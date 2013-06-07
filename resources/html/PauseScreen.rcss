@@ -1,0 +1,326 @@
+body
+{
+  font-family: Chaney;
+  
+  background-color: white;
+}
+.Hide
+{
+  display: none;
+  background-color: white;
+}
+body.window
+{
+  width: 800px;
+  height: 600px;
+}
+div.Header
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 62px;
+	background-decorator: image;
+	background-image-src: pausemenutest/TopBase.png;
+}
+div.Footer
+{
+	position: absolute;
+    left: 0px;
+    top: 504px;
+    width: 800px;
+    height: 96px;
+	background-decorator: image;
+	background-image-src: pausemenutest/BottomBase.png;
+}
+.GameTimeText
+{
+	position: absolute;
+	left: 16px;
+	top: 16px;
+	width: 120px;
+	font-size: 20px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+.HeaderText
+{
+	position: absolute;
+	left: 20px;
+	top: 16px;
+	font-size: 20px;
+	width: 760px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+.TimeText
+{
+	position: absolute;
+	left: 38px;
+	top: 42px;
+	width: 120px;
+	font-size: 20px;
+	font-color: yellow;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+.FooterText
+{
+	position: absolute;
+	left: 200px;
+	top: 16px;
+	font-size: 20px;
+	width: 570px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+.OptionsPanel
+{
+	position: absolute;
+	left: 5px;
+	top: 72px;
+	width: 210px;
+}
+.Option
+{
+	width: 170px;
+	height: 24px;
+	position: relative;
+	background-decorator: image;
+	background-image-src: pausemenutest/Option.png;
+	float: left;
+	/*display: inline-block;*/
+	margin-bottom: 2px;
+}
+.SelectedOption
+{
+	width: 170px;
+	height: 24px;
+	position: relative;
+	background-decorator: image;
+	background-image-src: pausemenutest/HighlightedOption.png;
+	float: left;
+	/*display: inline-block;*/
+	margin-bottom: 2px;
+}
+.OptionText
+{
+	position: absolute;
+	left: 10px;
+	font-size: 18px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+div.Background
+{
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  display: inline-block;
+}
+
+.ContentPanel
+{
+	position: absolute;
+	left: 210px;
+	top: 72px;
+}
+.CharacterPanel
+{
+}
+.SingleCharacterPanel
+{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 140px;
+	height: 420px;
+}
+.CharacterPotrait
+{
+	position: absolute;
+	left: 9px;
+	float: left;
+
+}
+.NamePanel
+{
+	position: absolute;
+	top: 140px;
+	left: 8px;
+	font-size: 23px;
+	shadow-font-effect: shadow;
+    shadow-offset: 2px 2px 2px 2px;
+    shadow-color: black;
+	float: left;
+}
+.LevelPanel
+{
+	position: absolute;
+	top: 170px;
+	left: 8px;
+	width: 124px;
+	height: 42px;
+	float: left;
+	background-decorator: image;
+	background-image-src: pausemenutest/LevelBack.png;
+	margin-bottom: -8px;
+}
+.LevelHeader
+{
+	position: absolute;
+	left: 7px;
+	font-size: 15px;
+}
+.LevelValue
+{
+	position: absolute;
+	top: 5px;
+	font-size: 22px;
+	right: 8px;
+	float: right;
+	text-align: right;
+
+}
+.StatPanel
+{
+	position: absolute;
+	top: 200px;
+	left: 5px;
+}
+.HPPanel
+{
+	float: left;
+	width: 135px;
+	height: 57px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	background-decorator: image;
+	background-image-src: pausemenutest/StatBack.png;
+	margin-bottom: -10px;
+}
+.HPText
+{
+	position: absolute;
+	font-size: 16px;
+	font-style: italic;
+	top: 4px;
+	left: 4px;
+	z-index: 3;
+}
+.HPValue
+{
+	position: absolute;
+	top: 10px;
+	font-size: 15px;
+	right: 5px;
+	float: right;
+	color: green;
+	font-style: italic;
+	text-align: right;
+	z-index: 3;
+}
+.HPBar
+{
+	position: absolute;
+	left: 6px;
+	top: 32px;
+	height: 6px;
+}
+.MPPanel
+{
+	float: left;
+	font-size: 12px;
+	width: 135px;
+	height: 57px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	background-decorator: image;
+	background-image-src: pausemenutest/StatBack.png;
+	margin-bottom: -10px;
+}
+.MPText
+{
+	position: absolute;
+	font-size: 16px;
+	font-style: italic;
+	top: 4px;
+	left: 4px;
+}
+.MPValue
+{
+	position: absolute;
+	top: 10px;
+	font-size: 15px;
+	right: 5px;
+	float: right;
+	color: rgb(15, 155, 255);
+	font-style: italic;
+	text-align: right;
+}
+.MPBar
+{
+	position: absolute;
+	left: 3px;
+	top: 10px;
+	height: 20px;
+}
+.SPPanel
+{
+	float: left;
+	font-size: 12px;
+	width: 135px;
+	height: 57px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	background-decorator: image;
+	background-image-src: pausemenutest/StatBack.png;
+	margin-bottom: -10px;
+}
+.SPText
+{
+	position: absolute;
+	font-size: 16px;
+	font-style: italic;
+	top: 4px;
+	left: 4px;
+}
+.SPValue
+{
+	position: absolute;
+	top: 10px;
+	font-size: 15px;
+	right: 5px;
+	float: right;
+	color: yellow;
+	font-style: italic;
+	text-align: right;
+}
+.SPBar
+{
+	position: absolute;
+	left: 3px;
+	top: 10px;
+	height: 20px;
+}
+
+.CharacterHighlight
+{
+	background-decorator: image;
+	background-image-src: pausemenutest/CharacterOutline.png;
+	width: 164px;
+	height: 435px;
+	float: left;
+	left: 205px;
+	top: 64px;
+	position: absolute;
+}

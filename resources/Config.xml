@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="LogDirectory" value="..\..\Log\Log.txt"/>
+    <add key="Threaded" value="False"/>
+    <add key="FPS" value="50"/>
+    <!--Used to specify the folder to drop into to find resources -->
+    <add key="ResourcesBaseDirectory" value="..\..\..\Resources\"/>
+    <!--Graphics Paths-->
+    <add key="MapSubDir" value="Maps\"/>
+    <add key="GraphicsSubDir" value="Graphics\"/>
+    <add key="TitleScreenSubDir" value="Intro\"/>
+    <add key="GUISubDir" value="GUI\"/>
+    <add key="BattleBacksSubDir" value="Battle Backgrounds\"/>
+    <add key="BackgroundsSubDir" value="Backgrounds\"/>
+    <add key="GUIBattleSubDir" value="Battle\"/>
+    <add key="GUIMenuSubDir" value="Menu\"/>
+    <add key="CoreSprites" value="Core\"/>
+    <add key="CoreBattleSprite" value="Battle\"/>
+    <add key="BattleQueueSprites" value="Queue\"/>
+    <add key="SpriteSubDir" value="Sprites\"/>
+    <add key="OverworldSpriteDir" value="Overworld\"/>
+    <add key="MainGameSpriteSubDir" value="Main\"/>
+    <add key="FFVGameSpriteDir" value="FFV\"/>
+    <add key="FFVIGameSpriteDir" value="FFVI\"/>
+    <add key="FFVGameGUISubDir" value="FFV\"/>
+    <add key="FFTacticsGameSpriteDir" value="FFTactics\"/>
+    <add key="MainGameSpriteDir" value="Main\"/>
+    <add key="QueueSubDir" value="Queue\"/>
+    <add key="EnemySubDir" value="Enemies\"/>
+    <add key="NPCSubDir" value="NPC\"/>
+    <add key="WeaponsSubDir" value="Weapons\"/>
+    <add key="GuardianSubDir" value="Guardians\"/>
+    <add key="BossSubDir" value="Bosses\"/>
+    <add key="ChasersSubDir" value="Chasers\"/>
+    <add key="IconSubDir" value="Icons\"/>
+    <add key="ChasersSubDir" value="Chasers\"/>
+    <add key="SummonSubDir" value="Summons\"/>
+    <add key="MagicIconSubDir" value="Magic Icons\"/>
+    <add key="MagicSheetSubDir" value="Attack Sheets"/>
+    <add key="SkillSheetSubDir" value="Attack Sheets\"/>
+    <add key="QuadrupleTriadDirectory" value="QuadrupleTriad\"/>
+    <add key="WorldDirectory" value="Worlds\"/>
+    <add key="TileSetDir" value="Tilesets\"/>
+    <add key="ShaderSubDir" value="Shaders\"/>
+    <add key="BackColorsSubDir" value="BackColours\"/>
+    <add key="HTMLDirectory" value="..\..\..\Resources\html\"/>
+    <!--Right now, you NEED to specify full path for the HTML Directory-->
+    <add key="MinigameSubDir" value="Minigames\"/>
+    <add key="DDRSubDir" value="DDR\"/>
+    <add key="ParticleSubDir" value="Particles"/>
+    <!--Database Paths-->
+    <add key="DatabaseSubDir" value="Databases\"/>
+    <add key="Main Database" value="KHMP_Main.sqlite"/>
+    <!--Music Paths-->
+    <add key="MusicSubDir" value="Music\"/>
+    <add key="FFVMusicDir" value="FFV\"/>
+    <add key="FFVIMusicDir" value="FFVI\"/>
+    <add key="SoundEffectsDir" value="SoundEffects\"/>
+    <!--Font Paths-->
+    <add key="FontSubDir" value="Fonts\"/>
+
+    <add key="ScriptPath" value="Scripts\"/>
+
+    <!--Other Settings-->
+    <!--Sound Settings-->
+    <add key="SoundChannels" value="32"/>
+    <!--Particle testing-->
+    <add key="Particle" value="Cloud001"/>
+    <add key="ParticleAlpha" value="200"/>
+    <add key="ParticleR" value="255"/>
+    <add key="ParticleG" value="243"/>
+    <add key="ParticleB" value="20"/>
+    <add key="ParticleXScale" value="1.25"/>
+    <add key="ParticleYScale" value="1.25"/>
+    <add key="ParticleRate" value="0"/>
+    <add key="ClientSettingsProvider.ServiceUri" value=""/>
+  </appSettings>
+  <inputConfig>
+    <Player1>
+      <keyboard>
+        <add key="W" action="Up"/>
+        <add key="S" action="Down"/>
+        <add key="A" action="Left"/>
+        <add key="D" action="Right"/>
+        <add key="H" action="Confirm"/>
+        <add key="J" action="Cancel"/>
+        <add key="U" action="Aux1" />
+        <add key="K" action="Aux2"/>
+        <add key="Q" action="LeftAux"/>
+        <add key="E" action="RightAux"/>
+        <add key="Enter" action="Start"/>
+        <add key="Space" action="Select" />
+      </keyboard>
+      <joystick>
+
+      </joystick>
+    </Player1>
+  </inputConfig>
+</configuration>

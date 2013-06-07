@@ -1,0 +1,16 @@
+<template name="window" content="content">
+  <head>
+    <link type="text/rcss" href="primarywindow.rcss"/>
+  </head>
+  <body class="window">
+    <div id="Header" class="Header">
+    </div>
+    <div id="NavPanel" class="NavPanel"></div>
+    <div id="content"></div>
+    <div id="TimePanelContainer" class="TimePanelContainer">
+      <div id="TimePanel" class="TimePanel"></div>
+    </div>
+    <div id="Footer" class="Footer">
+    </div>
+  </body>
+</template>

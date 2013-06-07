@@ -1,0 +1,22 @@
+﻿<Page x:Class="WPFTools.ComponentControls.ItemComponents.WeaponComponent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="355" d:DesignWidth="556"
+	Title="WeaponComponent">
+
+    <Grid>
+        <Grid Height="355" HorizontalAlignment="Left" Name="grid1" VerticalAlignment="Top" Width="556">
+            <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="117,177,0,0" Name="label1" VerticalAlignment="Top" />
+            <Label Content="Attack Power" Height="28" HorizontalAlignment="Left" Margin="6,30,0,0" Name="label2" VerticalAlignment="Top" />
+            <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="175,83,0,0" Name="label3" VerticalAlignment="Top" />
+            <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="82,129,0,0" Name="label4" VerticalAlignment="Top" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="93,32,0,0" Name="textBox1" VerticalAlignment="Top" Width="120" />
+            <CheckBox Content="Custom Atk Power" Height="16" HorizontalAlignment="Left" Margin="422,6,0,0" Name="CustomAttackPwr" VerticalAlignment="Top" Width="122" />
+            <CheckBox Content="Custom Use Function" Height="16" HorizontalAlignment="Left" Margin="422,30,0,0" Name="CustomUse" VerticalAlignment="Top" Width="134" />
+            <CheckBox Content="CheckBox" Height="16" HorizontalAlignment="Left" Margin="422,0,0,285" Name="checkBox3" VerticalAlignment="Bottom" />
+        </Grid>
+    </Grid>
+</Page>

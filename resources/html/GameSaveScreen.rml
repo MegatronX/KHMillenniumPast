@@ -1,0 +1,150 @@
+<rml>
+  <head>
+    <title>Title Screen</title>
+    <style type="text/css">
+      body
+      {
+      font-family: Chaney;
+      font-size: 20px;
+      background: rgba(128, 128, 128, 200);
+      width: 800px;
+      height: 600px;
+      color: white;
+      shadow-font-effect: shadow;
+      shadow-offset: 1px 1px;
+      shadow-color: black;
+      }
+
+      .Background
+      {
+      position: absolute;
+      width: 800px;
+      height: 600px;
+      z-index: -1;
+      }
+
+      .MainPanel
+      {
+      width: 800px;
+      height: 600px;
+      }
+
+      .savepanel
+      {
+      width: 600px;
+      height: 500px;
+      top: 85px;
+      left: 200px;
+      position: absolute;
+      }
+
+      .save
+      {
+      width: 596px;
+      height: 52px;
+      margin: 2px 5px 2px;
+      position: relative;
+      display: inline-block;
+      position: relative;background-decorator: image;
+      background-image-src: testimages/SaveBackSmall.png;
+      }
+      .saveid
+      {
+      width: 44px;
+      height: 44px;
+      top: 4px;
+      left: 10px;
+      position: absolute;
+      background-decorator: image;
+      background-image-src: testimages/NumCircSmall.png;
+      }
+      .saveidtext
+      {
+      position: absolute;
+      text-align: center;
+      width: 44px;
+      top: 18px;
+      }
+      .savetime
+      {
+      height: 20px;
+      top: 2px;
+      left: 400px;
+      position: absolute;
+      z-index: 1;
+      }
+
+      .savearea
+      {
+      height: 20px;
+      top: 26px;
+      left: 60px;
+      position: absolute;
+      z-index: 1;
+      }
+      .savelevel
+      {
+      top: 2px;
+      left: 60px;
+      position: absolute;
+      z-index: 1;
+      }
+      .savemoney
+      {
+      top: 2px;
+      left: 160px;
+      position: absolute;
+      z-index: 1;
+      }
+      .character
+      {
+      left: 340px;
+      height: 50px;
+      width: 220px;
+      top: 2px;
+      position: absolute;
+      }
+      .Header
+      {
+      position: absolute;
+      background-decorator: image;
+      background-image-src: testimages/TopBase.png;
+      z-index: 10;
+      width: 800px;
+      height: 62px;
+      }
+      .Footer
+      {
+      position: absolute;
+      background-decorator: image;
+      background-image-src: testimages/BottomBase.png;
+      top: 504px;
+      width: 800px;
+      height: 96px;
+      z-index: 10;
+      }
+      .savesummarypanel
+      {
+      position: absolute;
+      background-decorator: image;
+      background-image-src: testimages/SummaryBack.png;
+      z-index: 2;
+      height: 430px;
+      width: 200px;
+      top: 72px;
+      }
+    </style>
+    <link type="text/rcss" href="SavesPanelBad.css" />
+  </head>
+  <body>
+    <div id="Background" class="Background"/>
+    <!--div id="Header" class="Header">
+    </div>-->
+    <div id="MainPanel" class="MainPanel">
+      
+      <div id="savesummarypanel" class="savesummarypanel">
+      </div>
+    </div>
+    <!-- <div id="Footer" class="Footer"/>-->
+  </body>
+</rml>

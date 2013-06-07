@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="Layer Transition" color="#ff00ff"/>
+ <objecttype name="Chest" color="#00ffff"/>
+ <objecttype name="NPC" color="#ffff00"/>
+ <objecttype name="Exit" color="#55aaff"/>
+ <objecttype name="General Event" color="#42995d"/>
+</objecttypes>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="60" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Background" value="awakening"/>
+  <property name="Music" value="Dive into the Heart, Dive into the Heart"/>
+  <property name="Script" value="Station1.py"/>
+ </properties>
+ <tileset firstgid="1" name="AtlantisTop" tilewidth="32" tileheight="32">
+  <image source="AtlantisTop.png" width="1024" height="320"/>
+ </tileset>
+ <tileset firstgid="321" name="Station" tilewidth="32" tileheight="32">
+  <image source="Station.png" width="1024" height="800"/>
+ </tileset>
+ <tileset firstgid="1121" name="StationExtender" tilewidth="32" tileheight="32">
+  <image source="StationExtender.png" width="1024" height="480"/>
+ </tileset>
+ <tileset firstgid="1601" name="Collisions" tilewidth="32" tileheight="32">
+  <image source="Collisions.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Station Base" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="0"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WZROWhRaGUbpLukWkkZDu7u4upbu7pVQwQEC6S+kSpUsJUVLp7u4uF//hDO/MmWfPrM/3XN92mDDBBRdccMEFF1xwwQUXXHD/myseNkyYEpSkFKUpQ1nKUZ4KVKQSlalCVapRnRrUpBa1qUNd6lGfBjSkEY1pQlOahX3/vZ/Z/JzmtKAlrWhNG9rSjvZ0oCOd6EwXutKN7vSgJ73oTR/60o/+DGAggxjMkBD0DrX5BcMYzghGMoov+YqvGc0YvuFbvuN7xjKOHxjPBCbyI5OYzBSmMo3pzGAms0LQO9vmHOYyj/ksYCGL+ImfWcwSlrKM5axgJatYzRrW8gvr+JXfWM8GNrKJzWxhawh6t9nczg528jt/sIvd7GEvf7KPv/ib/RzgIIc4zBH+4V+OcozjnOAkpzjNGc5yLgS9521e4CKXuMwVrnKN69zgJre4zR3uco/7POAhj3jME57yjOe84CWveM0b3r5rDff+e8PaDEd4IhCRSEQmClGJRnRiEJNYxCYOHxCXeMQnAQlJRGKSkJRkJCcFKfmQVCHo/chmaj4mDWlJR3oykJFMZOYTspCVbGTnU3KQk1zkJg95yUd+ClCQQhSmCEUpFoLe4jZLUJJSlKYMZSlHeSpQkUpUpgpVqUZ1alCTWtSmDnWpR30a0JBGNKYJTWkWgt7PbH5Oc1rQkla0pg1taUd7OtCRTnSmC13pRnd60JNe9KYPfelHfwYwkEEMZkgIeofa/IJhDGcEIxnFl3zF14xmDN/wLd/xPWMZxw+MZwIT+ZFJTGYKU5nGdGYwk1kh6J1tcw5zmcd8FrCQRfzEzyxmCUtZxnJWsJJVrGYNa/mFdfzKb6xnAxvZxGa2sDUEvdtsbmcHO/mdP9jFbvawlz/Zx1/8zX4OcJBDHOYI//AvRznGcU5wklOc5gxnOReC3vM2L3CRS1zmCle5xnVucJNb3OYOd7nHfR7wkEc85glPecZzXvCSV7zmDW/ftYZ//71hbYYjPBGISCQiE4WoRCM6MYhJLGIThw+ISzzik4CEJCIxSUhKMpKTgpR8SKoQ9H5kMzUfk4a0pCM9GchIJjLzCVnISjay8yk5yEkucpOHvOQjPwUoSCEKU4SiFAtBb3GbJShJKUpThrKUozwVqEglKlOFqlSjOjWoSS1qU4e61KM+DWhIIxrThKY0C0HvZzY/pzktaEkrWtOGtrSjPR3oSCc604WudKM7PehJL3rTh770oz8DGMggBjMkBL1DbX7BMIYzgpGM4ku+4mtGM4Zv+Jbv+J6xjOMHxjOBifzIJCYzhalMYzozmMmsEPTOtjmHucxjPgtYyCJ+4mcWs4SlLGM5K1jJKlazhrX8wjp+5TfWs4GNbGIzW9gagt5tNrezg538zh/sYjd72Muf7OMv/mY/BzjIIQ5zhH/4l6Mc4zgnOMkpTnOGs5wLQe95mxe4yCUuc4WrXOM6N7jJLW5zh7vc4z4PeMgjHvOEpzzjOS94ySte84a371ojvP/esDbDEZ4IRCQSkYlCVKIRnRjEJBaxicMHxCUe8UlAQhKRmCQkJRnJSUFKPiRVCHo/spmaj0lDWtKRngxkJBOZ+YQsZCUb2fmUHOQkF7nJQ17ykZ8CFKQQhSlCUYqFoLe4zRKUpBSlKUNZylGeClSkEpWpQlWqUZ0a1KQWtalDXepRnwY0pBGNaUJTmoWg992PEEpBb9Ab9Aa9QW/QG/QGvUFv0Bv0Br1Bb9Ab9Aa9QW/QG/T+//T+B4AVkuhAOAAA
+  </data>
+ </layer>
+ <layer name="Station Ext" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="1"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VJ1ODURSE4U8kwQEBB8FRHNUBcRRHdRRHcVQXwFFcCOAojuIIxVEcxVFdAEdxkIAjMMP7B3IUk7lid+ZRe8RedT1PURRFURRFURRFURRFURRFURRFURRFURRFURQXM+DzvEEMYdiX+W6EbhRjGMcEJo37CN0UpjFj3GU7s2yZwzwWjF1RukXEsIRlrBj3q3RrWMeGQ+/dZMsWtrFj7Nqli2MP+zjAoXF/RHeME5w69N4ztpzjApfGriu6a9zgFne4N+4TdA94xJND731mywte8Wbseqf7QBIpfOLLuP+mS+MHvw691+f3PD8CyPFnvsuly0M+gihAoXFfRFeMEEqMu2ynlC1lKEeFsauSrgrVqEEt6oz7eroGNCLs0Hub2NKMFrQau9ro2tGBTnSh27jvoetFH/odeu8AWwYxhGFj1wjdKMYwjglMGvcRuilMY8ah986yZQ7zWDB2RekWEcMSlrFi3K/SrWEdGw69d5MtW9jGjrFrly6OPezjAIfG/RHdMU5w6tB7z9hyjgtcGruu6K5xg1vc4d64T9A94BFPDr33mS0veMWbseud7gNJpPCJL+P+my6NH/w69F5fgP8XAeQEMt/l0uUhH0EUoNC4L6IrRgglxl22U8qWMpSjwthVSVeFatSgFnXGfT1dAxoRdui9iqIoivJf+QMTawD0QDgAAA==
+  </data>
+ </layer>
+ <layer name="Atlantis Top" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="2"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PV/QXAhzG4f7tvffee++9rNBSKiTRUimzISQqUpSRokELDdGwQshoLxRp2Ip2iKLC063fZf1ON9/POc/1e95UqaIoiqIoiqIois5PKaQmDWlJR3oykJFMZCYLWclGdnKQk1zkJg95yUd+ClCQQhSmCEUpRnFKUDL59xIqRWnKUJZylKcCFalEZapQlWpUpwY1qUVt6lCXetSnAQ1pRGOa0JRmNKcFLZN/L6FWtOYiLuYSLuUy2nA5V3AlbWlHezrQkavoRGeupgtd6cY1XMt1dOd6enADPbkx+fcSuole9KYPfenHzfRnAAO5hUEM5lZu43bu4E7uYghDGcZw7mYE93Av9zGS+xnFA8m/l9CDjGYMY3mIhxnHI4xnAo/yGBOZxOM8wZM8xWSeZgpTeYZnmcZ0ZjCT53ieWcxO/r2E5jCXebzAi7zEfBawkEW8zGJe4VWWsJRlLOc1XucN3uQtVvA27/AuK3mP9/mAVcm/l9CHfMTHfMJq1rCWdaxnAxvZxGa2sJVP+YzP2cZ2vuBLdvAVO9nFbvbwNd/wLd8l/15C3/MDP/ITe9nHz/zCfg5wkEMc5ghHOcav/MbvHOcP/uQEJ/mLvznFac7wD/+eHU9J/r//l2IzNWlISzrSk4GMZCIzWchKNrKTg5zkIjd5yEs+8lOAghSiMEUoSjGKU4KSF+BvKZulKUNZylGeClSkEpWpQlWqUZ0a1KQWtalDXepRnwY0pBGNaUJTmtGcFrS8AH+jKIqiKIqiKIqiKIqiKIqiKIqiKIqiKIqi6Fz6Dza3/1lAOAAA
+  </data>
+ </layer>
+ <layer name="Collission Layer" width="60" height="60">
+  <properties>
+   <property name="collision layer" value="true"/>
+   <property name="enforce on" value="0, 1, 2"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WwQkAIQwEQF/X1/XflB0cHER3HzPgO1kJxrUAAICE95k5rab7bc1/q5907lT9VOb0fCXuOU3es7WSM518N27UbtpNp3ZlU8YvU3+r5owAAAAAAAAAAPDXBo6aPtxAOAAA
+  </data>
+ </layer>
+</map>

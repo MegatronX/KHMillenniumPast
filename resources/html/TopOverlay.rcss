@@ -1,0 +1,46 @@
+body
+{
+	font-family: Chaney;
+	font-color: rgba(128, 128, 128, 128);
+}
+
+body.window
+{
+	width: 800px;
+	height: 600px;
+}
+
+div.BottomMessageDiv
+{
+	display: inline-block;
+	position: absolute;
+    top: 390px;
+    left: 0px;
+	width: 800px;
+	height: 200px;
+	
+}
+
+div.EmotionDiv
+{
+	height: 200px;
+	position: relative;
+}
+
+div.BottomMessage
+{
+    width: 630px;
+	height: 170px;
+	position: absolute;
+	/*vertical-align: top;*/
+	top: 30px;
+	left: 165px;
+	font-size: 25px;
+	background-decorator: image;
+	background-image-src: testimages/testitemback.png;
+}
+
+img.EmotionImage
+{
+	height: 180px;
+}

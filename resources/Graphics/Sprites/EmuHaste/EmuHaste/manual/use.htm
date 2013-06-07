@@ -1,0 +1,124 @@
+<HTML>
+<HEAD><TITLE>HOW TO USE</TITLE></HEAD>
+<BODY>
+<h2>基本的な使い方</h2>
+
+・わかってる人向け<br>
+エミュ起動→ROM読込→emuhaste起動→MODE CHANGE→エミュ種類選択<br>
+→SNAP PROCESS→コードサーチ→コード動作チェック→ウマー(ﾟДﾟ)<br><br>
+
+・・・以下、初心者向け<br><br>
+
+見た目は以下のような感じです。<br>
+<img src="./img_01.png" alt="スクリーンショット"><br><br>
+
+初回起動時はサーチ方法を選択するように表示されるので、サーチしたい項目を選んでください。<br>
+続いて改造コードエンジンの選択が表示されるので使いたいものを選んでください(推奨＝default）。<br><br>
+
+ゲームを始めた後、メニュー左上の <b>[SNAP PROCESS]</b> でプロセスを捕捉すればサーチ可能になります。<br>
+ここでエラーが表示される場合、右下の<b>INFORMATION & MEMO</b>にある<b>Process</b>の名前と、<br>
+実際にゲームプレイに利用しているエミュレータのプログラム名が一致していることを確認してください。<br><br>
+
+<h2>Hex Viewer</h2>
+emuhaste左上半分の16進数羅列表示エリアを「Hex Viewer」と言います。<br>
+直接パラメータやキャラクター名などを確認するために使用します。<br>
+「自動更新」のチェックを外すと表示が固定されたままになります。<br>
+なお、少し変な仕様ですが、コピー＆ペーストしたいときは<font color=red>CTRLを押したまま選んで</font>ください。<br><br>
+
+<h2>Search Pallet</h2>
+実際にパラメータサーチを行うのがこの「Search Pallet」です。<br>
+<font color=red>必ず最初は<b>新規サーチ[NEW]</b>ボタンを押してサーチ用バッファをクリア</font>してください。<br>
+また、サーチをやり直す場合もこのボタンを押してください。<br><br>
+
+＊<font size=4><b>PARAM & STRING SEARCH</b></font><br>
+16進数、10進数、浮動小数点数、文字列などのパラメータを直接指定してサーチできます。<br>
+<table border=1>
+<tr><td>サーチ対象</td><td>書式例</td><td>説明</td></tr>
+
+<tr><td>16進数</td><td>00FFEE1122…</td><td>直接打ちます。最大で255桁までサーチ可能</td></tr>
+<tr><td>16進数 <font color=red size=2>new!Ver2.51</font><br>(エンディアン反転)</td><td>R00FFEE1122…</td><td>Rを付加するとエンディアン反転してサーチします。<br>左例であれば2211EEFF00…を検索します。</td></tr>
+
+<tr><td>10進数(直指定)</td>
+<td>S0 ～ S255<br>M0 ～ M65535<br>L0 ～L4294967295</td>
+<td>8ビット(00-FF)の値を探します。<br>16ビット(0000-FFFF)の値を探します。<br>32ビット(00000000-FFFFFFFF)の値を探します。</td></tr>
+
+<tr><td>10進数(変化量)</td>
+<td>+S0 ～ +S255<br>+M0 ～ +M65535<br>+L0 ～ +L4294967295</td>
+<td>10進数指定の頭	にプラスまたはマイナスの符号を付けると、<br>「変化量」を調べることができます。<br>（例）敵に34ダメージを与えた→敵のHPは34減った→-M34</td></tr>
+
+<tr><td>浮動小数点数</td><td>T0 ～</td><td>浮動小数点数サーチ(Ver2.55で正式実装しました)。</td></tr>
+
+<tr><td>文字列</td><td>$string</td><td>文字列検索。キャラ名からステータステーブルを探したりとか。</td></tr>
+
+<tr><td>任意の範囲</td><td>Innnnnnnn-nnnnnnnn<br>(開始addr - 終端addr)</td><td>16進数で任意の範囲に含まれるパラメータ探します。<br>DATEL TOOLKITのレンジサーチと同じです。</td></tr>
+
+</table>
+「任意の範囲」検索については上級者向けのため、あえてここでは説明しません。<br>
+左メニュー<a href="ind_search.htm">上級者の方へ／変動アドレスのサーチ方法</a>リンクを参照。<br><br>
+
+
+＊<font size=4><b>MULTI SEARCH</b></font><br>
+目に見えないパラメータ（HPゲージや好感度など）を探す際に用います。<br>
+初めに<b>DATA TYPE</B>でバイトサイズを指定して、絞り込みやすくしてください。<br>
+例えば「レベル」は大抵0～99なのでBYTE、「所持金」は999999999だったりするのでDWORDですね。<br>
+後はステータス変化に合わせて「増加」「減少」「変動」「不動」で絞り込めばOK。<br><br>
+
+＊<font size=4><b>SET SEARCH RANGE</b></font><br>
+この項目にチェックを入れ、下に二つ並ぶチェックボックスにそれぞれ<br>
+「開始アドレス-終了アドレス」を入れることでサーチ範囲を指定することができます。<br><br>
+
+<h2>CHEAT ENGINE</h2>
+emuhasteはサーチツールですが、簡易的な改造コードの動作チェックが可能です。<br>
+※<font color=red>Ver2.00</font>からエンジンの差し替えが可能になりました。<Br>
+どんな改造コードエンジンがあるかは、左メニューの<a href="use_engine.htm">改造コードエンジンを選ぶ</a>をご覧下さい。<br><br>
+
+同封の標準エンジン(default.dll)では、以下のコードをサポートしています。<br><br>
+<b>一般的な改造コード(初心者向け)</b><br>
+<table border=1>
+<tr><td>コード書式</td><td>効果・用法</td></tr>
+<tr><td>0aaaaaaa 000000nn</td><td>アドレスaaaaaaaに1バイトnnを書き込む</td></tr>
+<tr><td>1aaaaaaa 0000nnnn</td><td>アドレスaaaaaaaに2バイトnnnnを書き込む</td></tr>
+<tr><td>2aaaaaaa nnnnnnnn</td><td>アドレスaaaaaaaに4バイトnnnnnnnnを書き込む</td></tr>
+<tr><td>Daaaaaaa nnnnnnnn</td><td>アドレスaaaaaaaが4バイトnnnnnnnnのときだけ次の行のコードを実行</td></tr>
+</table><br>
+
+<b>特殊効果をもつコード(上級者向け)</b><br>
+<table border=1>
+<tr><td>コード書式</td><td>効果・用法</td></tr>
+<tr><td>Baaaaaaa 00000000</td><td>アドレスaaaaaaaの4バイトをインデックスとして0,1,2コードのアドレスをずらす ※</td></tr>
+<tr><td>D2000000 00000000</td><td>Bコードのインデックスの値を0にリセットする</td></tr>
+<tr><td>4aaaaaaa nnnnnnnn<br>w000zzzz uuuuuuuu</td><td>アドレスaaaaaaaにパラメータyyyyyyyyをuuuuuuuuバイトごとにzzzz回、<br>
+w=0のときは1バイト、1のときは2バイト、2のときは4バイト書き込む。<br>(Dipstarシリアルコードもどき互換)</td></tr>
+</table>
+
+※Bコードの仕様はDSプロアクションリプレイ互換です (load index,[addr] & str param,[addr+index])<br><br>
+
+また、スペースや / @ * といった記号を行の先頭に置くとコメント扱いになります。<br><br>
+
+各ボタンおよびチェックの機能は以下の通り。<br>
+「更新＆適用」ボタン … 入力したコードを適用＆実行します。<br>
+「to ClipBoard」ボタン … クリップボードに改造コードをコピーします。<br>
+「CLEAR」ボタン … 改造コードを全て消去します。<br>
+「常に実行」チェック … このチェックを入れると常にコードが実行されます。<br>
+「DLL拡張」チェック … DLLに対してこのチェックの値を渡すことで挙動を変化させます。<br>
+　　　　　　　　　　　　　　※default.dllでは改造コードの1バイト書き込みと4バイト書き込みの効果を反転します(主にDS用)<br>
+
+<h2>EXTRA MODE -エクストラモード-</h2>
+メニューの [EXTRA] をクリックすると、EXTRA MODEダイアログが開きます。<br>
+<img src="./img_02.png"><br><br>
+この画面でOKボタンを押すと、emuhasteがエクストラモードに切り替わります。<br><br>
+
+このモードでは、コンフィグファイルを修正することなく、対象プロセス名や<br>
+アドレス情報などをカスタマイズすることができます。<br>
+ただし、使い方次第ではシステムにダメージを与える可能性がありますので、<br>
+<font color=red><b>「本当に理解している方のみ」お使いください。</b></font><br><br>
+
+なお、Refresh rateは<b>「改造コードの実行頻度をミリ秒で指定」</b>です。<br>
+（ヘキサビューワの更新周期はコレの5倍の時間です。 50→50x5 = 250ms …0.25秒ごと）。<br><br>
+
+BaseAddr detect step sizeは、BASEADDR_KEYでベースアドレス検索する際のステップ幅を指定します。<br>
+普通は 4 で良いのすが、スピード重視の場合は 16。精度重視の場合は 1 を指定してください。<br>
+
+
+</BODY>
+</HTML>

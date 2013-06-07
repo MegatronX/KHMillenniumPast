@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <AllClasses>
+    <Class value="HealingItem" />
+    <Class value="SynthesisItem" />
+    <Class value="Weapon" />
+    <Class value="Armor" />
+    <Class value="Accessory" />
+    <Class value="StatBoostingItem" />
+    <Class value="Keystone" />
+  </AllClasses>
+  <Item name="Abounding Crystal" value="5000">
+    <Family value="Abounding Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A colourful crystal composed of many smaller crystals. It gives off a warm glow." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Blazing Shard" value="100">
+    <Family value="Blazing Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A small red shard that appears to have a small flame inside. It feels warm to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Blazing Stone" value="250">
+    <Family value="Blazing Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A red stone that glows brightly from the fire inside. It feels hot to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Blazing Gem" value="750">
+    <Family value="Blazing Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Fire swirls around inside, giving off a bright glow. It is painfully hot to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Blazing Crystal" classes="Synthesis Item" value="1500">
+    <Family value="Blazing Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It looks as though there is lava flowing inside. It gives off a dangerous amount of heat and is rumoured to never burn out." />
+    <Components>
+      <ThrowComponent>
+        <ThrowsAsAttack value="Firaga" />
+      </ThrowComponent>
+      <FreeSynthesisComponent>
+        <WeaponEffect>
+          <ElementalAttackComponent>
+            <Fire value="1.0" />
+          </ElementalAttackComponent>
+          <AttackComponent>
+            <AttackPowerBoost value="50" />
+          </AttackComponent>
+        </WeaponEffect>
+        <ArmorEffect>
+          <ElementalDefenseComponent>
+            <Fire value="1.0" />
+          </ElementalDefenseComponent>
+        </ArmorEffect>
+        <AccessoryEffect>
+          <ElementalDefenseComponent>
+            <Fire value="0.5" />
+          </ElementalDefenseComponent>
+          <ElementalDamageBoostComponent>
+            <Fire value="0.25" />
+          </ElementalDamageBoostComponent>
+        </AccessoryEffect>
+      </FreeSynthesisComponent>
+    </Components>
+    <Flag>
+      <Throwable />
+    </Flag>
+  </Item>
+  <Item name="Bright Shard" value="250">
+    <Family value="Bright Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A small shard with a few specks of light floating inside. It emits a faint glow." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Bright Stone" value="1000">
+    <Family value="Bright Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Several small lights dance around inside. It emits a noticable glow." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Bright Gem" value="2000">
+    <Family value="Bright Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Many small lights swirl around inside. It gives off a strong glow." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Bright Crystal" value="5000">
+    <Family value="Bright Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Countless lights flow around inside. It gives off an intense light." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Chaos Crystal" value="5000">
+    <Family value="Chaos Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Light is refracted chaotically inside producing intense colours. It sometimes vibrates wildly." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dark Shard" value="100">
+    <Family value="Dark Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A small shard that seems to absorb light cast on it." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dark Stone" value="250">
+    <Family value="Dark Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It appears to draw in light, casting shadows around itself." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dark Gem" value="750">
+    <Family value="Dark Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Draws in and absorbs light, darkening areas around it. It is cool to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dark Crystal" value="2000">
+    <Family value="Dark Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Draws in tremendous amounts of light, darkening large areas. It feels cold to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dense Shard" value="500">
+    <Family value="Dense Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A small grey shard that is suprisingly heavy." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dense Stone" value="1500">
+    <Family value="Dense Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A heavy stone that is difficult to damage." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dense Gem" value="2500">
+    <Family value="Dense Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="An opaque grey gem that is extremely heavy and resilient to damamge." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Dense Crystal" value="5000">
+    <Family value="Dense Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A mostly opaque crystal that is exceedingly difficult to move due to it's weight. Has tremendous strength." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Energy Shard" value="200">
+    <Family value="Energy Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A shard that occasionally moves by itself, it is strongly drawn to other metals." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Energy Stone" value="500">
+    <Family value="Energy Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It glows faintly and is warm to the touch. It can magnify any force applied to it. It can impart energy to nearby objects." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Energy Gem" value="2000">
+    <Family value="Energy Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It seems to contract and expand when held. Holding it causes a rush of energy to pass through the holder." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Energy Crystal" value="5000">
+    <Family value="Energy Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It pulsates with intense energy. It greatly magnifies any force applied to it and frequently energizes nearby objects." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Fleeting Crystal" value="5000">
+    <Family value="Fleeting Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A decayed crysal that looks as though it was once glorious. Listening closely, voices can sometimes be heard." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Frost Shard" value="100">
+    <Family value="Frost Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A translucent blue shard. It is cool to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Frost Stone" value="250">
+    <Family value="Frost Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A light weight blue stone, it is quite cold to the touch." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Frost Gem" value="750">
+    <Family value="Frost Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A gem frozen from the inside out, it is always covered in a layer of ice." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Frost Crystal" value="1500">
+    <Family value="Frost Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A brilliantly blue crystal that freezes nearby objects. It is dangerously cold." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Manifest Illusion" value="5000">
+    <Family value="Illusion Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A small multicoloured crystal, it strongly distorts any light passing through. It is rumoured to reveal a being's true form." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Lost Illusion" value="10000">
+    <Family value="Illusion Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A large elaborate crystal that warps light. It is rumoured that it can reveal glimpses of the future." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Orichalcum" value="10000">
+    <Family value="Orichalcum Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="An extremely rare and strong material, it boasts great strength and resistance to the elements." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Orichalcum+" value="25000">
+    <Family value="Energy Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Orichalcum refined to it's purest level, Orichalcum+ is incredibly rare and valuable. It posseses superior strength to Orichalcum." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Lucid Shard" value="200">
+    <Family value="Lucid Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A dark, smoky shard, it is surpsingly light." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Lucid Stone" value="500">
+    <Family value="Lucid Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Smoke seems to swirl around inside. It is cool to the touch and gives off an eerie vibe." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Lucid Gem" value="1500">
+    <Family value="Lucid Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Smoke moves around chaotically inside. It is cold to the touch and uneases those around it." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Lucid Crystal" value="3000">
+    <Family value="Lucid Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="An extremely light crystal, it feels as though an ominous presence lurks inside it's dark smoky interior." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Mythril Shard" value="500">
+    <Family value="Mythril Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A small shard with incredible strength, it feels almost as light as air." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Mythril Stone" value="1500">
+    <Family value="Mythril Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A virtually weightless stone, it glimmers brilliantly blue and purple. When combined with other Mythril stones, it can be used for equipment." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Mythril Gem" value="3500">
+    <Family value="Mythril Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Very lightweight and surprisingly strong, further refinement will make it even stronger." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Mythril Crystal" value="7500">
+    <Family value="Mythril Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Incredibly light-weight and strong, it makes an ideal base metal for equipment." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Power Shard" value="250">
+    <Family value="Power Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A deep blue metal shard, it gravitate to other power shards to form stronger structures." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Power Stone" value="750">
+    <Family value="Power Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A strong, heavy stone, it increases strength when held." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Power Gem" value="750">
+    <Family value="Power Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A heavy gem that makes one feel more powerful just by looking at it. Increases the strength of near by objects." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Power Crystal" value="750">
+    <Family value="Power Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Holding the crystal makes one feel nearly indestructible. It greatly increases the strength of everything near it." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Rememberance Shard" value="750">
+    <Family value="Rememberance Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It feels soft and yielding to the touch. It invokes feelings of nostalgia." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Rememberance Stone" value="750">
+    <Family value="Rememberance Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It increases memory strength, it is rumoured to give brief glimpses of the past." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Rememberance Gem" value="750">
+    <Family value="Rememberance Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Can causes involuntary recall of past memories. Voices can sometimes be heard from it." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Rememberance Crystal" value="750">
+    <Family value="Rememberance Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="It vastly increases the strength of memories when held. It often reveals glimpses of the past. it is rumoured to be able to revert objects to their previous forms." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Secret Crystal" value="750">
+    <Family value="Secret Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Said to be unbrekable, the crystal's core is permanently obscurred beneath a strong multi-coloured glow." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Serenity Shard" value="750">
+    <Family value="Serenity Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="" />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Serenity Stone" value="750">
+    <Family value="Serenity Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="" />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Serenity Gem" value="750">
+    <Family value="Serenity Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="" />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Serenity Crystal" value="750">
+    <Family value="Serenity Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="" />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Prism Shard" value="750">
+    <Family value="Prism Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A shard that splits light into 7 colours." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Prism Stone" value="750">
+    <Family value="Prism Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="" />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Prism Gem" value="750">
+    <Family value="Prism Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A gem that warps light." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Prism Crystal" value="750">
+    <Family value="Prism Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="A heavy crystal that warps and amplifies light." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Enriched Etherium" value="75000">
+    <Family value="Etherium Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Highly purified Etherium, possesing superior strength to impure Etherium." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Etherium" value="50000">
+    <Family value="Etherium Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="An extremely rare metal with incredible strength and resilience." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Etherium Ore" value="20000">
+    <Family value="Etherium Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="An impure and rare ore that can be processed into Etherium." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Raw Etherium" value="750">
+    <Family value="Etherium Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Transmuted Etherium ore. Further purification is needed to maximize the metal's strength." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Raw Etherium Ore" value="750">
+    <Family value="Etherium Materials" />
+    <Classes>
+      <Class value="SynthesisItem" />
+    </Classes>
+    <Description value="Extremely impure Etherium ore. It must be highly refined to be usable." />
+    <Components>
+    </Components>
+    <Flags>
+    </Flags>
+  </Item>
+  <Item name="Potion" classes="Healing Item" value="200">
+    <Family value="Potions" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A low quality potion, it restores a small amount of health" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="0" type="Absolute" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Hi-Potion" classes="Healing Item" value="200">
+    <Family value="Potions" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A mid quality potion, it restores health" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="1500" type="Absolute" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Mega-Potion" classes="Healing Item" value="200">
+    <Family value="Potions" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A high quality potion, it fully restore health" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="100" type="AbsolutePercent" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Ether" classes="Healing Item" value="200">
+    <Family value="Ethers" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A low quality ether, it restores a small amount of MP" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="75" type="Absolute" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Hi-Ether" classes="Healing Item" value="200">
+    <Family value="Ethers" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A mid-quality ether, it restores MP" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="250" type="Absolute" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Mega-Ether" classes="Healing Item" value="200">
+    <Family value="Ethers" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A high quality ether, it restores all MP" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="100" type="AbsolutePercent" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Elixir" classes="Healing Item" value="200">
+    <Family value="Elixirs" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A high quality ether, it restores all MP" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="100" type="AbsolutePercent" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Mega-Elixir" classes="Healing Item" value="200">
+    <Family value="Elixirs" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="A high quality ether, it restores all MP" />
+    <Components>
+      <HealingComponent>
+        <BattleHealingComponent>
+          <HPHealingComponent value="100" type="AbsolutePercent" />
+          <MPHealingComponent value="100" type="AbsolutePercent" />
+          <SPHealingComponent value="100" type="AbsolutePercent" />
+        </BattleHealingComponent>
+      </HealingComponent>
+    </Components>
+  </Item>
+  <Item name="Power Boost" value="200">
+    <Family value="Stat Boosters" />
+    <Classes>
+      <Class value="StatBoostingItem" />
+    </Classes>
+    <Description value="It surges with incredible power. You feel stronger just by touching it." />
+    <Components>
+    </Components>
+  </Item>
+  <Item name="Defense Boost" value="200">
+    <Family value="Stat Boosters" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="It's suface is incredibly hard, and feels nearbly unbrekable. You feel more resilient just holding it." />
+    <Components>
+      <StatBoostComponent>
+      </StatBoostComponent>
+    </Components>
+  </Item>
+  <Item name="Magic Boost" value="200">
+    <Family value="Stat Boosters" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="Sparkling with pure magical essense, your mind and body feel clearler and sharper when holding it." />
+    <Components>
+      <StatBoostComponent>
+      </StatBoostComponent>
+    </Components>
+  </Item>
+  <Item name="HP Boost" value="200">
+    <Family value="Stat Boosters" />
+    <Classes>
+      <Class value="HealingItem" />
+    </Classes>
+    <Description value="Despite it's high level of elasticity, it feels very difficult to break. You feel energized when holding it." />
+    <Components>
+      <StatBoostComponent>
+      </StatBoostComponent>
+    </Components>
+  </Item>
+  <Item name="Rainbow Crystal" value="200">
+    <Family value="Raindbow Materials" />
+    <Classes>
+      <Class value="SyntehsisItem" />
+    </Classes>
+    <Description value="A high quality ether, it restores all MP" />
+    <Components>
+    </Components>
+  </Item>
+</Items>

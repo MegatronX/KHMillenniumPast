@@ -1,0 +1,49 @@
+body
+{
+	font-family: Chaney;
+}
+
+body.window
+{
+	width: 800px;
+	height: 600px;
+}
+
+div.Header
+{
+width: 800px;
+height: 62px;
+display: inline-block;
+position: absolute;
+background-decorator: image;
+background-image-src: testimages/TopBase.png;
+background-repeat: no-repeat;
+z-index: 5;
+}
+div.TimePanelContainer
+{
+	position: absolute;
+	left: 3px;
+	bottom: 10px;
+}
+div.TimePanel
+{
+	text-align: right;
+	font-size: 22px;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+div.Footer
+{
+width: 800px;
+height: 96px;
+display: inline-block;
+position: absolute;
+top: 504px;
+left: 0px;
+background-decorator: image;
+background-image-src: testimages/BottomBase.png;
+z-index: 5;
+}
+

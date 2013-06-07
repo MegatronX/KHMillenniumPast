@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="AnimateTileSet" value="AnimWater: Water1.png, Water2.png, Water3.png, Water4.png | fps: 12"/>
+ </properties>
+ <tileset firstgid="1" name="AnimWater" tilewidth="32" tileheight="32">
+  <image source="Water1.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="5" name="hills" tilewidth="32" tileheight="32">
+  <image source="hills.png" width="256" height="704"/>
+ </tileset>
+ <tileset firstgid="181" name="dasboot" tilewidth="32" tileheight="32">
+  <image source="dasboot.png" width="256" height="544"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="32" height="32">
+  <properties>
+   <property name="Draw Order" value="0"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2V3QrAIAhG3dr7P/O6CURw8z8CL0ImNTufpgMAnrmuuW5kB/Gvb+qPstz/uXh0v9c2f/M3/35+abwsfmm85o/nx75KfgljFr9Hc8ph0UdTc1pdNTp88Vv1jcq/t76k+ed0oW8jYr5gxsg+4q2D7LlaYbX328kpPf9XJ5H3Xv22Iq+WfnJ6fWbO8eY/i/8Fcz0dkQAQAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="32" height="32">
+  <properties>
+   <property name="Draw Order" value="1"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3Wx08CQRjG4eVgJfYIirGgsRJFMfa/W1HA3rvSxIK9N07qyfI77m027sx6cN7kuc6bSebLN4ZhL+OYQBiTmEIEUcRsnm0l05jBLOYwjwUsYsmB/mWsYBVrWMcGNrHlQP82drCLPewjjgSSijpf8IocUkjjABkc4gjHOFHU/4Z3fCCLU5zhHBe4xBWuFfV/4gvfuMEt7nCPBzziCc+/PF80U3kuw8hHAQpRhGK4XTYuZYpopkroKUUZylGBSlRJ6hfNVDU9HnhRg1r4UCepXzRT9fQ0oBFN8KMZLZL6RTPVSk8b2tGBTnQhIKlfNFPd9PQgiF70IYR+Sf2imRqgZxBDGMYIRjEmqV/vtP+308yxstNUvhErO03lG7Gy0/Qbcf7fY85f/HvMUfHv0dHRcTY/vh3X3gAQAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="32" height="32">
+  <properties>
+   <property name="Draw Order" value="3"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3NIQ7AIBAF0TVQSlJJegYEsve/Gl9UVDQ4WMG8ZPSYAdhNUHHh51BJnSqr+2226/P6a7bi/G/O/0fVQQAAAFirA+hT8msAEAAA
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="32" height="32">
+  <properties>
+   <property name="Draw Order" value="4"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3RIQ4AIAxDUe4PDhw4OCgzSyamC+K/pLpbWgqgVy3tYVe3DFG/d8U7pmWJ+r0r/rwtR9TvXX6HcvvsDuX2GeX2GeX2AAAA+MsFkMcBawAQAAA=
+  </data>
+ </layer>
+</map>

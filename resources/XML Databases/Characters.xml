@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Characters>
+  <Character name="Arian" displayname="Arian" description="" alignment="Guardian">
+    <InitialState>
+      <Stats HP="343" MP="34" SP="34" Str="25" Vit="22" Mg="25" Spr="22" Skl="25" Spd="28" Acc="100" Ev="5" MgEv="5" Luck="45"/>
+      <Level value="5"/>
+    </InitialState>
+  </Character>
+</Characters>

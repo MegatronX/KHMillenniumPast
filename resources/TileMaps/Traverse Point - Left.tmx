@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="60" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="grasslands1" tilewidth="32" tileheight="32">
+  <image source="grasslands1.png" width="256" height="864"/>
+ </tileset>
+ <tileset firstgid="217" name="grasslands2" tilewidth="32" tileheight="32">
+  <image source="grasslands2.png" width="256" height="896"/>
+ </tileset>
+ <tileset firstgid="441" name="grasslands3" tilewidth="32" tileheight="32">
+  <image source="grasslands3.png" width="256" height="1024"/>
+ </tileset>
+ <tileset firstgid="697" name="grasslands4" tilewidth="32" tileheight="32">
+  <image source="grasslands4.png" width="256" height="864"/>
+ </tileset>
+ <layer name="Base" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="0"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DAQkAAAwEofv+pddjKLhqqqqqqqqqqqqqqqqqquqrB41l5KJAOAAA
+  </data>
+ </layer>
+ <layer name="Base 2" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WNw4CQRAF0dk9Fy7ABbgAF+DugkSCRILEeamMEzQj9daTKu8fzZQiSZKkbO5tKY+29hX/82Trq0N732z9dGivJEmSJEnKr9eU0qcBDWnU1L4o1ph9E5rSjObJ9y7Yt6QVrWmTfO+WfTva04GOyfee2HemC13plnyvJEXyT1T7olj+iWpfFMs/kfTje1b7oli+Z7UviuV7JklSXl+UN6SpQDgAAA==
+  </data>
+ </layer>
+ <objectgroup name="Exits" width="60" height="60">
+  <object type="Exit" x="0" y="512" width="32" height="1216">
+   <properties>
+    <property name="Active Layer" value="3"/>
+    <property name="Target Map" value="Traverse Point - Far Left.tmx"/>
+    <property name="Target Position" value="59, Carry, 5"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="WPFTools.ComponentControls.ItemComponents.HealingComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+             mc:Ignorable="d" 
+             d:DesignHeight="330" d:DesignWidth="710" Name="HealingComponentUserControl">
+    <UserControl.Resources>
+        <x:Array x:Key="HealingComponentTypes" Type="sys:String">
+            <sys:String>Absolute</sys:String>
+            <sys:String>AbsolutePercent</sys:String>
+            <sys:String>RelativePercent</sys:String>
+        </x:Array>
+        <DataTemplate x:Key="TypeTemplate">
+            <TextBlock Text="{Binding XPath=@type}" Width="100"/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.DataContext>
+            <Binding ElementName="HealingComponentUserControl" Path="RootComponentElement"/>
+        </Grid.DataContext>
+        <Label Content="{Binding XPath=@name}" Height="39" HorizontalAlignment="Left" Margin="0,52,0,0" Name="ComponentOwner" VerticalAlignment="Top" Width="232">
+            <Label.DataContext>
+                <Binding ElementName="HealingComponentUserControl" Path="ItemElement"/>
+            </Label.DataContext>
+        </Label>
+        <GroupBox DataContext="{Binding XPath=FieldHealingComponent}"  Header="Field Use" Height="328" HorizontalAlignment="Left" Margin="231,2,0,0" Name="groupBox3" VerticalAlignment="Top" Width="220">
+            <Grid>
+                <GroupBox Header="HP Healing Component" Height="101" HorizontalAlignment="Left" Margin="6,0,0,0" Name="HPFieldUseGroup" VerticalAlignment="Top" Width="192">
+                    <Grid>
+                        <TextBox Text="{Binding XPath=HP/@amount}"  Height="23" HorizontalAlignment="Right" Margin="0,16,6,0" Name="HPFieldHealingAmount" VerticalAlignment="Top" Width="112" />
+                        <CheckBox Content="Use" Height="16" HorizontalAlignment="Left" Name="UseFieldHPHealing" VerticalAlignment="Top" Checked="UseFieldHPHealing_Checked" Unchecked="UseFieldHPHealing_Checked" />
+                        <ComboBox SelectedValuePath="@type"  ItemsSource="{StaticResource HealingComponentTypes}" Height="23" HorizontalAlignment="Left" Margin="62,49,0,0" Name="HPFielUseType" SelectedValue="{Binding XPath=HP/@, Mode=TwoWay}" VerticalAlignment="Top" Width="112" />
+                        <Label Content="Amount" Height="28" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label2" VerticalAlignment="Top" />
+                        <Label Content="Type" Height="28" HorizontalAlignment="Left" Margin="6,44,0,0" Name="label3" VerticalAlignment="Top" />
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="SP Healing Component" Height="101" HorizontalAlignment="Left" Margin="6,199,0,0" Name="SPHealingComponent" VerticalAlignment="Top" Width="192">
+                    <Grid>
+                        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,16,6,0" Name="textBox4" Text="{Binding XPath=SP/@amount}" VerticalAlignment="Top" Width="112" />
+                        <CheckBox Content="Use" Height="16" HorizontalAlignment="Left" Name="UseFieldSPHealing" VerticalAlignment="Top" Checked="UseFieldSPHealing_Checked" Unchecked="UseFieldSPHealing_Checked" />
+                        <ComboBox ItemsSource="{StaticResource HealingComponentTypes}" SelectedItem="{Binding XPath=SP/@type, Mode=TwoWay}" Height="23" HorizontalAlignment="Left" Margin="62,49,0,0" Name="SPFieldUseType" VerticalAlignment="Top" Width="112" />
+                        <Label Content="Amount" Height="28" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label9" VerticalAlignment="Top" />
+                        <Label Content="Type" Height="28" HorizontalAlignment="Left" Margin="6,44,0,0" Name="label10" VerticalAlignment="Top" />
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="MP Healing Component" Height="101" HorizontalAlignment="Left" Margin="6,101,0,0" Name="groupBox2" VerticalAlignment="Top" Width="192">
+                    <Grid Name="MPHealingComponentBox">
+                        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,16,6,0" Name="textBox5" Text="{Binding XPath=MP/@amount}" VerticalAlignment="Top" Width="112" />
+                        <CheckBox Content="Use" Height="16" HorizontalAlignment="Left" Name="UseFieldMPHealing" VerticalAlignment="Top" Checked="UseFieldMPHealing_Checked" Unchecked="UseFieldMPHealing_Checked" />
+                        <ComboBox ItemsSource="{StaticResource HealingComponentTypes}" SelectedItem="{Binding XPath=MP/@type, Mode=TwoWay}" Height="23" HorizontalAlignment="Left" Margin="62,49,0,0" Name="MPFieldUseType" VerticalAlignment="Top" Width="112" />
+                        <Label Content="Amount" Height="28" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label12" VerticalAlignment="Top" />
+                        <Label Content="Type" Height="28" HorizontalAlignment="Left" Margin="6,44,0,0" Name="label13" VerticalAlignment="Top" />
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox DataContext="{Binding XPath=BattleHealingComponent}"  Header="Battle Use" Height="328" HorizontalAlignment="Left" Margin="457,2,0,0" Name="BattleUseGroupBox" VerticalAlignment="Top" Width="220">
+            <Grid>
+                <GroupBox Header="HP Healing Component" Height="101" HorizontalAlignment="Left" Margin="6,0,0,0" Name="HPBattleUseGroupBox" VerticalAlignment="Top" Width="192">
+                    <Grid>
+                        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,16,6,0" Name="textBox1" Text="{Binding XPath=HP/@amount}" VerticalAlignment="Top" Width="112" />
+                        <CheckBox Content="Use" Height="16" HorizontalAlignment="Left" Name="UseBattleHPHealing" VerticalAlignment="Top" Checked="UseBattleHPHealing_Checked" Unchecked="UseBattleHPHealing_Checked" />
+                        <ComboBox SelectedValuePath="@type"  ItemsSource="{StaticResource HealingComponentTypes}" Height="23" HorizontalAlignment="Left" Margin="62,49,0,0" Name="HPBattleUseType" SelectedValue="{Binding XPath=HP/@type}" VerticalAlignment="Top" Width="112" />
+                        <Label Content="Amount" Height="28" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label4" VerticalAlignment="Top" />
+                        <Label Content="Type" Height="28" HorizontalAlignment="Left" Margin="6,44,0,0" Name="label5" VerticalAlignment="Top" />
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="SP Healing Component" Height="101" HorizontalAlignment="Left" Margin="6,199,0,0" Name="groupBox6" VerticalAlignment="Top" Width="192">
+                    <Grid>
+                        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,16,6,0" Name="textBox3" Text="{Binding XPath=SP/@amount}" VerticalAlignment="Top" Width="112" />
+                        <CheckBox Content="Use" Height="16" HorizontalAlignment="Left" Name="UseBattleSPHealing" VerticalAlignment="Top" Checked="UseBattleSPHealing_Checked" Unchecked="UseBattleSPHealing_Checked" />
+                        <ComboBox ItemsSource="{StaticResource HealingComponentTypes}" SelectedItem="{Binding XPath=SP/@type}" Height="23" HorizontalAlignment="Left" Margin="62,49,0,0" Name="SPBattleUseType" VerticalAlignment="Top" Width="112" />
+                        <Label Content="Amount" Height="28" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label7" VerticalAlignment="Top" />
+                        <Label Content="Type" Height="28" HorizontalAlignment="Left" Margin="6,44,0,0" Name="label8" VerticalAlignment="Top" />
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="MP Healing Component" Height="101" HorizontalAlignment="Left" Margin="6,101,0,0" Name="groupBox7" VerticalAlignment="Top" Width="192">
+                    <Grid Name="grid1">
+                        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,16,6,0" Name="textBox2" Text="{Binding XPath=MP/@amount}" VerticalAlignment="Top" Width="112" />
+                        <CheckBox Content="Use" Height="16" HorizontalAlignment="Left" Name="UseBattleMPHealing" VerticalAlignment="Top" Checked="UseBattleMPHealing_Checked" Unchecked="UseBattleMPHealing_Checked" />
+                        <ComboBox ItemsSource="{StaticResource HealingComponentTypes}" SelectedItem="{Binding XPath=MP/@type}" Height="23" HorizontalAlignment="Left" Margin="62,49,0,0" Name="MPBattleUseType" VerticalAlignment="Top" Width="112" />
+                        <Label Content="Amount" Height="28" HorizontalAlignment="Left" Margin="6,14,0,0" Name="label1" VerticalAlignment="Top" />
+                        <Label Content="Type" Height="28" HorizontalAlignment="Left" Margin="6,44,0,0" Name="label6" VerticalAlignment="Top" />
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+        <Label Background="#FF3EA76C" Content="Healing Component" FontWeight="Bold" Foreground="White" Height="28" HorizontalAlignment="Left" Margin="0,2,0,0" Name="label11" VerticalAlignment="Top" Width="232" />
+    </Grid>
+</UserControl>

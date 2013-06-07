@@ -1,0 +1,68 @@
+<HTML>
+<HEAD><TITLE>TOP PAGE</TITLE></HEAD>
+<BODY>
+<CENTER><H2>汎用改造コードサーチツール [ emuhaste ]</H2></CENTER>
+
+<pre>
+ソ フ ト名　：Multi Emulator cheat engine [emuhaste] Ver2.55 fix2(2010/12/12)
+著作権者　　：Imaha486
+チェック環境：OS.Win7Pro + CPU.Core i7 860 + MEM.DDR3(8GB)
+推奨環境　　：多分、Windows2000/XP/Vista/7で動くはず。
+タイプ　　　：フリーウェア。著作権は放棄してません。
+転載条件　　：なし。でも、連絡をくれたらうれしいかな。
+オフィシャル：http://hp.vector.co.jp/authors/VA018359/
+About the modification or disassemble : All Ok. You may distribute it again. ;)
+<a href="../How_to_MultiLanguage.txt" target="_blank">&gt&gtMulti language manual : How_to_MultiLanguage.txt</a>
+</pre>
+
+<h2>emuhasteとは？</h2>
+拙作『DreamHaste』『phaste』『hasteDS』っぽい見た目をしたゲーム改造ツールですが、<br>
+<b>Multi Emulator</b>つまり、いくつものエミュレータで動作するゲームの改造を目的としており、<br>
+configフォルダ内にターゲット条件を記載したINI(コンフィグファイル)を追加することで<br>
+対応エミュレータを追加することができます。<br>
+
+現在、下記のエミュレータ用のコンフィグファイルを収録しています。<br>
+<table border=1>
+<tr><td width=280>ターゲット</td><td width=180>INIファイル名</td><td width=180>コンフィグ作者(敬称略)</td></tr>
+<tr><td>DSエミュレータ DeSmuMe</td><td>NDS_DeSmuMe.ini</td><td>Imaha486</td></tr>
+<tr><td>DSエミュレータ iDeaS</td><td>NDS_iDeaS.ini</td><td>Imaha486</td></tr>
+<tr><td>DSエミュレータ No$gba<br>(※正常にサーチできない場合は後者を使用)</td><td>NDS_no$gba.ini<br>NDS_no$gba_TRY1.ini</td><td>Imaha486</td></tr>
+<tr><td>PS2エミュレータ PCSX2 v0.9.6</td><td>PS2_pcsx2_096.ini</td><td>Imaha486</td></tr>
+<tr><td>PS2エミュレータ PCSX2 バージョンチェック無し</td><td>PS2_pcsx2_custom.ini</td><td>Imaha486</td></tr>
+<tr><td>メガドライブエミュレータ DGEN</td><td>MD_DGEN.ini</td><td>Imaha486</td></tr>
+<tr><td>SFCエミュレータ SNES9X</td><td>SFC_SNES9X.ini</td><td>Imaha486</td></tr>
+<tr><td>FCエミュレータ VirtuaNES 0.96～0.97</td><td>VirtuaNES.ini</td><td>Imaha486</td></tr>
+<tr><td>PCEエミュレータ npce 0.10+0.08</td><td>npce010.ini</td><td>Imaha486</td></tr>
+<tr><td>DreamCastエミュレータ nullDC</td><td>DC_nullDC.ini</td><td>Shimita</td></tr>
+<tr><td>SegaSaturnエミュレータ SSF</td><td>SS_SSF.ini</td><td>Shimita</td></tr>
+<tr><td>GameCubeエミュレータ Dolphin final</td><td>GC_Dolphin_final.ini</td><td>ねこかぶ</td></tr>
+<tr><td>N64エミュレータ 1964</td><td>N64_1964.ini</td><td>ねこかぶ</td></tr>
+<tr><td>N64エミュレータ Project64</td><td>N64_Project64.ini</td><td>ねこかぶ</td></tr>
+<tr><td>N64エミュレータ Nemu64</td><td>N64_Nemu64.ini</td><td>ねこかぶ</td></tr>
+<tr><td>Wiiエミュレータ Dolphin SVN rシリーズ</td><td>Wii_DolphinSVN_ALLAREA.ini</td><td>Imaha486</td></tr>
+</table>
+※PCSX2v0.9.3及びDolphin1.01～1.03.2のコンフィグファイルは old_conf フォルダにありますので、<br>
+　必要な方は config フォルダにコピーしてご利用ください。<br><br>
+
+<font color=red size=5>Ver2.00より</font><br>
+改造コードエンジンをDLLで拡張可能になりました([ENGINE CHANGE])。<br>
+これにより独自形式だけでなくプロアクションリプレイの改造コードも使えるようになる…かも？<br>
+詳しくは左メニューの「上級者の方へ→改造エンジン開発」をご参照ください。<br><br>
+
+現在、同封されている改造コードエンジンは以下の通りです。
+<table border=1>
+<tr><td width=280>コードエンジン名称</td><td width=180>DLLファイル名</td><td width=180>コンフィグ作者(敬称略)</td></tr>
+<tr><td>default(emuhasteオリジナル形式)</td><td>default.dll</td><td>Imaha486</td></tr>
+<tr><td>PS2 action replay(phaste v1.60相当)</td><td>ps2par.dll</td><td>Imaha486</td></tr>
+<tr><td>RAWライトモード(オリジナル形式)</td><td>raw_write.dll</td><td>Imaha486</td></tr>
+<tr><td>N64 Action Replay互換チートエンジン</td><td>n64par.dll</td><td>ねこかぶ</td></tr>
+
+</table><br>
+
+なお、個人的に余裕が無いためコンフィグファイルおよび改造コードエンジンの作成依頼は引き受けられませんが、<br>
+「自作した！」というツワモノな方は以下に報告頂けると助かります。<br>
+<a href="http://blog.goo.ne.jp/imaha486/">はむのブログ : http://blog.goo.ne.jp/imaha486/</a><br>
+<a href="mailto:hs_mana@hotmai.com">Mail : hs_mana@hotmail.com</a><br>
+
+</BODY>
+</HTML>

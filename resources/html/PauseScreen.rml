@@ -1,0 +1,29 @@
+<rml>
+  <head>
+    <title>Pause Screen</title>
+    <link type="text/rcss" href="PauseScreen.rcss" />
+    <link type="text/rcss" href="PauseScreen.rcss" />
+  </head>
+  <body>
+    <div id="Background" class="Background">
+    </div>
+    <div id="Header" class="Header">
+      <div id="HeaderText" class="HeaderText"/>
+    </div>
+    <div id="OptionsPanel" class="OptionsPanel">
+      <!--<div id="Option0" class="Option">Status</div>
+      <div id="Option1" class="Option">Status</div>
+      <div id="Option2" class="Option">Status</div>-->
+    </div>
+    <div id="ContentPanel" class="ContentPanel">
+      <div id="CharacterPanel" class="CharacterPanel">
+        
+      </div>
+    </div>
+    <div id="Footer" class="Footer">
+      <div id="GameTimeText" class="GameTimeText">Game Time</div>
+      <div id="TimeText" class="TimeText">00:00:00</div>
+      <div id="FooterText" class="FooterText"></div>
+      </div>
+  </body>
+</rml>

@@ -1,0 +1,23 @@
+<rml>
+  <head>
+    <link type="text/rcss" href="TopOverlay.rcss" />
+  </head>
+  <body>
+    <div id="TopMessageDiv">
+      <div id="MessageSpeaker">
+        
+      </div>
+      <div id="Message">
+        
+      </div>
+    </div>
+    <div id="BottomMessageDiv" class="BottomMessageDiv">
+      <div id="EmotionDiv" class="EmotionDiv\">
+        <img src="..\Graphics\Expressions\Ceira_Sad.png" class="EmotionImage"/>
+      </div>
+      <div id="MessageDiv" class="BottomMessage">
+        Ceira: Hey Arian, we need to talk
+      </div>
+    </div>
+  </body>
+</rml>

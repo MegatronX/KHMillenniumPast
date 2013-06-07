@@ -1,0 +1,64 @@
+<HTML>
+<HEAD><TITLE>MAKE CONFIG</TITLE></HEAD>
+<BODY>
+<h2>コンフィグファイルの作り方</h2>
+emuhasteと同じフォルダ内にある<a href="../config/" target="_blank">configフォルダ</a>を開くと色々なINIファイルが入っていますが、<br>
+これが各エミュレータに対応するための設定情報が記載された<font color=red><b>コンフィグファイル</b></font>です。<br><br>
+
+例えば NDS_no$gba.ini を開くとこんな感じ。<br>
+<pre>;Config by Imaha486
+[EMUHASTE]
+PROCESS_NAME=NO$GBA.EXE
+BASEADDR_KEY=FFDEFFE7FFDEFFE7
+BASEADDR_TRY=2
+VIRTUAL_ADDR=2000000
+MEMORY_SIZE=400000
+COMMENT=CleanROM専用\n暗号化ROMでは利用不可。</pre>
+
+また、このコンフィグファイルの動作は以下の通り。<br>
+<font color=blue>「プログラム NO$.GBA.EXE のメモリから FFDEFFE7FFDEFFE7 という配列を探し、<br>
+2回目に見つかった場所を基準とする。基準は2000000hから始まり、そのサイズは400000hバイト」。</font><br><br>
+
+INIファイルでサポートしている構文は以下の通り。基本的に全ての数値は16進数表記。<br>
+<table border=1>
+<tr><td>項目名</td><td>意味</td><td>記述例</td></tr>
+<tr><td>[EMUHASTE]</td><td>コンフィグ先頭の宣言文。必ず初めに入れてください。</td><td>.</td></tr>
+<tr><td>PROCESS_NAME</td><td>対象プロセス(プログラム)名。部分一致だけでも検出する。<br>(chank→chankast.exe or chankex.exe ..)</td><td>PROCESS_NAME=no$gba.exe</td></tr>
+<tr><td>BASE_ADDR</td><td>ベースアドレスをダイレクトに指定。普通は使わない。</td><td>BASE_ADDR=0021FE00</td></tr>
+<tr><td>BASEADDR_KEY</td><td>ベースアドレスを検出するためのキー配列を指定。<br>最も効果的で、バージョン違いなどにも影響されない。</td><td>BASEADDR_KEY=FFDEFFE7FFDEFFE7</td></tr>
+<tr><td>BASEADDR_LOAD</td><td>任意アドレスに格納された4バイトを読み込み、<br>読んだ値のアドレスからベースアドレスを取得する。</td><td>BASEADDR_LOAD=00638000</td></tr>
+<tr><td>BASEADDR_FIX</td><td>検出したベースアドレスの値を加減算して調整する。<br>検出場所と基準アドレスが異なる場合に使用。</td><td>BASEADDR_FIX=-3E7</td></tr>
+<tr><td>BASEADDR_TRY</td><td>BASEADDR_KEYで指定したキーを何回探すかを指定。<br>未指定の場合、デフォルト値は1。</td><td>BASEADDR_TRY=2</td></tr>
+<tr><td>VIRTUAL_ADDR</td><td>開始アドレスがどの値から始まるかを指定する。<br>例えばDSのARM9はアドレス02000000から始まっている。</td><td>VIRTUAL_ADDR=2000000</td></tr>
+<tr><td>MEMORY_SIZE</td><td>サーチするメモリサイズをバイト単位で指定する。<br>DSは4MB(400000)、PS2は32MB(1000000)。</td><td>MEMORY_SIZE=400000</td></tr>
+<tr><td>COMMENT</td><td>コメント。対応バージョンや注意書きなどにどうぞ。</td><td>COMMENT=自己責任で！</td></tr>
+</table><br>
+
+<h2>ベースアドレスを探す手順</h2>
+1.デバッガやメモリビューア付きのエミュレータでゲーム開始。<br><br>
+
+2.タイトル前くらいでエミュレーションを停止させ、メモリビューアからアドレス00000000付近の<br>
+　基準になりそうな特徴的な値を探す(BIOSコードなど)。<br><br>
+
+3.DBxSTANDやSTAND-Mxなどのプロセスメモリエディタでその値を検索。<br><br>
+
+4.うまくヒットしたら実際コンフィグファイルを組んで動作検証する。<br><br>
+
+5.他のゲームでも正しくアドレスが検出できれば成功。<br>
+
+<h2>ベースアドレスを探す手順(BASEADDR_LOAD使用)</h2>
+1.デバッガやメモリビューア付きのエミュレータでゲーム開始。<br><br>
+
+2.メモリビューアのアドレス00000000以降にある特徴的な値を探す。<br><br>
+
+3.DBxSTANDやSTAND-Mxなどのプロセスメモリエディタでその値を検索。<br><br>
+
+4.うまくヒットしたらそのアドレス00000000の位置のリアルアドレスを反転する<br>
+（例：010DC250にヒット→50C20D01）。<br><br>
+
+5.反転した値を検索し、EXEモジュール内のアドレスにヒットしたら成功<br><br>
+
+6.BASEADDR_LOAD=ヒットしたアドレス、で定義完了。<br><br>
+
+</BODY>
+</HTML>

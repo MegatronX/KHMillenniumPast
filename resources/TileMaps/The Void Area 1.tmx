@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Collisions" tilewidth="32" tileheight="32">
+  <image source="Collisions.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="3" name="Void Tileset" tilewidth="32" tileheight="32">
+  <image source="Void Tileset 2x - 4.png" width="384" height="320"/>
+ </tileset>
+ <layer name="Base" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VSwoCMRAE0L6N7se9XsA5gGs/W8X7gwnBXo0gAyYI70HtC4pOIgAAAAAAAAAA/sttdAFS3eI5ugSpbnEcXYJU7+M6ugSp3sdldAnSueQenzfx1/f1KNlF22SJv76fTckp2h5zLG/iLetnirbFO3WT7RfhN/YlhxUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABY6wVlVRIeQJwAAA==
+  </data>
+ </layer>
+ <layer name="Base Accents" width="100" height="100" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OMQ0AAAgDsEnG/4WMkdAqaAIAAAAAAAAAAAAAXDPtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADy2WUQANkCcAAA=
+  </data>
+ </layer>
+ <layer name="Main" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3ayUoDQRAA0PoGP8Cry01crkbP6gd4NerR7f/BKWJjZ8yIoDMdmfegsBGFpoteqpIIABjPXhf7XRy0nsjMlTycVCEn7Zx3cRfr+ThtOqN5e+jiOORjG5Sz6jbkYxuUs+qpi51qfNFyUjOWZ1XmJNd/txo/tpzUTOVZ9RqrnOT671bjt/DGmlre4ctY5STX/7Aa34c7ZEq5N/IOf45VTnL9z6rxS8jHlOr3beYk1/+yGufvb8KZNbah9+1Q3IQeyljKGfWTPMjL+Po1eB2LXvT7J3Ve5ORvDOUj7+2rXmzqaand/9bQGuf6Xm+I7/6e3yt9w9IXKeub9fhy4H8yJ4te6KX8XqnFj+KzL7IIa9tK7ousLXKPHH78vGo6o3krd3meS1mH5165bjqjeSv5yD2SdfjLx5jpDdWB3kltfFd39NW93repJjgz+Zb6ST6Wsd7rvZ9wjnOTeyQ/h+3Xd3XvI8+151i/Y/RGxlE+h910du3H1+9fuWOmUfKxaa/Ix/Tqunzonn8KvZEW6t5U2Su+67Md9LMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4H97B5AZCORAnAAA
+  </data>
+ </layer>
+ <layer name="Main Two" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UMQoCMRAF0DmDB7BVa7VWe/EAtqKtsN4fTHDBsKx2a4S8Bx9SDvPJRAAAAAAAAAB8t0hZ9llVnqV1uYtzyqbPKfTyS+VfyCm7KJN70cn0dimXGO9gmG2lGVtyS1mHPv5FF5/7uKfsixxqDNiYa7xvVt7/rHjn/R8HYVqPeN2s3Ene/7x4U0dXewAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGPEE088vGECcAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BMQEAAADCoPVP7WULoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBt5RKnmQJwAAA==
+  </data>
+ </layer>
+</map>

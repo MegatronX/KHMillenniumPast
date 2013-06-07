@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="16" height="16" tilewidth="32" tileheight="32">
+ <tileset name="MarioTileSet" firstgid="1" tilewidth="32" tileheight="32">
+  <image source="../../Resources/Graphics/Tilesets/Mar3chipLarge.png"/>
+ </tileset>
+ <tileset name="Collisions" firstgid="481" tilewidth="32" tileheight="32">
+  <image source="../../Resources/Graphics/Tilesets/Collisions.png"/>
+ </tileset>
+ <layer name="Collision Layer" width="16" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAGNgGPrAD4j9KdCfA8S5VHLLKBgFQwkAADjSQLgABAAA
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="16" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAGNgGB5AAIgFgVgIiIWx8AkBPSDWB2IDIDbEwifXXmQ+NjcRsheZj81NTUT4DR+gln50v+Fi49KP7jdcbHSAbi8szNExLjeg2wsLc3RMTFoYigAABdMQOgAEAAA=
+  </data>
+ </layer>
+ <layer name="Layer 2" width="16" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAGNgGPrgISNhTEg/ufLEmo/LTcS4nZB+SgC19JPiZlz6yXErsXGMrBaXfnL9MJQBAH2MZt8ABAAA
+  </data>
+ </layer>
+</map>

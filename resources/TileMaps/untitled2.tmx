@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="60" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilec" tilewidth="32" tileheight="32">
+  <image source="tilec.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="10rpro4" tilewidth="32" tileheight="32">
+  <image source="10rpro4.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="513" name="tilea5" tilewidth="32" tileheight="32">
+  <image source="tilea5.png" width="256" height="512"/>
+ </tileset>
+ <layer name="Ground Layer" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3DAQkAAAwDoL3c+kdaj6NgL6mqqqqqqqqqqqqqqqqq+uoA1jNffkA4AAA=
+  </data>
+ </layer>
+ <layer name="Building Base" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3POQ7CMBRFUcvLg2yEqWAqILB3XhEUOqrYUnSOdCtLX36lAACs376WckjH2vsny9tl4yVd0y2dOm3e1LklnXP/mcb0SvcOe3+3LrV5nDY+0jYNU+86v7XSYu9Q/9dKi71fPXcCAAAAAAAAAAAAsD4fkveLqkA4AAA=
+  </data>
+ </layer>
+ <layer name="Building Roof 1" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3PyQlCMRhF4aA24FSAogU4FaBoAU4lODQg2IBgHWoDioJbJ7APG/HKe4v4MMsEhPPB2SSLy28MAOCfpFRaZQJsbdRW7QJs/ZJVOZVXBVX0uLVXB3VTR3XyuOVSUmUT3VtRVY9bF3U10b139fC45VIz3/e2PGxMrKbx20zNrfdQ2qquGqpp/Nx7jlsk3pfWXyifezvqpbqq52HjGbdKvK+tv1D6aqCGaqTGAbcBAAAAAAAAAAAAAAAAAAAAwOUNjhUNMEA4AAA=
+  </data>
+ </layer>
+ <layer name="Building Roof 2" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OPQ6CQBRFYShZAroCpNDSnw2obIBO12KhPYXuxyVYuB5u8YoxGhOKeRPI+ZKTmUBxJ8sAYPyK1A9wVKqZmqd+iIObqtRC1Q5boWvkvV8eaqO2aqfWkbdC94hb/xzUUTWJ9qfoPfA7xmOpVna/5J9n+M/LU9t7O2M4qbPdO9vq8u9/Xl7abu300PrMAAAAAAAAAAAAAAAAAAAAYOJ6ZEEaCUA4AAA=
+  </data>
+ </layer>
+ <layer name="Foilage 1" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3UwQ2AIAwF0DqsbqCzOIJjKleSnogg5r1jD00/FCIAAJjZukRsy+gp+tmfrMcEed1LuzPpV+ojzzebq9WV9C31nntf58vmavGl9/FGvtos/xYAAAAAAAAAAADwPzfZpK5lQDgAAA==
+  </data>
+ </layer>
+ <layer name="Lights" width="60" height="60">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XQQqDMBCG0XjaHqE9gmfNKUTosmMjgpDf9yCb2X0Lk7E1AAAAuNd7OTef3afoquazW4uuag7ANf17nmSk+RW2b/R23J26b1TNyftG2jc90pLUPNKS1Lvr7fcd9e/eSlC1P5n//eP57JLfXwAAAAAASLYB9AogXkA4AAA=
+  </data>
+ </layer>
+</map>

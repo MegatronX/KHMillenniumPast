@@ -1,0 +1,32 @@
+uniform sampler2D texture;
+uniform float starttime; 
+uniform float time; 
+
+void main()
+{
+	float difTime = (time - starttime) * 50;
+	float res = sin(difTime);
+	vec4 ref = texture2D(texture, gl_TexCoord[0].xy) * gl_Color;
+	vec4 final;
+	if (res > 0.5)
+	{
+		//Flash White
+		if (ref.r > 0.9 && ref.g > 0.9 && ref.b > 0.9)
+			final = vec4(0, 0, 0, ref.a);
+			//final = vec4(ref.r - 0.8, ref.g - 0.8, ref.b - 0.8, ref.a);
+		else
+			final = vec4(ref.r - 0.8, ref.g - 0.8, ref.b - 0.8, ref.a);
+			//final = vec4(1, 1, 1, ref.a);
+	}
+	else
+	{
+		if (ref.r < 0.1 && ref.g < 0.1 && ref.b < 0.1)
+			final = vec4(0, 0, 0, ref.a);
+			//final = vec4(ref.r + 0.8, ref.g + 0.8, ref.b + 0.8, ref.a);
+		else
+			//final = vec4(0, 0, 0, ref.a);
+			final = vec4(ref.r + 0.8, ref.g + 0.8, ref.b + 0.8, ref.a);
+
+	}
+	gl_FragColor = final;
+}

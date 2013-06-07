@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WPFTools">
+</Property><Property Name="Solution File" Value="M:\KHMP\build\KHMP\WPFTools\WPFTools\WPFTools.sln">
+</Property><Property Name="User Options File" Value="M:\KHMP\build\KHMP\WPFTools\WPFTools\WPFTools.suo">
+</Property><Property Name="Date" Value="October-28-11">
+</Property><Property Name="Time" Value="18:01 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WPFTools.sln" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools.sln">
+</Event><Event ErrorLevel="0" Project="" Source="WPFTools.suo" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools.suo">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\WPFTools.csproj" Description="Project file successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\WPFTools.csproj">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\App.xaml.cs" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Editor.xaml.cs" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Editor.xaml.cs">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Properties\AssemblyInfo.cs" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Properties\Resources.Designer.cs" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Properties\Settings.Designer.cs" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\app.config" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\app.config">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Properties\Settings.settings" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Properties\Resources.resx" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\App.xaml" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\App.xaml">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\Editor.xaml" Description="File successfully backed up as M:\KHMP\build\KHMP\WPFTools\WPFTools\Backup\WPFTools\Editor.xaml">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\WPFTools.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WPFTools" Source="WPFTools\WPFTools.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WPFTools.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WPFTools.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WPFTools" Source="WPFTools\WPFTools.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

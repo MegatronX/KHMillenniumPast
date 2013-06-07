@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <Sprites gamestyle="Main">
+    <Sprite indexname="MainChests" startinganimation="WoodChestTop" startingfps="0" sheet="basechests.png" type="map objects" defaultscale="1.0" width="384" height="384" flipx="false">
+      <Column index="WoodChestTop" framewidth="32" frameheight="48" frames="4" defaultfps="3"/>
+      <Column index="LargeWoodChestTop" framewidth="32" frameheight="48" frames="4" offset="32,0" defaultfps="3" />
+      <Column index="RedChestTop" framewidth="32" frameheight="48" frames="4" offset="64, 0" defaultfps="3" />
+      <Column index="BlueChestTop" framewidth="32" frameheight="48" frames="4" offset="96, 0" defaultfps="3"/>
+
+      <Column index="WoodChestLeft" framewidth="32" frameheight="48" frames="4" defaultfps="3"/>
+      <Column index="LargeWoodChestLeft" framewidth="32" frameheight="48" frames="4" offset="32,0" defaultfps="3" />
+      <Column index="RedChestLeft" framewidth="32" frameheight="48" frames="4" offset="64, 0" defaultfps="3" />
+      <Column index="BlueChestLeft" framewidth="32" frameheight="48" frames="4" offset="96, 0" defaultfps="3"/>
+
+      <Column index="WoodChestLeft" framewidth="32" frameheight="48" frames="4" offset="128, 0" defaultfps="3"/>
+      <Column index="LargeWoodChestLeft" framewidth="32" frameheight="48" frames="4" offset="160,0" defaultfps="3" />
+      <Column index="RedChestLeft" framewidth="32" frameheight="48" frames="4" offset="192, 0" defaultfps="3" />
+      <Column index="BlueChestLeft" framewidth="32" frameheight="48" frames="4" offset="224, 0" defaultfps="3"/>
+
+      <Column index="WoodChestRight" framewidth="32" frameheight="48" frames="4" offset="256, 0" defaultfps="3"/>
+      <Column index="LargeWoodChestRight" framewidth="32" frameheight="48" frames="4" offset="288,0" defaultfps="3" />
+      <Column index="RedChestRight" framewidth="32" frameheight="48" frames="4" offset="320, 0" defaultfps="3" />
+      <Column index="BlueChestRight" framewidth="32" frameheight="48" frames="4" offset="352, 0" defaultfps="3"/>
+
+      <Column index="WoodChestBottom" framewidth="32" frameheight="48" frames="4" offset="0, 48" defaultfps="3"/>
+      <Column index="LargeWoodChestBottom" framewidth="32" frameheight="48" frames="4" offset="32,48" defaultfps="3" />
+      <Column index="RedChestBottom" framewidth="32" frameheight="48" frames="4" offset="64, 48" defaultfps="3" />
+      <Column index="BlueChestBottom" framewidth="32" frameheight="48" frames="4" offset="96, 48" defaultfps="3"/>
+
+      <AnimationSequences>
+        <Sequence index="IdleClosedTop" frames=""/>
+        <Sequence index="IdleClosedLeft" frames=""/>
+        <Sequence index="IdleClosedRight" frames=""/>
+        <Sequence index="IdleClosedBottom" frames=""/>
+        <Sequence index="IdleOpenTop" frames=""/>
+        <Sequence index="IdleOpenLeft" frames=""/>
+        <Sequence index="IdleOpenRight" frames=""/>
+        <Sequence index="IdleOpenBottom" frames=""/>
+      </AnimationSequences>
+    </Sprite>
+    <Sprite indexname="Arian Walk" startinganimation="WalkLeft" sheet="Arian_Walk.png" type="walking animation" defaultscale="1.0" width="" height="" flipx="false">
+      <Row index="WalkRight" framewidth="128" frameheight="128" frames="7" fps="7" startingframeoffset="0, 0"/>
+      <Row index="WalkDown" framewidth="128" frameheight="128" frames="6" fps="6" startingframeoffset="0, 128"/>
+    </Sprite>
+    <Sprite indexname="Ceira Walk" startinganimation="WalkLeft" sheet="Ceira_Walk.png" type="walking animation" defaultscale="1.0" width="" height="" flipx="false">
+      <Row index="WalkRight" framewidth="128" frameheight="128" frames="7" fps="7" startingframeoffset="0, 0"/>
+      <Row index="WalkDown" framewidth="128" frameheight="128" frames="6" fps="6" startingframeoffset="0, 128"/>
+    </Sprite>
+    <Sprite indexname="Arian Battle" startinganimation="Idle" sheet="Arian Battle.png" type="battle animation" defaultscale="1.0" width="" height="" flipx="false">
+      <Row index="Idle" framewidth="128" frameheight="128" frames="5" fps="4" startingframeoffset="0,0"/>
+    </Sprite>
+    <Sprite indexname="Ceira Battle" startinganimation="Idle" sheet="Ceira Battle.png" type="battle animation" defaultscale="1.0" width="" height="" flipx="false">
+      <Row index="Idle" framewidth="128" frameheight="128" frames="4" fps="4" startingframeoffset="0,0"/>
+    </Sprite>
+    <Sprite indexname="Shadow Battle" startinganimation="WalkLeft" sheet="Shadow Battle.png" type="battle sheet" defaultscale="1.0" width="" height="" flipx="false">
+    </Sprite>
+    <Sprite indexname="Red Dragon Battle" startinganimation="" sheet="Red Dragon Battle.png" type="battle sheet" defaultscale="1.0" width="" height="" flipx="false">
+    </Sprite>
+  </Sprites>
+</Resources>

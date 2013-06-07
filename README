@@ -1,0 +1,5 @@
+Required Libraries
+Boost (anything post 1.49 should work. Regex/signals/python/libz libraries must be built)
+SFML 2.0
+FMOD
+libRocket

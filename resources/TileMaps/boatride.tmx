@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="32" height="32" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="dasboot" tilewidth="32" tileheight="32">
+  <image source="dasboot.png" width="256" height="544"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="32" height="32">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TWTNQARjH4WPPWrLvLci+lkpkqBjZhqixj7KMfZJlShhZ+tqeb8DF4cZ5Z57b93/1C4LoorvZvaWdd3TQyXu67mi/mx4+8JFP9NJ3R/v9fGaAQYYYZiSk/zHEEkc8CSSSxANGGeML40zwlW8h7SeTQipppJPBQx4xyRTTzDDLHPMh7WfymCyyySGXPPJZ4Ds/WGSJZVZC2i+gkCKKKaGUMp6wyhrrbLDJFtsh7T/lGc8pp4JKXlAV3H5/1dRQSx31NNBIU3D7/TXTQisveUUbr3kTRP1F/UX9Rf1F/d3X/n6ywy922WOfg5D2r+vvN3845C9HHHMS0v51/Z3yjzPOueCS/yHtR3f/7grz7bRaABAAAA==
+  </data>
+ </layer>
+</map>

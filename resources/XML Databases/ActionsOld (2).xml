@@ -1,0 +1,104 @@
+<Resources>
+  <Game>
+    <Actions>
+      <Attacks>
+        <Attack name="Reflect" mp="33" sp="0" description="Sets up a magical barrier that turns magic attacks against their users">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Reflect" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+        
+        <Attack name="Haste" mp="33" sp="0" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Haste" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Hastara" mp="33" sp="0" targetting="AnyParty" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Reflect" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Hastaga" mp="33" sp="0" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Haste+" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Hastaja" mp="33" sp="0" targetting="AnyParty" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Haste+" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Slow" mp="33" sp="0" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Slow" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Slowara" mp="33" sp="0" targetting="AnyParty" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Slow" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Slowaga" mp="33" sp="0" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Haste+" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Slowaja" mp="33" sp="0" targetting="AnyParty" description="Warps space and time around the target, speeding up their actions">
+          <Components>
+            <SEChanceComponent indexname="StatusEffectChanceComponent">
+              <StatusEffect name="Haste+" chance="1.0" />
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Fire" basepower="40" mp="33" sp="0" description="A small blast of flame sears the opponent">
+          <Components>
+            <ElementWeightComponent>
+              <Element name="Fire" weight="1.0" />
+            </ElementWeightComponent>
+          </Components>
+        </Attack>
+
+        <Attack name="Flare" basepower="440" mp="213" sp="0" description="A brutally powerful orb of flame burns through the opponents defenses">
+          <Flags>
+            <Unreflectable/>
+            <LockedElements/>
+          </Flags>
+          <Components>
+            <ElementWeightComponent>
+              <Element name="Fire" weight="0.5" />
+              <Element name="Elementless" weight="0.5"/>
+            </ElementWeightComponent>
+            <SEChanceComponent>
+              <StatusEffect name="Death" chance="0.04"/>
+            </SEChanceComponent>
+          </Components>
+        </Attack>
+
+      </Attacks>
+    </Actions>
+  </Game>
+</Resources>

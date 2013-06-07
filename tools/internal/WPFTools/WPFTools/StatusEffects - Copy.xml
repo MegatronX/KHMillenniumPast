@@ -1,0 +1,29 @@
+<StatusEffects>
+  <AllClasses>
+  </AllClasses>
+  <SETriggers>
+    <BeforeBattleStart />
+    <OutgoingAttack/>
+    <FinalizingTargets/>
+    <IncomingAttack/>
+    <StatusEffectAdded/>
+    <StatusEffectRemoved/>
+    
+  </SETriggers>
+  <StatusEffect name="Haste">
+    <Description value="Briefly modifies the flow of time around a character, allowing them to act faster" />
+    <StatModificationComponent>
+      <Speed amount="1.5" type="Multiply" />
+    </StatModificationComponent>
+    <RecommendedTurns value="7"/>
+  </StatusEffect>
+  <StatusEffect name="Reflect">
+    <Description value="Reflects magic attacks back at the attacker" />
+    <ReflectComponent>
+      <ReflectStrength value="2" />
+      <ReflectAttackTypes>
+        <AttackType value="Magic"/>
+      </ReflectAttackTypes>
+    </ReflectComponent>
+  </StatusEffect>
+</StatusEffects>

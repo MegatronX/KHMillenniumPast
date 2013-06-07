@@ -1,0 +1,197 @@
+<rml>
+  <head>
+    <title>Title Screen</title>
+    <style type="text/css">
+    
+    .background
+    {
+        width: 800px;
+        height: 600px;
+    }
+    .body
+    {
+        font-family: Chaney;
+    }
+    .mainpanel
+    {
+        width: 800px;
+        height: 600px;
+        position: relative;
+    }
+    
+    .newgamepanel
+    {
+        position: absolute;
+        top: 100px;
+        left: 75px;
+    }
+    /*New Game Title*/
+    .newgametitle
+    {
+        width: 346px;
+        height: 54px;
+        position: absolute;
+        left: 146px;
+        
+    }
+    .newgametitleback
+    {
+        width: 346px;
+        height: 54px;
+        position: absolute;
+    }
+    .newgametitlewords
+    {
+        font-family: Chaney;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        left: 1px;
+        top: 11px;
+        width: 334px;
+        text-align: center;
+    }
+    /*New Game Panel*/
+    .newgameoptionspanel
+    {
+        width: 650px;
+        height: 310px;
+        position: absolute;
+        top: 60px;
+    }
+    .newgameoptionsback
+    {
+        width: 650px;
+        height: 310px;
+    }
+    .difficulties
+    {
+        position: absolute;
+        top: 50px;
+        left: 147px;
+        width: 346px;
+        height: 140px;
+    }
+    .easydifficulty
+    {
+        position: absolute;
+    }
+    .normaldifficulty
+    {
+        position: absolute;
+        top: 42px;
+    }
+    .harddifficulty
+    {
+        position: absolute;
+        top: 84px;
+    }
+    .difficultytext
+    {
+        width: 346px;
+        color: red;
+        z-index: 4;
+        font-family: Chaney;
+        font-size: 20px;
+        color: white;
+        shadow-font-effect: shadow;
+        shadow-offset: 1px 1px 1px 1px;
+        shadow-color: rgba(63, 191, 255, 200);
+        position: absolute;
+        text-align: center;
+        margin-top: 6px;
+    }
+    .BackgroundImage
+    {
+        width: 346px;
+        height: 39px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .nsdifficultyback
+    {
+        width: 346px;
+        height: 39px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .sdifficultyback
+    {
+        width: 346px;
+        height: 39px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .gamedifficultytext
+    {
+        font-family: Chaney;
+        font-size: 20px;
+        color: rgba(63, 191, 255, 200);
+        shadow-font-effect: shadow;
+        shadow-offset: 1px 1px 1px 1px;
+        shadow-color: rgba(63, 191, 255, 200);
+        position: absolute;
+        top: 200px;
+        width: 633px;
+        left: 10px;
+    }
+    .cursorBeginner
+    {
+        position: relative;
+        top: 220px;
+        z-index: 1;
+    }
+    .cursorSt
+    {
+        position: relative;
+        left: 140px;
+        top: 250px;
+        z-index: 1;
+    }
+    .cursorStandard
+    {
+        position: relative;
+        top: 250px;
+        z-index: 1;
+    }
+    .cursorExpert
+    {
+        position: relative;
+        top: 280px;
+        z-index: 1;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="Background" class="background"/>
+    <div id="MainPanel" class="mainpanel"/>
+    <img id="MainCursor" class="cursorSt" src="testimages/Cursor.png"/>
+    <div id="NewGamePanel" class="newgamepanel">
+        <div id="NewGameTitle" class="newgametitle">
+            <img id="newgametitleback" class="newgametitleback" src="testimages/MenuTitle.png"/>
+            <div id="newgametitlewords" class="newgametitlewords">New Game</div>
+        </div>
+        <div id="NewGameOptions" class="newgameoptionspanel">
+            <img id="NewGameOptionsBack" class="newgameoptionsback" src="testimages/MenuBack.png"/>
+            <div id="Diffulcties" class="difficulties">
+                <div id="EasyDifficulty" class="easydifficulty">
+                    <div id="BackgroundImage0" class="BackgroundImage"><img id="EasyDifficultyBack" class="nsdifficultyback" src="testimages/NewGameOptionBack.png"/></div>
+                    <div id="EasyDifficultyText" class="difficultytext">Beginner</div>
+                </div>
+                <div id="NormalDifficulty" class="normaldifficulty">
+                     <div id="BackgroundImage1" class="BackgroundImage"><img id="NormalDifficultyBack" class="nsdifficultyback" src="testimages/NewGameOptionBack.png"/></div>
+                    <div id="NormalDifficultyText" class="difficultytext">Standard</div>
+                </div>
+                <div id="HardDifficulty" class="harddifficulty">
+                    <div id="BackgroundImage2" class="BackgroundImage"><img id="HardDifficultyBack" class="nsdifficultyback" src="testimages/NewGameOptionBack.png"/></div>
+                    <div id="HardDifficultyText" class="difficultytext">Expert</div>
+                </div>
+            </div>
+            <div id="gamedifficultytext" class="gamedifficultytext"/>
+        </div>
+    </div>
+  </body>
+</rml>

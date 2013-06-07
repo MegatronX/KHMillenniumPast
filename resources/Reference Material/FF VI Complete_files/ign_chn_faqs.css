@@ -1,0 +1,99 @@
+/************************
+* global html tag selectors
+************************/
+body { background-image:url(http://media.ignimgs.com/faqs/faqs/images/body_bg.gif); }
+a { color: #039; }
+
+/************************
+* global page
+************************/
+.editHead, .editHead1Col { background-image:url(http://media.ignimgs.com/faqs/faqs/images/edithead_bg.gif); }
+.editHead2 { background-image:url(http://media.ignimgs.com/faqs/faqs/images/editHead2_bg.gif); }
+.editHead1Col { margin-left:4px; margin-right:4px; height:16px; padding:3px 5px 0px 5px; border:1px solid #999; font-weight:bold; font-size:12px;  color:#fff; }
+
+/************************
+* left column
+************************/
+.navArrowedLink { background-image:url(http://media.ignimgs.com/faqs/faqs/images/nav_arrow.gif); }
+.navArrowedLink a { color:#039; }
+.navLink a:hover { color:#039; }
+
+/************************
+* center column
+************************/
+.objectTabsBtnImages { background:url(http://media.ignimgs.com/faqs/faqs/images/gametabs_btn_images.gif); }
+.objectTabsBtnVideos { background:url(http://media.ignimgs.com/faqs/faqs/images/gametabs_btn_videos.gif); }
+.gametabsBtnImages { background:url(http://media.ignimgs.com/faqs/faqs/images/gametabs_btn_images.gif); }
+.gametabsBtnVideos { background:url(http://media.ignimgs.com/faqs/faqs/images/gametabs_btn_videos.gif); }
+.latestmediaBtnImages { background:url(http://media.ignimgs.com/faqs/faqs/images/latestmedia_btn_images.gif); }
+.latestmediaBtnImagesOnly { background:url(http://media.ignimgs.com/faqs/faqs/images/latestmedia_btn_imagesonly.gif); }
+.latestmediaBtnVideos { background:url(http://media.ignimgs.com/faqs/faqs/images/latestmedia_btn_videos.gif); }
+
+/* topStories */
+#topStoriesImage a:hover { color:#039; }
+.spotHeader { background-image:url(http://media.ignimgs.com/faqs/faqs/images/spotheader_bg.gif); }
+
+/* theme 2 */
+#themeLeft a, #themeRight a { color:#9AAACB; }
+
+/* border for media thumnails */
+.latestMediaThumb { border-color:#039; }
+
+/* connections box */
+.colCenterBoxTop { background-image:url(http://media.ignimgs.com/faqs/faqs/images/colcenterbox_top_bg.gif); }
+
+/* Latest faqs boxes */
+.columns { background-image:url(http://media.ignimgs.com/faqs/faqs/images/columns_bg.gif); }
+.columnsBottom { background-image:url(http://media.ignimgs.com/faqs/faqs/images/columnsbottom_bg.gif); height:24px; margin-bottom: 5px; }
+.column { width:510px; text-align:left; position:relative; float: none; }
+.rowImage1, .rowImage2 { height:94px; }
+.rowImage1 { padding:5px 0px; }
+.rowImage2 { padding:5px 8px 5px 0px; background-color:#eee; }	
+.row1, .row2 { padding:1px 8px; margin: 5px 5px 0px 5px; }
+.row2 { background-color:#eee; }
+.row { vertical-align:top; width: 255px; }
+
+/************************
+* right column
+************************/
+/* old right column header */
+div.colRightBoxTop { background:url(http://media.ignimgs.com/faqs/faqs/images/colrightbox_top.gif); }
+/* new right column header */
+.rightColumnHeader { background:url(http://media.ignimgs.com/faqs/faqs/images/bg_right_column_header.gif); }
+.rightTab { background-color: #73a4cf !important; }
+
+/* various bottoms */
+.colRightBottom { width:302px; height:13px; background:url(http://media.ignimgs.com/faqs/faqs/images/colrightbottom_bg.gif) no-repeat; }
+.colRightBottomHex { width:302px; height:30px; background:url(http://media.ignimgs.com/faqs/faqs/images/colrightbottomhex_bg.gif) no-repeat; }
+.colRightBottomSquare { width:302px; height:31px; background:url(http://media.ignimgs.com/faqs/faqs/images/colrightbottomsquare_bg.gif) no-repeat; }
+.colRightBottomHex2 { width:302px; height:30px; background:url(http://media.ignimgs.com/faqs/faqs/images/colrightbottomhex2_bg.gif) no-repeat; }
+.colRightBottomSquare2 { width:302px; height:31px; background:url(http://media.ignimgs.com/faqs/faqs/images/colrightbottomsquare2_bg.gif) no-repeat; }
+
+/* latest guides, cheats, & faqs */
+.r1D2, .r1H2, .r2D2, .r2T2, .r2P2, .r2E2, .mostpoprow2   { background-color:#2f6288; } /* DARK RIGHT STRIPES */
+.rightBox { background-color:#3a6d93; } /* LIGHT RIGHT STRIPES */
+.rightBox a:hover { color:#9AAACB; }
+.rightButton { background-image:url(http://media.ignimgs.com/faqs/faqs/images/rightbutton_bg.gif); }
+.white:hover { color: #9AAACB; }
+
+/************************
+* buttons
+************************/
+.button17, .button13, .buttonInput, .buttonLSW { color:#039; }
+.goSubmitButton { text-align:center; font:bold 10px tahoma,sans-serif; color:#003399; cursor:hand; border:1px solid #999; height:15px; background-position:bottom; background-repeat:no-repeat; background-color:#fff; width:21px; height:17px; margin-left:5px; background-image:url(http://media.ignimgs.com/codes/codes/images/bg_button17.gif); padding:2px 0px 0px 0px;  }
+.selectControls { vertical-align:bottom; }
+
+/************************
+* constraints
+************************/
+a.colCenterLetterConstraint:hover, a.colCenterLetterConstraintOther:hover { background-color:#039; border-color:#039; }
+a.colCenterLetterConstraint:active, a.colCenterLetterConstraintOther:active { color:#039; border-color:#039; }
+a.colCenterLetterConstraintCurrent { background-color:#039; border-color:#039; }
+
+
+/************************
+* google Adsense
+************************/
+#afcGoogleHub #ad-hdr {background:url(http://media.ignimgs.com/faqs/faqs/images/editHead2_bg.gif) repeat-x #000;}
+#afcGoogleHub #ad-wrap span, #afcGoogleHub #ad-wrap strong {color: #039; }  
+#afcGoogleSection #ad-wrap span, #afcGoogleSection #ad-wrap strong { color: #039 !important; }

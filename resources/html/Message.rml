@@ -1,0 +1,11 @@
+<rml>
+  <head>
+    <title>Message Page</title>
+    <link type="text/rcss" href="Message.rcss" />
+  </head>
+  <body>
+    <div id="MessagePanel" class="MessagePanel">
+	</div>
+
+  </body>
+</rml>

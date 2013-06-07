@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <Sprites gamestyle="Main">
+    <Sprite indexname="Ceira" width="1792" height="1152" defaultrow="Idle" defaultfps="3" flipx="false" defaultscale="1.0" orientation="Left">
+      <Row rowtypes="Idle" framewidth="128" frameheight="128" framecount="4" fps="3"></Row>
+      <Row rowtypes="Injured, Statused" framewidth="128" frameheight="128" framecount="4" fps="3, 3.5"></Row>
+      <Row rowtypes="BlockAttack" framewidth="128" frameheight="128" framecount="6">
+        <SubRow rowtypes="Defend" framewidth="128" frameheight="128" rowframestart="0" rowframeend="3" holdframe="4"></SubRow>
+      </Row>
+      <Row rowtypes="Run" framewidth="128" frameheight="128" framecount="6"></Row>
+      <Row rowtypes="CastMagic" framewidth="128" frameheight="128" framecount="14" fps="3"></Row>
+      <Row rowtypes="Attack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="QuickAttack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="StrongAttack" framewidth="128" frameheight="128" framecount="6"></Row>
+      <Row rowtypes="KO" framewidth="128" frameheight="128" framecount="1" rowoffseter="-20, 13"></Row>
+      <AnimationSequence name="">
+        <Frame id="" row="" column=""></Frame>
+      </AnimationSequence>
+    </Sprite>
+    <Sprite indexname="Arian" width="1792" height="1152" defaultrow="Idle" defaultfps="3" flipx="false" defaultscale="1.0" orientation="Left">
+      <Row rowtypes="Idle" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="Injured, Statused" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="BlockAttack" framewidth="128" frameheight="128" framecount="6">
+        <SubRow rowtypes="Defend" framewidth="128" frameheight="128" rowframestart="0" rowframeend="3" holdframe="4"></SubRow>
+      </Row>
+      <Row rowtypes="Run" framewidth="128" frameheight="128" framecount="6"></Row>
+      <Row rowtypes="CastMagic" framewidth="128" frameheight="128" framecount="14"></Row>
+      <Row rowtypes="Attack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="QuickAttack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="StrongAttack" framewidth="128" frameheight="128" framecount="6"></Row>
+      <Row rowtypes="KO" framewidth="128" frameheight="128" framecount="1"></Row>
+      <AnimationSequence name="">
+        <Frame id="" row="" column=""></Frame>
+      </AnimationSequence>
+    </Sprite>
+    <Sprite indexname="Cara" width="1792" height="1152" defaultrow="Idle" defaultfps="3" flipx="false" defaultscale="1.0" orientation="Left">
+      <Row rowtypes="Idle" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="Injured, Statused" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="BlockAttack" framewidth="128" frameheight="128" framecount="6">
+        <SubRow rowtypes="Defend" framewidth="128" frameheight="128" rowframestart="0" rowframeend="3" holdframe="4"></SubRow>
+      </Row>
+      <Row rowtypes="Run" framewidth="128" frameheight="128" framecount="6"></Row>
+      <Row rowtypes="CastMagic" framewidth="128" frameheight="128" framecount="14"></Row>
+      <Row rowtypes="Attack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="QuickAttack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="StrongAttack" framewidth="128" frameheight="128" framecount="6"></Row>
+      <Row rowtypes="KO" framewidth="128" frameheight="128" framecount="1"></Row>
+      <AnimationSequence name="">
+        <Frame id="" row="" column=""></Frame>
+      </AnimationSequence>
+    </Sprite>
+    <Sprite indexname="Red Dragon" width="548" height="441" defaultrow="Idle" defaultfps="0" flipx="false" defaultscale="0.75" orientation="left" defaultpositionoffset="-50, 50">
+    </Sprite>
+    <Sprite indexname="Aoni" width="1280" height="1152" defaultrow="Idle" defaultfps="3" flipx="false" defaultscale="1.0" orientation="Left">
+      <Row rowtypes="Idle" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="Injured, Statused" framewidth="128" frameheight="128" framecount="3"></Row>
+      <Row rowtypes="BlockAttack" framewidth="128" frameheight="128" framecount="4">
+        <SubRow rowtypes="Defend" framewidth="128" frameheight="128" rowframestart="0" rowframeend="3" holdframe="4"></SubRow>
+      </Row>
+      <Row rowtypes="Run" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="CastMagic" framewidth="128" frameheight="128" framecount="10"></Row>
+      <Row rowtypes="Attack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="QuickAttack" framewidth="128" frameheight="128" framecount="4"></Row>
+      <Row rowtypes="StrongAttack" framewidth="128" frameheight="128" framecount="5"></Row>
+      <Row rowtypes="KO" framewidth="128" frameheight="128" framecount="1"></Row>
+      <AnimationSequence name="">
+        <Frame id="" row="" column=""></Frame>
+      </AnimationSequence>
+    </Sprite>
+    <Sprite indexname="MCircleAngled" width="1150" height="690" defaultrow="CastMagic" defaultfps="10" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="QuarterDown" width="256" height="256" defaultrow="Unavailable" defaultfps="8" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="EighthDown" width="256" height="256" defaultrow="Unavailable" defaultfps="10" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="TwelfthDown" width="256" height="256" defaultrow="Unavailable" defaultfps="12" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="SixteenthDown" width="256" height="256" defaultrow="Unavailable" defaultfps="14" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="TwentyFourthDown" width="256" height="256" defaultrow="Unavailable" defaultfps="16" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="ThirtySecondDown" width="256" height="256" defaultrow="Unavailable" defaultfps="18" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+      <Row rowtypes="Unavailable" framewidth="64" frameheight="64" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="London - GMD" width="915" height="112" defaultrow="Unavailable" defaultfps="7.5" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="15"></Row>
+    </Sprite>
+    <Sprite indexname="Ivalice" width="244" height="112" defaultrow="Unavailable" defaultfps="4" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="4"></Row>
+    </Sprite>
+    <Sprite indexname="Atlantis" width="732" height="112" defaultrow="Unavailable" defaultfps="7" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="12"></Row>
+    </Sprite>
+    <Sprite indexname="Camelot" width="366" height="112" defaultrow="Unavailable" defaultfps="4" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="6"></Row>
+    </Sprite>
+    <Sprite indexname="FFV" width="366" height="112" defaultrow="Unavailable" defaultfps="5" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="6"></Row>
+    </Sprite>
+    <Sprite indexname="FFVI" width="183" height="112" defaultrow="Unavailable" defaultfps="4" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="3"></Row>
+    </Sprite>
+    <Sprite indexname="Peru" width="183" height="112" defaultrow="Unavailable" defaultfps="3" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="3"></Row>
+    </Sprite>
+    <Sprite indexname="Prydain" width="366" height="112" defaultrow="Unavailable" defaultfps="5" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="6"></Row>
+    </Sprite>
+    <Sprite indexname="Jungle Book" width="487" height="112" defaultrow="Unavailable" defaultfps="7" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="61" frameheight="112" framecount="8"></Row>
+    </Sprite>
+    <Sprite indexname="Krystallwelt" width="438" height="219" defaultrow="Unavailable" defaultfps="12" flipx="false" defaultscale="1.0">
+      <Row rowtypes="Unavailable" framewidth="73" frameheight="73" framecount="6"></Row>
+      <Row rowtypes="Unavailable" framewidth="73" frameheight="73" framecount="6"></Row>
+      <Row rowtypes="Unavailable" framewidth="73" frameheight="73" framecount="3"></Row>
+    </Sprite>
+    <AttackSprite indexname="MCircleAngled" matchattack="Haste" framecount="30" allone="true" animationtime="2200" width="1150" height="690" defaultrow="CastMagic" defaultfps="10" flipx="false" defaultscale="1.0">
+      <AlphaFadeIn startingalpha="0.0" endingalpha="1.0" fadeintime="350"/>
+      <AlphaFadeOut startingalpha="1.0" endingalpha="0.0" fadeouttime="250" />
+      <FPSGradient startingframe="4" endingframe="24" startingfps="4.0" endingfps="16.0" gradienttime="1600" />
+      <Position anchor="Target" anchoroffset="centerx, anchorbottom - attacksprite * 0.5"/>
+      <!--Row Descriptions-->
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="5"></Row>
+      <Row rowtypes="Unavailable" framewidth="230" frameheight="115" framecount="4"></Row>
+    </AttackSprite>
+  </Sprites>
+</Resources>

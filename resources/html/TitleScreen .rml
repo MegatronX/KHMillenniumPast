@@ -1,0 +1,70 @@
+<rml>
+  <head>
+    <title>Title Screen</title>
+    <link type="text/rcss" href="TitleScreen.rcss" />
+  </head>
+  <body>
+    <div id="Background" class="Background">
+      <img src="titlescreentest/Heart.png" id="Heart" class="Heart" />
+      <img src="titlescreentest/Arian.png" id="Arian" class="Arian"/>
+      <img src="titlescreentest/Ceira.png" id="CeiraImg" class="CeiraImg"/>
+      <img src="titlescreentest/Ceira_.png" id="Ceira" class="Ceira"/>
+      <img src="titlescreentest/Aoni.png" id="Aoni" class="Aoni"/>
+      <img id="DisneyLogo" alt="" class="DisneyLogo" src="titlescreentest/DisneyLogo.png"/>
+      <img id="InspiredBy" alt="" class="InspiredBy" src="titlescreentest/InspiredBy.png"/>
+      <img id="Logo" alt="" class="Logo" src="titlescreentest/Logo.png"/>
+      <img id="AandC" alt="" class="AandC" src="titlescreentest/ArianCeira.png"/>
+      <img id="SELogo" alt="" class="SELogo" src="titlescreentest/SquareEnixLogo_.png"/>
+      <img id="Disclaimer" alt="" class="Disclaimer" src="titlescreentest/Disclaimer.png"/>
+      <img id="Heart" alt="" class="Heart" src="titlescreentest/Heart.png"/>
+      <!--<div class="NewGameOption">
+        <img src="titlescreentest/HighlightButton.gif"></img>
+        <div class="OptionText">New Game</div>
+      </div>
+      <div class="LoadGameOption">
+        <img class="HighlightedOption" src="titlescreentest/HighlightButton.gif"></img>
+        <div class="OptionText">Load Game</div>
+      </div>
+      <div class="OptionsOption">
+        <img class="HighlightedOption" src="titlescreentest/HighlightButton.gif"></img>
+        <div class="OptionText">Options</div>
+      </div>-->
+      <div id="NewGameMenu" class="NewGameMenu">
+        <div id="Cursor" class="Cursor"></div>
+        <div id="NewGameHeader" class="NewGameHeader">
+          <div id="HeaderText" class="HeaderText">NEW GAME</div>
+        </div>
+        <div id="NewGameBody" class="NewGameBody">
+          <div id="OptionList" class="OptionList">
+            <div id="NewGameOption0" class="NewGameOption">
+              <div class="NewGameOptionText">Beginner Mode</div>
+            </div>
+            <div id="NewGameOption1" class="NewGameOption">
+              <div class="NewGameOptionText">Standard Mode</div>
+            </div>
+            <div id="NewGameOption2" class="NewGameOption">
+              <div class="NewGameOptionText">Expert Mode</div>
+            </div>
+          </div>
+          <div id="DifficultyDescription" class="DifficultyText"></div>
+        </div>
+      </div>
+      
+      <div id="MenuOptions" class="MenuOptions">
+        <div id="NewGameOption" class="MainOption" style="left: 700px;">
+          <div id="NewGameOptionBox" class="GameOptionAnim"></div>
+          <div class="MainOptionText">New Game</div>
+        </div>
+        <div id="LoadGameOption" class="MainOption" style="left: 750px;">
+          <div id="LoadGameOptionBox" class="GameOptionAnim"></div>
+          <div class="MainOptionText">Load Game</div>
+        </div>
+        <div id="OptionsGameBox" class="MainOption" style="left: 800px;">
+          <div id="OptionsOptionBox" class="GameOptionAnim"></div>
+          <div class="MainOptionText">Options</div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</rml>

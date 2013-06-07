@@ -1,0 +1,113 @@
+v1.1 half damage for single/all scope CTB by Charlie - Game_Battler
+
+v1.2 fixed a bug which made the reaction window appear even when the actor had died
+v1.2 fixed a bug which made the enemies always appear behind the actors
+v1.2 FFX-style reaction implemented
+
+v1.3 some bugs fixed
+v1.3 chars can return to defend after reaction
+
+v1.4 Altruismo implemented
+
+v1.5 Trincea implemented
+v1.5 Improved compatibility with Minkoff's system
+v1.5 Fixed the "Skill Learned" bug in the Weapon Window
+v1.5 "Stand still" element introduced, to be applied to weapons and techs: forces the battler to stay immobile
+
+v1.6 Skill learning resume window implemented
+v1.6 Configurable delays and variance (kind of) for the BS
+v1.6 Improved behavior for haste-hastega
+v1.6 Some visual and timing configuration parameters available 
+v1.6 Implemented a configurable multiplier for the level->exp_points relation
+
+v2.0 Minkoff/DerVVulfman v10.0 animation system adopted
+
+v2.1 Skills Learning System v1.2 with renewed graphics now featured
+v2.1 Edited status windows removed as part of the battle system. They are part of the Skills Lerning System.
+v2.1 Minkoff/DerVVulfman v10.3 animation system adopted
+v2.1 Game Temp mods and Font settings relocated from the ADD ONs section to CHARLIE CTB section
+v2.1 Fixed a little glitch that displayed a defending char in the wrong position.
+
+v2.2 Added a simple SuperArts/LimitBreaks system.
+v2.2 Added a Scene_Skill subwindow that shows Techniques.
+
+v2.3 Added support for forced battle actions.
+v2.3 Added a new state, Priority, that gives the char the first turn in battle.
+
+v2.4 Added an option to show pictures instead of text in the turns window.
+v2.4 Added an Auto-Phoenix state.
+v2.4 Added a configuration option so that auto-phoenix can be used only on chars killed during the last turn.
+v2.4 The turns update only if a change really occurs and not at every change of the selection in the actor command window.
+
+v2.5 Lots of graphics configuration options
+v2.5 Support for 8 chars during battle.
+v2.5 New battle status window
+v2.5 Summons
+v2.5 Options for usability of items with summons
+v2.5 Individual Battle Commands
+
+v2.6 Curative skills do not depend on target's int.
+v2.6 It's possible to tag selected skills so that they cannot be reflected.
+v2.6 Redesigned, floating and more essential status-on-battle window.
+v2.6 Display of skills grouped by category in the Skills Menu can be disabled from the configuration.
+v2.6 Support for images of the enemies in the turn window.
+v2.6 Skills Learning System version 1.7 included.
+
+v2.7 New skills Drain and Aspire, with different colors and damage sprite animation for SP and HP loss and gain.
+v2.7 Support for multi-attack weapons (if you are using Multi-Slot by Guillame777).
+v2.7 Two Status battle styles available.
+v2.7 Configurable filling speed for the SuperArt points bar.
+v2.7 New skill Demi: halves the target's HP.
+
+v2.8 New skill Steal.
+v2.8 New state Thievery.
+v2.8 Defetead Aeons can be automatically retired from battle.
+v2.8 Aeons recover a configurable amount of HPs at the end of each battle.
+v2.8 Defetead Aeons become unavailable for a configurable number of battles. 
+v2.8 Added a new scene to visualize stats and skills of the Aeons and to make them learn new skills.
+
+v2.9 Aeons recover a configurable amount of SPs at the end of each battle.
+v2.9 Formula for techs damage changed: tech power now expresses the amount of damage as a percentage relative to a phiycal attack.
+v2.9 Change SuperArt style by pressing SHIFT in the status scene.
+v2.9 View HP/SP of summons during battle BEFORE you call them.
+v2.9 Third type of Summon: transformation. Transformation cannot be reverted during battle. Transformed actors return to their basic form after battle.
+v2.9 Physical attacks and skills cannot target flying enemies unless the battler uses a ranged weapon.
+v2.9 Added missing animations to the summoning system: appearing summoned and transformed actors, returning party.
+v2.9 Minkoff/DerVVulfman v10.7 (slightly patched) animation system adopted.
+
+v2.10 Added the possibility to switch party members during the battle.
+v2.10 The superart bar can be disabled on a per character basis.
+v2.10 Animated HP bars.
+v2.10 Target indicator in the turns bar.
+v2.10 Can use custom graphics for the command window.
+v2.10 Shortcuts added to the command window. Press LEFT to select Defend - RIGHT to select Superarts.
+
+v2.11 New window for Defend, Skip, Status and Escape, and new Overdrive window (removed the shortcuts system).
+v2.11 Battle report.
+v2.11 Actors that cannot use Items.
+v2.11 Switch Party Scene.
+v2.11 Transformations recover a configurable amount of HPs at the end of each battle.
+v2.11 Added a new scene to visualize stats of the Transformations.
+v2.11 Automatic addition of Aeons and Transformations to the party.
+
+v2.12 Cursor memory (optional).
+v2.12 Auto-Life
+v2.12 Extended stats in switch character window.
+v2.12 Little changes in the Reflect support (Trincea and Altruismo cannot be reflected).
+v2.12 Skills can be set up to be reflected based on the comparison of user's and target's intelligence.
+v2.12 Rotating state animations for party members and enemies updated.
+v2.12 New overdrive type Emphaty.
+v2.12 New battle formulas.
+
+v2.13 New overdrive types Category, Critical.
+v2.13 Icons in the battle command window.
+v2.13 New state "Stop Time" (aka how to get consecutive turns).
+v2.13 New state "MP 1" (reduces mp consumption to 1).
+v2.13 New state "Half MP" (halves mp consumption).
+v2.13 New state "Doom" (starts a countdown to death).
+v2.13 SP/HP recovery on Attack and Defend (Optional).
+v2.13 HP bars for enemies killed at least once (Optional).
+v2.13 New state "Zombie" (inverts the effects of skills with ATK_F=0 and items, aka how to kill with an extra-potion).
+v2.13 New state "Stone" (instantly killed by physical attacks and skills with ATK_F>0).
+v2.13 Blue Magic (learn skills from enemies).
+v2.13 Optional horizontal turns bar. 

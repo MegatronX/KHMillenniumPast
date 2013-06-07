@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resources>
+  <Sprties>
+    <Sprite name="Ceira" multitexture="false">
+      <Rows>
+        <Row index="Idle" framecount="4">
+          <Frame framesize="128, 128" top="0, 0" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+          <Frame framesize="128, 128" top="128, 0" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+          <Frame framesize="128, 128" top="256, 0" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+          <Frame framesize="128, 128" top="384, 0" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+        </Row>
+        <Row index="Injured" framecount="4">
+          <Frame framesize="128, 128" top="0, 128" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+          <Frame framesize="128, 128" top="128, 128" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+          <Frame framesize="128, 128" top="256, 128" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+          <Frame framesize="128, 128" top="384, 128" center="64, 64" spritesize="128, 128" spriteoffset="0, 0" />
+        </Row>
+      </Rows>
+      <Sequences>
+        <Sequence index="Derp" frames="0, 1, 2, 3"/>
+      </Sequences>
+    </Sprite>
+  </Sprties>
+</Resources>

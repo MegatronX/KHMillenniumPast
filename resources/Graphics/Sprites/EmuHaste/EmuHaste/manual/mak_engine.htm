@@ -1,0 +1,31 @@
+<HTML>
+<HEAD><TITLE>改造コードエンジン開発</TITLE></HEAD>
+<BODY>
+
+<h2>改造コードエンジン開発について</h2>
+emuhasteの engine フォルダに改造コードエンジンのDLLファイルを追加してやることで、<br>
+あらゆるゲーム改造ツールの改造コードに対応させることが可能です。<br><br>
+
+また、アーカイブの engnie_source フォルダにあるZIPファイルは、改造コードエンジンのソースコードですので、<br>
+ユーザサイドでこれを改良（または仕様に準拠した独自DLLを開発）することが可能です。<br><br>
+
+<h2>基本となる仕組み</h2>
+emuhasteは改造コードエンジン選択時にDLLからCheatEngine()をロードし、<br>
+改造コード適用時またはタイマー呼び出しごとにCheatEngine()へ以下のパラメータを渡して実行します。
+<pre>>int CheatEngine(unsigned long m_ProcessID,			// プロセスID
+>		unsigned long m_ulRealStartAddress,		// プロセスの基準となるベース開始アドレス
+>		unsigned long m_ulVirtualStartAddress,	// emuhasteのヘキサビューワの開始アドレス
+>		unsigned long m_ulCodeCount,		// 入力された改造コードの数
+>		unsigned long m_ulWriteAddress[],		// 改造コードのアドレス配列
+>		unsigned long m_ulWriteParam[],		// 改造コードのパラメータ配列
+>		unsigned char m_ucAdvancedCheck){		// DLL拡張チェックの値(チェック=1)</pre>
+DLL側はこれらのパラメータを元に改造コード実行ルーチンを処理します。<Br>
+プロセスID 3260 のBaseAddr:03D10100、ヘキサビューワ開始アドレス02000000、コード数1、DLL拡張無しなら、<br>
+CheatEngine(3260,0x03d10100,0x02000000,1,addr[],param[],0);<br>
+とまあ、こんなかんじですね。<br>
+あとのOpenProcess()やWriteProcessMemory()を用いたプロセスメモリ書き換えルーチンについては、<br>
+DLL開発者の腕に任せますので、特に指定はありません。<br>
+CheatEngine()の返り値にintで0を返してさえくれればemuhasteは動作しますので。<br>
+
+
+</BODY></HTML>

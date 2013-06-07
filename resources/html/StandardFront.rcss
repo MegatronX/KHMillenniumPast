@@ -1,0 +1,24 @@
+body
+{
+  font-family: Chaney;
+}
+
+body.window
+{
+  width: 800px;
+  height: 600px;
+}
+
+img.TopHeader
+{
+	width: 800px;
+	position: absolute;
+}
+
+img.BottomHeader
+{
+	position: absolute;
+	width: 800px;
+	height: 96px;
+	top: 504px;
+}

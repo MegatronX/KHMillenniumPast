@@ -1,0 +1,8 @@
+uniform sampler2D texture;
+void main()
+{
+    gl_FragColor = texture2D(texture, gl_TexCoord[0].st);
+    float temp = gl_FragColor.r;
+    gl_FragColor.r = gl_FragColor.b;
+    gl_FragColor.b = temp;
+}

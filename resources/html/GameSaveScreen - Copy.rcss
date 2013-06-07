@@ -1,0 +1,70 @@
+body
+{
+	font-family: Chaney;
+	background: white;
+}
+
+body.window
+{
+	width: 800px;
+	height: 600px;
+}
+div.MainPanel
+{
+		width: 800px;
+	height: 600px;
+}
+div.Background
+{
+	position: absolute;
+	width: 800px;
+	height: 600px;
+}
+
+div.savepanel
+{
+	width: 600px;
+	height: 450px;
+	top: 75px;
+	left: 180px;
+
+	position: absolute;
+}
+div.save
+{
+	width: 550px;
+	height: 50px;
+		background-decorator: image;
+	background-image-src: testimages/SaveBack.png;
+}
+div.saveid
+{
+	font-size: 22px;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	width: 50px;
+	height: 40px;
+	top: 20px;
+	left: 20px;
+}
+div.savetime
+{
+	font-size: 22px;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	width: 50px;
+	height: 40px;
+	top: 20px;
+	left: 50px;
+}
+div.savearea
+{
+	font-size: 22px;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	width: 50px;
+	height: 40px;
+}

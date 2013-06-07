@@ -1,0 +1,10 @@
+<rml>
+  <head>
+    <title>Game Save Screen</title>
+    <link type="text/rcss" href="GameSaveScreen.rcss" />
+  </head>
+  <body>
+    <div id="MainPanel" class="MainPanel">
+    </div>
+  </body>
+</rml>

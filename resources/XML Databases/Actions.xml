@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<Actions>
+	<Attack name="Blizzard" mp="22" power="102" accuracy="1.0" family="Blizzard">
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Ice" weight="1.0" />		
+			</ElementalWeightComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Blizzara" mp="42" power="178" accuracy="1.0" family="Blizzard">
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Ice" weight="1.0" />		
+			</ElementalWeightComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Blizzaga" mp="87" power="261" accuracy="1.0" family="Blizzard">
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Ice" weight="1.0" />		
+			</ElementalWeightComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Blizzaja" mp="166" power="390" accuracy="1.0" family="Blizzard">
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Ice" weight="1.0" />		
+			</ElementalWeightComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Blizzaza" mp="242" power="516" accuracy="1.0" family="Blizzard">
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Ice" weight="1.0" />		
+			</ElementalWeightComponent>	
+		</Components>
+	</Attack>
+  <Attack name="water" mp="22" power="102" accuracy="1.0" family="Water">
+    <Components>
+      <ElementalWeightComponent>
+        <Element name="Water" weight="1.0" />
+      </ElementalWeightComponent>
+    </Components>
+  </Attack>
+  <Attack name="Waterara" mp="42" power="178" accuracy="1.0" family="Water">
+    <Components>
+      <ElementalWeightComponent>
+        <Element name="Water" weight="1.0" />
+      </ElementalWeightComponent>
+    </Components>
+  </Attack>
+  <Attack name="Wateraga" mp="87" power="261" accuracy="1.0" family="Water">
+    <Components>
+      <ElementalWeightComponent>
+        <Element name="Water" weight="1.0" />
+      </ElementalWeightComponent>
+    </Components>
+  </Attack>
+  <Attack name="Wateraja" mp="166" power="390" accuracy="1.0" family="Water">
+    <Components>
+      <ElementalWeightComponent>
+        <Element name="Water" weight="1.0" />
+      </ElementalWeightComponent>
+    </Components>
+  </Attack>
+  <Attack name="Wateraza" mp="242" power="516" accuracy="1.0" family="Water">
+    <Components>
+      <ElementalWeightComponent>
+        <Element name="Water" weight="1.0" />
+      </ElementalWeightComponent>
+    </Components>
+  </Attack>
+	<Attack name="Haste" mp="31" accuracy="1.0" family="Haste">
+		<Components>
+			<SEChanceComponent>
+				<StatusEffect name="Haste" chance="1.0" />		
+			</SEChanceComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Protect" mp="22" accuracy="1.0">
+		<Components>
+			<SEChanceComponent>
+				<StatusEffect name="Protect" chance="1.0" turns="12"/>	
+			</SEChanceComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Shell" mp="22" accuracy="1.0">
+		<Components>
+			<SEChanceComponent>
+				<StatusEffect name="Shell" chance="1.0" turns="12"/>		
+			</SEChanceComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Wall" mp="52" accuracy="1.0">
+		<Components>
+			<SEChanceComponent>
+				<StatusEffect name="Protect" chance="1.0" turns="10"/>
+				<StatusEffect name="Shell" chance="1.0" turns="10"/>		
+			</SEChanceComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Reflect" mp="35" accuracy="1.0">
+		<Components>
+			<SEChanceComponent>
+				<StatusEffect name="Reflect" chance="1.0" turns="10"/>	
+			</SEChanceComponent>	
+		</Components>
+	</Attack>
+	<Attack name="White Wind" mp="41">
+		<Components>
+			<WhiteWindDamageComponent index="DamageCalculatorComponent">
+				<![CDATA[
+					class WhiteWindDamageComponent(DamageCalculatorComponent):
+						def __init__(self, Owner):
+							DamageCalculatorComponent.__init__(self, Owner)
+						
+						def CalculateDamage(self, Action, Mechanics):
+							Dmg = 0
+							character = Action.GetUsers().GetFirst()
+							SM = character.GetComponent("StatManageComponent")
+							if (SM != None):
+								Dmg = -SM.GetCurrentHP()
+							return Dmg
+				
+					return WhiteWindDamageComponent(Owner)
+				]]>		
+			</WhiteWindDamageComponent>
+		</Components>
+	</Attack>
+	
+	<Attack name="Megiddo Flame" mp="144" accuracy="Infinite">
+		<Flags>
+			<IgnoreElements/>
+			<Unreflectable/>
+			<ConstantDamage/>	
+		</Flags>
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Fire" weight="0.5"/>	
+			</ElementalWeightComponent>
+			<ConstantDamageCalculationComponent damage="9998" index="DamageCalculatorComponent"/>	
+		</Components>
+	</Attack>
+	<Attack name="????" mp="2" accuracy="1.0">
+		<Flags>
+			<Unreflectable/>	
+		</Flags>
+		<Components>
+			<CustomComponent index="DamageCalculatorComponent">
+				<![CDATA[
+					class QuestionDamageCalculator(DamageCalculatorComponent):
+						def __init__(self, Owner):
+							DamageCalculatorComponent.__init__(self, Owner)
+				
+						def CalculateDamage(Action, Mechanics):
+							return Mechanics.GetRandomInt(1, 3000)
+						
+						def Clone(self)
+							return copy.deepcopy(self)
+				
+					return QuestionDamageCalculator(Owner)
+				]]>		
+			</CustomComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Needle" accruacy="1.0">
+		<Components>
+			<ConstantDamageCalcualtorComponent damage="10" 	index="DamageCalculatorComponent"/>
+		</Components>
+	</Attack>
+	<Attack name="1000 Needles" mp="0" sp="50" accuracy="1.0">
+		<Flags>
+			<Unreflectable/>
+			<ConstantDamage/>	
+		</Flags>
+		<Components>
+			<MultiHitComponent index="UseComponent" hits="1000">
+				<Hit asattack="Needle"/>	
+			</MultiHitComponent>	
+		</Components>
+	</Attack>
+	<Attack name="Time Slicer" mp="81" sp="71" accuracy="1.0">
+		<Components>
+			<ElementalWeightComponent>
+				<Element name="Space/Time" weight="1.0"/>		
+			</ElementalWeightComponent>	
+			<SEChanceComponent>
+				<StatusEffect name="Slow" chance="1.0"/>
+				<StatusEffect name="Stop" chance="1.0"/>		
+			</SEChanceComponent>
+			<SERemovalComponent>
+				<StatusEffect name="Sleep" chance="1.0"/>
+				<StatusEffect name="Confuse" chance="1.0"/>		
+			</SERemovalComponent>
+			<MultiHitComponent index="UseComponent">
+				<Hit targetting="RandomEnemy" power="110" accuracy="1.0" />
+				<Hit targetting="RandomEnemy" power="115" accuracy="1.0" requirechaining="true"/>
+				<Hit targetting="RandomEnemy" power="120" accuracy="1.0" requirechaining="true"/>
+				<Hit targetting="RandomEnemy" power="125" accuracy="1.0" requirechaining="true"/>
+				<Hit targetting="RandomEnemy" power="130" accuracy="1.0" requirechaining="true"/>
+			</MultiHitComponent>
+		</Components>
+	</Attack>
+</Actions>

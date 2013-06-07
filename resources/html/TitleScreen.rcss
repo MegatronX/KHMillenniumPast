@@ -1,0 +1,335 @@
+body
+{
+	font-family: Chaney;
+	background: white;
+}
+.Hide
+{
+	display: none;
+}
+body.window
+{
+	width: 800px;
+	height: 600px;
+}
+div.Background
+{
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	display: inline-block;
+	background-decorator: image;
+	background-image-src: titlescreentest/WhiteBack.png;
+}
+div.KHLogo
+{
+	position: absolute;
+	top: 45px;
+	left: 400px;
+}
+img.MainSelectedOption
+{
+	z-index: 4;
+	color: rgba(255, 255, 255, 0);
+}
+img.MainSelectedOptionVis
+{
+	z-index: 4;
+	color: rgba(255, 255, 255, 255);
+}
+img.LogoBack
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: rgba(255, 255, 255, 90);
+}
+img.LogoFront
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: rgba(255, 255, 255, 90);
+}
+img.Heart
+{
+	position: absolute;
+	left: 300px;
+	top: 280px;
+	width: 190px;
+	height: 150px;
+	color: rgba(255, 255, 255, 0);
+}
+
+img.Aoni
+{
+	position: absolute;
+	width: 230px;
+	height: 550px;
+	left: -225px;
+	top: -30px;
+	color: rgba(255, 255, 255, 140);
+}
+
+img.Arian
+{
+	position: absolute;
+	width: 263px;
+	height: 512px;
+	left: 800px;
+	display: inline-block;
+	color: rgba(255, 255, 255, 140);
+}
+img.CeiraImg
+{
+	position: absolute;
+	display: inline-block;
+	width: 290px;
+	height: 512px;
+	 right: 280px;
+    bottom: 100px;
+	color: rgba(255, 255, 255, 0);
+}
+img.Ceira
+{
+	position: absolute;
+	width: 360px;
+	height: 626px;
+	left: 130px;
+	top: 100px;
+	color: rgba(255, 255, 255, 0);
+	z-index: 2;
+}
+.DisneyLogo
+{
+    position: absolute;
+    top: 110px;
+    right: 238px;
+	color: rgba(255, 255, 255, 0);
+}
+.InspiredBy
+{
+    position: absolute;
+    right: 200px;
+    top: 20px;
+	color: rgba(255, 255, 255, 0);
+}
+
+.Logo
+{
+    position: absolute;
+    right: 200px;
+    bottom: 233px;
+	color: rgba(255, 255, 255, 0);
+}
+
+.AandC
+{
+    position: absolute;
+    left: 0px;
+	top: 0px;
+	color: rgba(255, 255, 255, 99);
+}
+
+.Disclaimer
+{
+    position: absolute;
+	color: rgba(255, 255, 255, 0);
+}
+.SELogo
+{
+    top: 450px;
+    right: 125px;
+    position: absolute;
+	color: rgba(255, 255, 255, 0);
+}
+
+.MainLogoWords
+{
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    /*width: 400px;
+    height: 259px;*/
+    display: none;
+    z-index: 9;
+    width: 325px;
+    height: 203px;
+    background-image: url("../Graphics/TitleScreen/LogoWordsSmall.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.MainLogoBack
+{
+    position: absolute;
+    top: 0px;
+    float: left;
+    left: 25px;
+    /*width: 400px;
+    height: 259px;*/
+    display: none;
+    z-index: 8;
+}
+
+
+.MenuOptions
+{
+    width: 800px;
+    height: 135px;
+    position: absolute;
+    left: 100px;
+    top: 455px;
+}
+
+.MainOption
+{
+    width: 800px;
+    height: 37px;
+    /*position: absolute;*/
+    position: relative;
+    float: left;
+	background-decorator: image;
+	background-image-src: titlescreentest/UnhighlightedOption.png;
+    margin-bottom: 10px;
+}
+.MainOptionSelected
+{
+    width: 840px;
+    height: 76px;
+    position: relative;
+    float: left;
+    background-decorator: image;
+	background-image-src: titlescreentest/HighlightedOptionTest.png;
+    margin-bottom: 10px;
+}
+.GameOptionAnim
+{
+    position: relative;
+    left: 9px;
+    top: 10px;
+	margin: 0px 40px 0px 0px;
+	 background-decorator: image;
+	background-image-src: titlescreentest/HighlightButton.gif; 
+    width: 16px;
+    height: 16px;
+}
+.MainOptionText
+{
+	position: relative;
+	left: 50px;
+	top: 10px;
+	font-size: 22px;
+
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+
+
+
+
+
+
+div.Ceira
+{
+	position: absolute;
+	left: 100px;
+	width: 290px;
+	height: 512px;
+	display: inline-block;
+	/*background-decorator: image;
+	background-image: titlescreentest/Ceira.png;
+	color: rgba(255, 255, 255, 128);*/
+}
+div.NewGameOption
+{
+	position: absolute;
+	left: 100px;
+	top: 420px;
+	width: 800px;
+	height: 37px;
+	display: inline-block;
+	background-decorator: image;
+	background-image: titlescreentest/UnhighlightedOption.png;
+	color: rgba(255, 255, 255, 120);
+}
+div.LoadGameOption
+{
+	position: absolute;
+	left: 160px;
+	top: 470px;
+	width: 800px;
+	height: 37px;
+	display: inline-block;
+	background-decorator: image;
+	background-image: titlescreentest/UnhighlightedOption.png;
+}
+div.OptionsOption
+{
+	position: absolute;
+	left: 220px;
+	top: 520px;
+	width: 800px;
+	height: 37px;
+	display: inline-block;
+	background-decorator: image;
+	background-image: titlescreentest/UnhighlightedOption.png;
+}
+img.HighlightedOption
+{
+	left: 10px;
+	top: 10px;
+}
+div.OptionText
+{
+	position: relative;
+	left: 50px;
+	top: 10px;
+	font-size: 22px;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+.Cursor
+{
+
+}
+.NewGameMenu
+{
+    position: absolute;
+    width: 650px;
+    height: 500px;
+    left: 75px;
+    top: 80px;
+    z-index: 10;
+	color: rgba(255, 255, 255, 10);
+}
+
+.NewGameHeader
+{
+    position: absolute;
+    left: 146px;
+    top: 10px;
+    width: 350px;
+    height: 54px;
+	color: rgba(255, 255, 255, 10);
+}
+
+.NewGameBody
+{
+    position: absolute;
+    width: 650px;
+    height: 310px;
+    top: 75px;
+	color: rgba(255, 255, 255, 10);
+}
+
+.OptionList
+{
+     position: absolute;
+     width: 346px;
+     left: 148px;
+     top: 50px;
+}
+

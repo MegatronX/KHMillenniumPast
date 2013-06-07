@@ -1,0 +1,104 @@
+<?xml version="1.0" standalone="yes"?>
+<Enemies>
+  <Enemy name="Red Dragon" type="BaseEnemy" enemyclasses="Dragon, Massive" displayname="Red Dragon">
+    <EnemyInstance level="56">
+      <Stats HP="55000" MP="2500" SP="2500" Strength="212" Vitality="125" Magic="200" Spirit="162" Skill="111" Speed="109" Evasion="100" MgEvasion="100" Accuracy="100" Luck="55" />
+      <StatusResistances>
+        <Resistance name="Sleep" value="100" />
+        <Resistance name="Stop" value="100" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Fire" value="0.75" />
+      </ElementEffectiveness>
+      <LootTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </LootTable>
+      <DropTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </DropTable>
+      <AIScript name="BasicBehaviour.py" />
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+    <EnemyInstance level="83">
+      <Stats HP="155000" MP="5000" SP="12500" Strength="312" Vitality="195" Magic="300" Spirit="262" Skill="222" Speed="209" Evasion="120" MgEvasion="120" Accuracy="120" Luck="85" />
+      <StatusResistances>
+        <Resistance name="Sleep" value="1.0" />
+        <Resistance name="Stop" value="1.0" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Fire" value="0.75" />
+      </ElementEffectiveness>
+      <LootTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </LootTable>
+      <DropTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </DropTable>
+      <AIScript name="BasicBehaviour.py" />
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+  </Enemy>
+  <Enemy name="Omega Weapon" type="BaseEnemy" displayname="Omega Weapon">
+    <EnemyInstance level="100">
+      <Stats HP="15000000" MP="125000" SP="125000" Strength="442" Vitality="295" Magic="400" Spirit="462" Skill="366" Speed="229" Evasion="120" MgEvasion="120" Accuracy="190" Luck="125" />
+      <StatusResistances>
+        <Resistance name="Beserk" value="1" />
+        <Resistance name="Break" value="1" />
+        <Resistance name="Confusion" value="1" />
+        <Resistance name="Death" value="1" />
+        <Resistance name="Sleep" value="1" />
+        <Resistance name="Slow" value="1" />
+        <Resistance name="Spr0" value="0.95" />
+        <Resistance name="Stop" value="1" />
+        <Resistance name="Vit0" value="0.95" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Fire" value="0.25" />
+        <Effectiveness name="Water" value="0.5" />
+        <Effectiveness name="Earth" value="0.5" />
+        <Effectiveness name="Dark" value="0.75" />
+        <Effectiveness name="Ice" value="0.25" />
+        <Effectiveness name="Lightning" value="1.5" />
+        <Effectiveness name="Fire" value="0.25" />
+      </ElementEffectiveness>
+      <LootTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </LootTable>
+      <DropTable>
+        <Item name="Refined Etherium" rate="1.00" count="2" />
+        <Item name="Omega Weapon" rate="1.00" count="1" />
+      </DropTable>
+      <AIScript name="OmegaWeapon.py" />
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+  </Enemy>
+  <Enemy name="Omicron Weapon" type="BaseEnemy" displayname="Omicron Weapon">
+    <EnemyInstance level="100">
+      <Stats HP="1500000" MP="12500" SP="12500" Strength="342" Vitality="225" Magic="300" Spirit="362" Skill="366" Speed="229" Evasion="120" MgEvasion="120" Accuracy="190" Luck="125" />
+      <StatusResistances>
+        <Resistance name="Break" value="1" />
+        <Resistance name="Confusion" value="1" />
+        <Resistance name="Slow" value="1" />
+        <Resistance name="Stop" value="1" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Dark" value="0.5" />
+        <Effectiveness name="Earth" value="-2" />
+        <Effectiveness name="Fire" value="0.5" />
+        <Effectiveness name="Ice" value="0.1" />
+        <Effectiveness name="Light" value="0.75" />
+        <Effectiveness name="Lightning" value="1.5" />
+        <Effectiveness name="Water" value="-1" />
+      </ElementEffectiveness>
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+  </Enemy>
+</Enemies>

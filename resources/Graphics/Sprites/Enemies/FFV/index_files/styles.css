@@ -1,0 +1,127 @@
+table {
+  font-size : 12px;
+}
+
+A.mainmenu:visited,A.mainmenu:link,A.mainmenu:hover,A.mainmenu:active {
+  font-family : arial; 
+  width : 100%; 
+  font-size : 12px;
+}
+A.mainmenu:visited {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.mainmenu:link {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.mainmenu:hover {
+  color : #2050f0; 
+  background-color : #f08040; 
+  text-decoration : underline; 
+}
+A.mainmenu:active {
+  color : #2060c0; 
+  text-decoration : underline; 
+}
+
+A.menuheader,A.menuheader:visited,A.menuheader:link,A.menuheader:hover,A.menuheader:active {
+  font-family : arial; 
+  width : 100%; 
+  font-size : 16px;
+  font-weight : bold;
+}
+A.menuheader {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.menuheader:visited {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.menuheader:link {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.menuheader:hover {
+  color : #2050f0; 
+  background-color : #f08040; 
+  text-decoration : underline; 
+}
+A.menuheader:active {
+  color : #2060c0; 
+  text-decoration : underline; 
+}
+
+A.homelink:visited,A.homelink:link,A.homelink:hover,A.homelink:active {
+  font-family : arial; 
+}
+A.homelink:visited {
+  color : #d0d0d0; 
+  text-decoration : none; 
+}
+A.homelink:link {
+  color : #d0d0d0; 
+  text-decoration : none; 
+}
+A.homelink:hover {
+  color : #80a0f0; 
+  text-decoration : underline; 
+}
+A.homelink:active {
+  color : #90b0ff; 
+  text-decoration : underline; 
+}
+
+A.link,A.link:visited,A.link:link,A.link:active,A.link:hover {
+  font-family : arial; 
+}
+A.link:visited {
+  color : #a040a0; 
+  text-decoration : underline; 
+}
+A.link:link {
+  color : #1020b0; 
+  text-decoration : underline; 
+}
+A.link:hover {
+  color : #3060ff; 
+  text-decoration : underline; 
+}
+A.link:active {
+  color : #2060c0; 
+  text-decoration : underline; 
+}
+
+A.hiddenlink,A.hiddenlink:visited,A.hiddenlink:link,A.hiddenlink:active,A.hiddenlink:hover {
+  font-family : arial; 
+}
+A.hiddenlink:visited {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.hiddenlink:link {
+  color : #000000; 
+  text-decoration : none; 
+}
+A.hiddenlink:hover {
+  color : #2050f0; 
+  text-decoration : underline; 
+}
+A.hiddenlink:active {
+  color : #2060c0; 
+  text-decoration : underline; 
+}
+
+A.header {
+  font-size : 20px;
+  font-family: times new roman;
+}
+
+A.title {
+  font-size : 28px;
+  font-weight : bold;
+  text-align: center;
+  width: 100%;
+  font-family: times new roman;
+}

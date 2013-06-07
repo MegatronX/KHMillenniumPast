@@ -1,0 +1,18 @@
+﻿WPFTools
+
+
+exe
+C#
+.cs
+F:\Kingdom Hearts MP\tools\Internal\WPFTools\WPFTools\obj\Debug\
+WPFTools
+none
+false
+DEBUG;TRACE
+F:\Kingdom Hearts MP\tools\Internal\WPFTools\WPFTools\App.xaml
+121780015628
+
+24858048748
+24-1381169504
+AddNewEnemy.xaml;AddNewEnemyInstance.xaml;ComponentControls\ItemComponents\FreeSynthesisComponent.xaml;ComponentControls\ItemComponents\HealingComponent.xaml;ComponentControls\ItemComponents\SynthesisRecipeComponent.xaml;ComponentControls\ItemComponents\ThrowComponent.xaml;Editor.xaml;ItemWindows\AddNewItem.xaml;ItemWindows\AddNewItemClass.xaml;NewEnemyInstanceWindow.xaml;NewEnemyWindow.xaml;Popups\AddStatusEffect.xaml;
+

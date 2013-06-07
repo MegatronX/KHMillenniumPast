@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPFTools.NewEnemyInstanceWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="NewEnemyInstanceWindow" Height="309" Width="687" Closing="Window_Closing" Name="AddNewEnemyInstanceWindow">
+    <Grid>
+        <Grid.DataContext>
+            <Binding ElementName="AddNewEnemyInstanceWindow" Path="NewEnemyInstanceElement"/>
+        </Grid.DataContext>
+        <Label Height="28" Content="{Binding XPath=../@name}" HorizontalAlignment="Left" Margin="5,30,0,0" Name="RootEnemyNameLabel" VerticalAlignment="Top" Width="245" FontSize="16"></Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="6,74,0,0" Name="label2" VerticalAlignment="Top" Width="41">Level:</Label>
+        
+        <Button HorizontalAlignment="Right" Margin="0,0,8,8" Name="CancelButton" Width="75" Height="23" VerticalAlignment="Bottom" Click="CancelButton_Click">Cancel</Button>
+        <TextBox Text="{Binding XPath=@level}" Height="23" HorizontalAlignment="Left" Margin="53,77,0,0" Name="EnemyLevelBox" VerticalAlignment="Top" Width="48" />
+        <Label Background="DarkSlateBlue" FontWeight="Bold" Foreground="White" Height="28" Margin="0,-1,0,0" Name="label5" VerticalAlignment="Top">Add New Enemy Instance</Label>
+        <ListView DataContext="{Binding XPath=Stats}" ItemsSource="{Binding Path=Attributes}" Name="EnemyStatViewDisplay" Margin="0,54,8,37" HorizontalAlignment="Right" Width="281">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="120" Header="Stat Name">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <TextBlock Width="120" Text="{Binding Name}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="130" Header="Stat Value">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <TextBox Width="130" Text="{Binding Value}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,26,169,0" Name="label1" VerticalAlignment="Top" Width="120">Stats</Label>
+        <Label HorizontalAlignment="Left" Margin="6,108,0,135" Name="label3" Width="120">Description</Label>
+        <TextBox Text="{Binding XPath=Description/@value}" HorizontalAlignment="Left" Margin="6,131,0,8" Name="EnemyDescriptionBox" Width="244" />
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,89,8" Name="SaveInstance" VerticalAlignment="Bottom" Width="75" Click="SaveEnemyInstance_Click">Save</Button>
+    </Grid>
+</Window>

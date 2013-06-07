@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Used as part of the KHMP Enemy generation system.
+
+Defines basic enemy information.
+
+Enemy -> Enemy specifies an enemy grouping. That is, all enemies in the grouping are treated as the same enemy internally
+      -> name = enemy Grouping name
+      -> type = enemy type. 
+         ->Base Enemy = basic enemy type suitable for most enemies
+      -> display name = base display name to show in a battle. This is appeneded to if multiple enemies in a battle have the same display name. This is generally the same as name
+       -> Enemy Instance = An instance of this enemy grouping. Instances are currently differentiated based on level
+         -> level = enemy instance level
+         -> Stats = the enemy instances' stats. All are mandatory, but order doesn't matter
+         -> Status Resistances = Used to construct the Status Resistance Table. All Status Effects default to 0 resistance unless added here
+            ->Resistance = a Status Effect Resistance
+              -> name = name of status effect
+              -> value = amount of resistance. Anything >= 1.0 is complete resistance. Anything <= 0 is complete unresistance
+         -> ElementEffectiveness = Dictates the effectivness of elemental attacks. All elements have a 1.0 damage rate by default unless added here
+            ->Effectivness = a modified elemental damage multiplier
+              -> name = element name
+              -> value = damage rate of that element. 1.0 is normal damage, 0 is immunity, < 0 is absorbtion, > 1.0 is extra damage
+         ->Loot Table = List of items that can be stolen from the enemy. Items are stolen one at a time until exhausted
+            -> Item = an Item representation
+                -> name = item's name
+                -> rate = base steal chance. >= 1.0 means steals will always suceed, <= 0 means steals will never succeed (barring steal modifiers)
+                -> count = number of this item that can be stolen. 
+         ->Drop Table = List of items that can be dropped by the enemy
+                -> Item = an Item representation
+                -> name = item's name
+                -> rate = base drop chance. >= 1.0 means the item will always be dropped, <= 0 means drop will never occur (barring drop modifiers)
+                -> count = number of this item that can be dropped.
+                -> variation = drop counts amount of deviation from count. I.e. if count = 10 and variation = 5, anywhere from 5 to 15 of this item can be dropped
+         ->AIScript = scripting file for enemy. Most enemies should use BasicBehaviour.py or AdvancedBehaviour.py
+-->
+<Enemies>
+  <Enemy name="Red Dragon" type="BaseEnemy" enemyclasses="Dragon, Massive" displayname="Red Dragon">
+    <EnemyInstance level="56">
+      <Description value="An enormous dragon who's skin seems to be on fire. It is very rare and posses collosal strength" />
+      <Stats HP="55000" MP="2500" SP="2500" Strength="212" Vitality="125" Magic="200" Spirit="162" Skill="111" Speed="109" Evasion="100" MgEvasion="100" Accuracy="100" Luck="55" />
+      <StatusResistances>
+        <Resistance name="Sleep" value="100" />
+        <Resistance name="Stop" value="100" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Fire" value="0.75" />
+      </ElementEffectiveness>
+      <LootTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </LootTable>
+      <DropTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </DropTable>
+      <AIScript name="BasicBehaviour.py" />
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+    <EnemyInstance level="83">
+      <Description value="An enormous dragon who's skin seems to be on fire. It is very rare and posses collosal strength" />
+      <Stats HP="155000" MP="5000" SP="12500" Strength="312" Vitality="195" Magic="300" Spirit="262" Skill="222" Speed="209" Evasion="120" MgEvasion="120" Accuracy="120" Luck="85" />
+      <StatusResistances>
+        <Resistance name="Sleep" value="1.0" />
+        <Resistance name="Stop" value="1.0" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Fire" value="0.75" />
+      </ElementEffectiveness>
+      <LootTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </LootTable>
+      <DropTable>
+        <Item name="Elixir" rate="0.03" count="1" variation="0" />
+      </DropTable>
+      <AIScript name="BasicBehaviour.py" />
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+  </Enemy>
+  <Enemy name="Omega Weapon" type="BaseEnemy" displayname="Omega Weapon">
+    <EnemyInstance level="100">
+      <Description value="An enormous dragon who's skin seems to be on fire. It is very rare and posses collosal strength" />
+      <Stats HP="15000000" MP="125000" SP="125000" Strength="442" Vitality="295" Magic="400" Spirit="462" Skill="366" Speed="229" Evasion="120" MgEvasion="120" Accuracy="190" Luck="125" />
+      <StatusResistances>
+        <Resistance name="Beserk" value="1" />
+        <Resistance name="Break" value="1" />
+        <Resistance name="Confusion" value="1" />
+        <Resistance name="Death" value="1" />
+        <Resistance name="Sleep" value="1" />
+        <Resistance name="Slow" value="1" />
+        <Resistance name="Spr0" value="0.95" />
+        <Resistance name="Stop" value="1" />
+        <Resistance name="Vit0" value="0.95" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Fire" value="0.1" />
+        <Effectiveness name="Water" value="0.5" />
+        <Effectiveness name="Earth" value="0.5" />
+        <Effectiveness name="Dark" value="0.75" />
+        <Effectiveness name="Ice" value="0.25" />
+        <Effectiveness name="Lightning" value="1.5" />
+        <Effectiveness name="Fire" value="0.25" />
+      </ElementEffectiveness>
+      <LootTable>
+        <Item name="Elixir" rate="0.03" count="1" />
+      </LootTable>
+      <DropTable>
+        <Item name="Refined Etherium" rate="1.00" count="2" variation="0" />
+        <Item name="Omega Weapon" rate="1.00" count="1" variation="0" />
+      </DropTable>
+      <AIScript name="OmegaWeapon.py" />
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+  </Enemy>
+  <Enemy name="Omicron Weapon" type="BaseEnemy" displayname="Omicron Weapon">
+    <EnemyInstance level="100">
+      <Description value="An enormous mechanical enemy. It is very rare and posses collosal strength" />
+      <Stats HP="1500000" MP="12500" SP="12500" Strength="342" Vitality="225" Magic="300" Spirit="362" Skill="366" Speed="229" Evasion="120" MgEvasion="120" Accuracy="190" Luck="125" />
+      <StatusResistances>
+        <Resistance name="Break" value="1" />
+        <Resistance name="Confusion" value="1" />
+        <Resistance name="Slow" value="1" />
+        <Resistance name="Stop" value="1" />
+      </StatusResistances>
+      <ElementEffectiveness>
+        <Effectiveness name="Dark" value="0.5" />
+        <Effectiveness name="Earth" value="-2" />
+        <Effectiveness name="Fire" value="0.5" />
+        <Effectiveness name="Ice" value="0.1" />
+        <Effectiveness name="Light" value="0.75" />
+        <Effectiveness name="Lightning" value="1.5" />
+        <Effectiveness name="Water" value="-1" />
+      </ElementEffectiveness>
+      <Flags>
+        <Massive />
+      </Flags>
+    </EnemyInstance>
+  </Enemy>
+</Enemies>

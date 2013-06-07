@@ -1,0 +1,274 @@
+body
+{
+	width: 800px;
+}
+
+.Preloads
+{
+    visibility: hidden;
+}
+
+div.LeftPanels
+{
+    width: 200px;
+    height: 440px;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+    display: inline;
+}
+
+
+div.AuxDisplay
+{
+}
+
+div.ActiveItemInfo
+{
+	position: absolute;
+	left: 10px;
+	top: 280px;
+	width: 190px;
+	height: 150px;
+	display: inline-block;
+	background-decorator: image;
+	background-image-src: testimages/testitemback.png;
+}
+
+div.ActiveItemInfoName
+{
+	/*position: absolute;*/
+	left: 2px;
+	font-size: 16px;
+	float: left;
+	z-index: 2;
+}
+
+div.ActiveItemInfoTypeHeader
+{
+	font-size: 16px;
+	text-decoration: underline;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	/*left: 2px;
+	top: 20px;*/
+	float: left;
+	z-index: 2;
+}
+
+div.ActiveItemInfoType
+{
+	font-size: 16px;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	float: left;
+	left: 3px;
+	z-index: 2;
+}
+
+div.ActiveItemInfoTypeValue
+{
+	font-size: 16px;
+	text-decoration: underline;
+	shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	float: left;
+	z-index: 2;
+}
+div.ActiveItemInfoValue
+{
+	font-size: 16px;
+	 shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	float: left;
+	left: 3px;
+	z-index: 2;
+}
+div.LargeItemDisplay
+{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	z-index: 1;
+}
+img.LargeItemImage
+{
+	width: 80px;
+	height: 80px;
+}
+div.RightPanels
+{
+    width: 590px;
+    height: 444px;
+    top: 60px;
+	left: 205px;
+    position: absolute;
+}
+
+div.ItemPanels
+{
+    width: 690px;
+    height: 444px;
+	
+    float: left;
+  /*  left: 4px;
+    top: -2px;*/
+    display: inline-block;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+div.ItemPanel
+{
+	margin: 2px 0px 0px 2px;
+    width: 292px;
+    height: 39px;
+    display: inline-block;
+	background-decorator: image;
+	background-image-src: testimages/itemback.png;
+	/*background-image: url('itemback.png');*/
+    position: relative;
+
+    opacity: 0.7;
+}
+
+div.ItemPanel:focus
+{
+	margin: 2px 0px 0px 2px;
+	width: 292px;
+    height: 39px;
+    display: inline-block;
+	background-decorator: image;
+	background-image-src: testimages/itembacksel.png;
+	/*background-image: url('itemback.png');*/
+    position: relative;
+
+    opacity: 0.7;
+}
+
+div.ItemPanelSelected
+{
+    width: 298px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+	background-decorator: image;
+	background-image-src: testimages/itembacksel.png;
+    /*background-image: url('testimages/itembacksel.png');
+    background-size: 298px 40px;*/
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+div.ItemName
+{
+    font-family: Chaney;
+    font-size: 20px;
+    /*font: 19px/1 Chaney, Arial,sans-serif;*/
+    /*float: left;*/
+    /*margin: 2px 3px;*/
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    left: 9px;
+	float: left;
+    shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+	shadow-offset: -1px -1px;
+    shadow-color: black;
+}
+
+div.ItemCount
+{
+    font-family: Chaney;
+    font-size: 16px;
+    /*float: right;*/
+    color: #ffffff;
+	left: 234px;
+	top: 17px;
+    position: absolute;
+    shadow-font-effect: shadow;
+    shadow-offset: 2px 2px;
+    shadow-color: black;
+    z-index: 1;
+}
+
+div.ItemImageDiv
+{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 9px;
+    top: -1px;
+}
+img.ItemImage
+{
+    width: 40px;
+    height: 40px;
+
+}
+
+div.Header
+{
+    width: 800px;
+    height: 62px;
+    display: inline-block;
+    position: absolute;
+	background-decorator: image;
+	background-image-src: testimages/TopBase.png;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+div.Footer
+{
+    width: 800px;
+    height: 96px;
+    display: inline-block;
+    position: absolute;
+    top: 504px;
+    left: 0px;
+	background-decorator: image;
+	background-image-src: testimages/BottomBase.png;
+    z-index: 5;
+}
+
+div.ItemDescription
+{
+    font-family: Chaney;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    top: 504px;
+    left: 190px;
+    width: 600px;
+    shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+	z-index: 8;
+    opacity: 1;
+}
+div.ItemNameFooter
+{
+    text-decoration: underline;
+    font-size: 18px;
+	position: relative;
+	float: left;
+	left: 5px;
+}
+
+div.ItemDescriptionFooter
+{
+    font-size: 17px;
+	position: relative;
+	float: left;
+	left: 5px;
+}

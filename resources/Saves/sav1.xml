@@ -1,0 +1,321 @@
+<Saves>
+  <Save name="Save0">
+    <PlayTime hours="24" minutes="31" seconds="19" />
+    <Munny value="25010"/>
+    <Area major="Luma" minor="Armory" tileposition="20, 20" correctposition="true">
+    </Area>
+    <Inventory>
+      <Item name="Potion" count="12" />
+      <Item name="Hi-Potion" count="61" />
+      <Item name="Thunder Gem" count="11" />
+      <Item name="Dark Matter" count="9" />
+      <KeyItem name="Omega Seal" count="1" />
+    </Inventory>
+    <MainParty>
+      <PartyMember name="Arian" level="66">
+        <Stats>
+          <Base>
+            <HP value="9999"/>
+            <MP value="999" />
+            <SP value="999"/>
+            <Str value="491"/>
+            <Mg value="411"/>
+            <Vit value="352"/>
+            <Spr value="363"/>
+            <Spd value="603"/>
+            <Skl value="230"/>
+            <Ev value="33"/>
+            <MgEv value="33"/>
+            <Acr value="178"/>
+            <MgAcr value="60"/>
+            <Lck value="121"/>
+          </Base>
+          <Current>
+            <HP value="5630"/>
+            <MP value="702"/>
+            <SP value="483"/>
+          </Current>
+          <PermanentAdders>
+            <HP value="710"/>
+            <MP value="30" />
+            <SP value="40"/>
+            <Str value="13"/>
+            <Mg value="17"/>
+            <Vit value="20"/>
+            <Spr value="19"/>
+            <Spd value="35"/>
+            <Ev value="3"/>
+            <MgEv value="2"/>
+            <Acr value="17"/>
+            <MgAcr value="3"/>
+            <Lck value="10"/>
+          </PermanentAdders>
+          <PermanentMultipliers>
+            <HP value="0.5"/>
+          </PermanentMultipliers>
+        </Stats>
+        <Equipment>
+          <Weapon name="Luminous Gale" />
+          <OffHand name="Mirror Aegis"/>
+
+        </Equipment>
+        <ActiveStatusEffects>
+        </ActiveStatusEffects>
+        <AbilityManager>
+          <PermanentAbilities>
+            <Ability name="Master Keyblader" instances="1"/>
+          </PermanentAbilities>
+          <LearningAbilities>
+            <Ability name="Vortex" currentxp="18993"/>
+          </LearningAbilities>
+        </AbilityManager>
+        <MagicManager>
+          <PermanentMagic>
+
+          </PermanentMagic>
+          <LearningMagic>
+
+          </LearningMagic>
+        </MagicManager>
+        <SkillManager>
+
+        </SkillManager>
+        <Properties>
+          <Property name="Type" value="Arian" />
+          <Property name="DisplayName" value="Arian" />
+        </Properties>
+      </PartyMember>
+      <PartyMember name="Ceira" level="89">
+        <Stats>
+          <Base>
+            <HP value="5960"/>
+            <MP value="937" />
+            <SP value="584"/>
+            <Str value="491"/>
+            <Mg value="411"/>
+            <Vit value="352"/>
+            <Spr value="363"/>
+            <Spd value="603"/>
+            <Ev value="33"/>
+            <MgEv value="33"/>
+            <Acr value="178"/>
+            <Lck value="121"/>
+          </Base>
+          <Current>
+            <HP value="5630"/>
+            <MP value="702"/>
+            <SP value="483"/>
+          </Current>
+          <PermanentAdders>
+            <HP value="710"/>
+            <MP value="30" />
+            <SP value="40"/>
+            <Str value="13"/>
+            <Mg value="17"/>
+            <Vit value="20"/>
+            <Spr value="19"/>
+            <Spd value="35"/>
+            <Ev value="3"/>
+            <MgEv value="2"/>
+            <Acr value="17"/>
+            <Lck value="10"/>
+          </PermanentAdders>
+        </Stats>
+        <Equipment>
+          <Weapon name="Luminous Gale" />
+          <OffHand name="Mirror Aegis"/>
+
+        </Equipment>
+        <ActiveStatusEffects>
+        </ActiveStatusEffects>
+        <AbilityManager>
+          <PermanentAbilities>
+            <Ability name="Master Keyblader" instances="1"/>
+          </PermanentAbilities>
+          <LearningAbilities>
+            <Ability name="Vortex" currentxp="18993"/>
+          </LearningAbilities>
+        </AbilityManager>
+        <MagicManager>
+          <PermanentMagic>
+
+          </PermanentMagic>
+          <LearningMagic>
+
+          </LearningMagic>
+        </MagicManager>
+        <SkillManager>
+
+        </SkillManager>
+        <Properties>
+          <Property name="Type" value="Ceira" />
+          <Property name="DisplayName" value="Ceira" />
+        </Properties>
+      </PartyMember>
+    </MainParty>
+    <ReserveParty>
+
+    </ReserveParty>
+    <GameFlags>
+      <JumpGatesOpened>101001001111011011</JumpGatesOpened>
+    </GameFlags>
+  </Save>
+  <Save  name="Save1">
+    <PlayTime hours="71" minutes="53" seconds="45" />
+    <Munny value="1835010"/>
+    <Area major="Bal Meridian" minor="Omega's Crest" tileposition="20, 20" correctposition="true">
+    </Area>
+    <Inventory>
+      <Item name="Potion" count="12" />
+      <Item name="Hi-Potion" count="61" />
+      <Item name="Thunder Gem" count="11" />
+      <Item name="Dark Matter" count="9" />
+      <KeyItem name="Omega Seal" count="1" />
+    </Inventory>
+    <MainParty>
+      <PartyMember name="Ceira" level="89">
+        <Stats>
+          <Base>
+            <HP value="5560"/>
+            <MP value="437" />
+            <SP value="584"/>
+            <Str value="491"/>
+            <Mg value="411"/>
+            <Vit value="352"/>
+            <Spr value="363"/>
+            <Spd value="603"/>
+            <Ev value="33"/>
+            <MgEv value="33"/>
+            <Acr value="178"/>
+            <Lck value="121"/>
+          </Base>
+          <PermanentBoosts>
+            <HP value="710"/>
+            <MP value="30" />
+            <SP value="40"/>
+            <Str value="13"/>
+            <Mg value="17"/>
+            <Vit value="20"/>
+            <Spr value="19"/>
+            <Spd value="35"/>
+            <Ev value="3"/>
+            <MgEv value="2"/>
+            <Acr value="17"/>
+            <Lck value="10"/>
+          </PermanentBoosts>
+        </Stats>
+        <Equipment>
+          <Weapon name="Luminous Gale" />
+          <OffHand name="Mirror Aegis"/>
+
+        </Equipment>
+        <ActiveStatusEffects>
+        </ActiveStatusEffects>
+        <AbilityManager>
+          <PermanentAbilities>
+            <Ability name="Master Keyblader" instances="1"/>
+          </PermanentAbilities>
+          <LearningAbilities>
+            <Ability name="Vortex" currentxp="18993"/>
+          </LearningAbilities>
+        </AbilityManager>
+        <MagicManager>
+          <PermanentMagic>
+
+          </PermanentMagic>
+          <LearningMagic>
+
+          </LearningMagic>
+        </MagicManager>
+        <SkillManager>
+
+        </SkillManager>
+      </PartyMember>
+    </MainParty>
+    <ReserveParty>
+
+    </ReserveParty>
+    <GameFlags>
+      <JumpGatesOpened>101001001111011011</JumpGatesOpened>
+    </GameFlags>
+  </Save>
+  <Save name="Save2">
+    <PlayTime hours="104" minutes="22" seconds="38" />
+    <Munny value="8459010"/>
+    <Area major="Eye of the Worlds" minor="Great Void" tileposition="20, 20" correctposition="true">
+    </Area>
+    <Inventory>
+      <Item name="Potion" count="12" />
+      <Item name="Hi-Potion" count="61" />
+      <Item name="Thunder Gem" count="11" />
+      <Item name="Dark Matter" count="9" />
+      <KeyItem name="Omega Seal" count="1" />
+    </Inventory>
+    <MainParty>
+      <PartyMember name="Tammerlaine" level="99">
+        <Stats>
+          <Base>
+            <HP value="5560"/>
+            <MP value="437" />
+            <SP value="584"/>
+            <Str value="491"/>
+            <Mg value="411"/>
+            <Vit value="352"/>
+            <Spr value="363"/>
+            <Spd value="603"/>
+            <Ev value="33"/>
+            <MgEv value="33"/>
+            <Acr value="178"/>
+            <Lck value="121"/>
+          </Base>
+          <PermanentBoosts>
+            <HP value="710"/>
+            <MP value="30" />
+            <SP value="40"/>
+            <Str value="13"/>
+            <Mg value="17"/>
+            <Vit value="20"/>
+            <Spr value="19"/>
+            <Spd value="35"/>
+            <Ev value="3"/>
+            <MgEv value="2"/>
+            <Acr value="17"/>
+            <Lck value="10"/>
+          </PermanentBoosts>
+        </Stats>
+        <Equipment>
+          <Weapon name="Luminous Gale" />
+          <OffHand name="Mirror Aegis"/>
+
+        </Equipment>
+        <ActiveStatusEffects>
+        </ActiveStatusEffects>
+        <AbilityManager>
+          <PermanentAbilities>
+            <Ability name="Master Keyblader" instances="1"/>
+          </PermanentAbilities>
+          <LearningAbilities>
+            <Ability name="Vortex" currentxp="18993"/>
+          </LearningAbilities>
+        </AbilityManager>
+        <MagicManager>
+          <PermanentMagic>
+
+          </PermanentMagic>
+          <LearningMagic>
+
+          </LearningMagic>
+        </MagicManager>
+        <SkillManager>
+
+        </SkillManager>
+      </PartyMember>
+    </MainParty>
+    <ReserveParty>
+
+    </ReserveParty>
+    <GameFlags>
+      <JumpGatesOpened>101001001111011011</JumpGatesOpened>
+    </GameFlags>
+  </Save>
+</Saves>

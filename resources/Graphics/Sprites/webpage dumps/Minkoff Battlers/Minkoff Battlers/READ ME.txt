@@ -1,0 +1,10 @@
+Any battlers in the "RzrBladeMontage" folder were created by me. In the "Other" folder are battlers that I have found online, these were not created by me. I own NONE of these sprites, and I did not pay for these, and I wasn't paid to create these, this project was 100% FREE. If, for some reason, you paid money for this, then get your cash back, NOW!
+
+
+If any of the battlers that I created are used in the development of a game, then please give me credit. Just a little "Thanks Rzr!" in the credits will do :).
+
+Also, if you want to use these battlers as "Enemies" then all you have to do is put them into the enemy graphic area. You DON'T need to change anything. However, if you want them to disappear, instead of lying there dead, then take the battlers into MS Paint and delete the very bottom sprites of any battler sheet you want to use. BE CAREFUL NOT TO SAVE OVER THE ORIGINAL BATTLER.
+
+The Minkoff Battler Script was **NOT** created by me, and I'm not taking any credit for it. All credit goes to Minkoff and DerVVulfMan. Thanks for making a kick ass script!
+
+If you need anything else, don't hesitate to contact me on the RPG Revolution forums!

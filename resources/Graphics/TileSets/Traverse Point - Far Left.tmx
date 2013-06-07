@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="60" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="ruins1" tilewidth="32" tileheight="32">
+  <image source="ruins1.png" width="256" height="992"/>
+ </tileset>
+ <tileset firstgid="249" name="grasslands1" tilewidth="32" tileheight="32">
+  <image source="grasslands1.png" width="256" height="864"/>
+ </tileset>
+ <tileset firstgid="465" name="grasslands2" tilewidth="32" tileheight="32">
+  <image source="grasslands2.png" width="256" height="896"/>
+ </tileset>
+ <tileset firstgid="689" name="grasslands3" tilewidth="32" tileheight="32">
+  <image source="grasslands3.png" width="256" height="1024"/>
+ </tileset>
+ <tileset firstgid="945" name="grasslands4" tilewidth="32" tileheight="32">
+  <image source="grasslands4.png" width="256" height="864"/>
+ </tileset>
+ <tileset firstgid="1161" name="grasslands5" tilewidth="32" tileheight="32">
+  <image source="grasslands5.png" width="256" height="896"/>
+ </tileset>
+ <tileset firstgid="1385" name="grasslands6" tilewidth="32" tileheight="32">
+  <image source="grasslands6.png" width="256" height="320"/>
+ </tileset>
+ <tileset firstgid="1465" name="Aoni" tilewidth="32" tileheight="32">
+  <image source="../Graphics/Sprites/Characters/Main/Aoni.png" width="1280" height="1152"/>
+ </tileset>
+ <tileset firstgid="2905" name="buildings1" tilewidth="32" tileheight="32">
+  <image source="buildings1.png" width="256" height="1186"/>
+ </tileset>
+ <tileset firstgid="3201" name="buildings2" tilewidth="32" tileheight="32">
+  <image source="buildings2.png" width="256" height="320"/>
+ </tileset>
+ <tileset firstgid="3281" name="buildings3" tilewidth="32" tileheight="32">
+  <image source="buildings3.png" width="256" height="960"/>
+ </tileset>
+ <tileset firstgid="3521" name="buildings4" tilewidth="32" tileheight="32">
+  <image source="buildings4.png" width="256" height="928"/>
+ </tileset>
+ <tileset firstgid="3753" name="Witch-Tree-large" tilewidth="32" tileheight="32">
+  <image source="Witch-Tree-large.png" width="1024" height="640"/>
+ </tileset>
+ <tileset firstgid="4393" name="Collisions" tilewidth="32" tileheight="32">
+  <image source="Collisions.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Base" width="60" height="60">
+  <properties>
+   <property name="Draw Order 0" value=""/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAADwZkvEChtAOAAA
+  </data>
+ </layer>
+ <layer name="BuildingBase" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="1"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TsQqCUBiG4TMV5CGnprbqfusOajNoa2xraGjoAiqIoBvpE5WOmboE5c/7wAceUPBFdK7ZQLtF2TbaPd+o5bkuSlu3attpe22s8yHKZrE5bJ3oPNVmrtxsSdF6+bCi2ZK61rDZkqN6Yl+/k7Hec8v3vRrs7fvyLPf2fLU3bLbWO2z4d9M91LvUfatfv+iXJG/Xa22hzd2rM6k+1nkWmwAAAAAAAAAAAAAAAAAAAADg3z0Bbehf+EA4AAA=
+  </data>
+ </layer>
+ <layer name="BuildBase2" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="2"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3USwrCMBRG4cy7B3XmG99jBZ/gQMGFdGndlbgM/2IKNTjIJAmG88GheGnhlhKN8XNQR3VSU89n/tHE1rZJsUgka5srx29c2uuz+J6/iny/cf2uQ11Hamxne/N551wt1FKt7O9rwl1Cav9PdVRX9dQjyTbhbdXOmTVnuq8GUbcJq1JndXHmzTmeqXnspQK7qbszq89x+eNeAAAAAAAAAAAAAAAAAAAAAADg7w1NAIEBQDgAAA==
+  </data>
+ </layer>
+ <layer name="BuildDetails" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="3"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3OwQmAQAxFwa1GUEFQwZb1ti2agwcrSFBm4BFy+60B8FVD9YBkS/WAZEc0RlM0F2/JskZbtFcPSXS+bo+u5+81cwAAAAAAAAAAAAAA+JEbqtbnlEA4AAA=
+  </data>
+ </layer>
+ <layer name="TreeBase" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="4"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VyQnCUBiF0WcHqdSxD8c+HPtwLMQWvIGAC9eivJwD3z6XR/hLAQAAAAD+3agpZZwmadr8+mu+6zl47111e2cVb55n2yItu73rtKl0b/u222zbpX06pGM6Vbq3dc62S7qmW7qnR8V76af23+6jYfN5n/t4r2p9f/fKvQIAAAAAAKjFC8xggLJAOAAA
+  </data>
+ </layer>
+ <layer name="TreeShadow" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="5"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VNVJEQRhF4YcTzgtxly3gLltAE3QLaIJuAYsYZAtYhm0BTdAt4JyugqSra6iJhvfmnqqvOu0b/Z6nlFJKKaWUUkoppdT/rSbiebWoQz0a0IgmNKMFrWhDOzrQiS50RxL9+/jr4c+96EM/BjCILcsQhjGCUYxhPIB7J/jzJKYwjRnMOvbOYR4LWMQSlgO4d4U/r2IN69hwbP0V/Xm3sYPdAO7d48/7OMAhjmLsPcYJTnGG8wDuveDPl7jCNW5w69h6h3s84BFPeA7g3hf+/Io3vOMDn/gyW3zPS0Eq0pCODGQiC9l+on8ffzn8ORd5yEcBClGEYpT4yXWvTK57FbWE5V6ZXPfK3huWe2Wy75W91dgMyb0y2ffKtTcakntlct0re2tY7pUpme6V6a97VYoylKMClahCdUD3KqWUUkoppZRSSimllFIqdt9MCkGUQDgAAA==
+  </data>
+ </layer>
+ <layer name="TreeCanopy" width="60" height="60" visible="0">
+  <properties>
+   <property name="Draw Order" value="6"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VR06WARSG0X+KSBdkC0gVRNgCRZDOFuy9bMHeyxZA6XULdFDaFgCRqjD0bIHEhHzJfZIzf+/oplJRFEVRdPr1ZKZSvXzjO330M8AgQwwzwihjjDPBZOZprz95UzZPM8Msc8yzwCJL/OAny6ywyhrrCbx3w+ZNtvjFNr/ZYZc99jngkD/85YjjBN6blpVKnSGds2SQSRbZ5JBLHufIp4DzFGad9vqTV2TzBYopoZQyyqngIpVUcYlqLlNDbQLvrbO5ngYauUITzVylhVbaaKeDTrroTuC912y+zg1ucovb3OEu97jPAx7yiMc84WkC731m83Ne8JJXvOYNb3nHez7wkU985gtfE3hvj829fOM7ffQzwCBDDDPCKGOMM8FkAu+dsnmaGWaZY54FFlniBz9ZZoVV1lhP4L0bNm+yxS+2+c0Ou+yxzwGH/OEvRxwn8N60bP+XdM6SQSZZZJNDLnmcI58CzlOYfdrrT16RzRcopoRSyiingotUUsUlqrlMDbUJvLfO5noaaOQKTTRzlRZaaaOdDjrpojuB90ZRFEVRFEVRFEVRFEVRFEVRFEVRFEVRFEVRFP2v/gEJRpo0QDgAAA==
+  </data>
+ </layer>
+ <layer name="TreeCanopy2" width="60" height="60" visible="0">
+  <properties>
+   <property name="Draw Order" value="7"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VRVaXARTG4f8UpaW2AFISwhYIUekt2B1bsDu2gKh0bAFUQHoLdMfQZ+6IEec75/7OeebvHd1UKoqiKIqiKIqiKIr+ryczlfpGL9/5wU/66GeAQYYYZoRRxhjPPO31J2/C5kl+8Zs/TDHNDH+ZZY55FlhkieUE3rti8yprrLPBJltss8Mue+xzwCFHHCfw3rSsVOoMZ0kng0yyyCaHXM6RRz4FFFKUddrrT16xzSWcp5QyyqmgkgtUUU0NtVykjvoE3ttgcyNNNHOJFi5zhau00kY7HXTSRXcC771m83VucJNb3OYOd7nHfR7wkEc85glPE3jvM5uf84KXvOI1b3jLO97zgY984jNf+JrAe3ts/kYv3/nBT/roZ4BBhhhmhFHGGE/gvRM2T/KL3/xhimlm+Mssc8yzwCJLLCfw3hWbV1ljnQ022WKbHXbZY58DDjniOIH3pmX7v5wlnQwyySKbHHI5Rx75FFBIUfZprz95xTaXcJ5SyiingkouUEU1NdRykTrqE3hvg82NNNHMJVq4zBWu0kob7XTQSRfdCbw3iqIoiqIoiqIoiqIoiqIoiqIoiqIoqf0DOBEUNEA4AAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="60" height="60">
+  <properties>
+   <property name="collision layer" value="true"/>
+   <property name="enforce on" value="0, 1, 2, 3, 4, 5, 6, 7"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3XsQ0AIAhFQVZwDPdf0BHQ8stdYkX1GglVTLVX/37S9ejNpvdtnkbv2zzNtH0EAADcmXYX6AXINO0/0wsAAAAAAAB5DvQjIiNAOAAA
+  </data>
+ </layer>
+</map>

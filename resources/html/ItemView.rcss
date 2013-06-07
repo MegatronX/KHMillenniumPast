@@ -1,0 +1,12 @@
+
+.ItemPanel
+{
+	background-decorator: image;
+	background-image-src: pausemenutest/CharacterOutline.png;
+	width: 164px;
+	height: 435px;
+	float: left;
+	left: 205px;
+	top: 64px;
+	position: absolute;
+}

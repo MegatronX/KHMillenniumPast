@@ -1,0 +1,87 @@
+<HTML>
+<HEAD><TITLE>改造コードエンジンを選ぶ</TITLE></HEAD>
+<BODY>
+
+<h2>改造コードエンジンを選ぶ</h2>
+初回起動時または[ENGINE CHANGE]メニューをクリックすることで、改造コードエンジンを選択できます。<br>
+各改造コードエンジンの名称および仕様は以下の通りです。<br><br>
+
+<font size=5>default.dll</font> (emuhaste汎用形式) 作者：Imaha486<br>
+用途：改造ツールとしてemuhasteだけを使いたい場合に適しています。
+<table border=1 width=100%>
+<tr><td>コード書式</td><td>効果・用法</td></tr>
+<tr><td>0aaaaaaa 000000nn</td><td>アドレスaaaaaaaに1バイトnnを書き込む</td></tr>
+<tr><td>1aaaaaaa 0000nnnn</td><td>アドレスaaaaaaaに2バイトnnnnを書き込む</td></tr>
+<tr><td>2aaaaaaa nnnnnnnn</td><td>アドレスaaaaaaaに4バイトnnnnnnnnを書き込む</td></tr>
+<tr><td>Daaaaaaa nnnnnnnn</td><td>アドレスaaaaaaaが4バイトnnnnnnnnのときだけ次の行のコードを実行</td></tr>
+<tr><td>Baaaaaaa 00000000</td><td>アドレスaaaaaaaの4バイトをインデックスとして0,1,2コードのアドレスをずらす ※</td></tr>
+<tr><td>D2000000 00000000</td><td>Bコードのインデックスの値を0にリセットする</td></tr>
+<tr><td>4aaaaaaa nnnnnnnn<br>w000zzzz uuuuuuuu</td><td>アドレスaaaaaaaにパラメータyyyyyyyyをuuuuuuuuバイトごとにzzzz回、<br>
+w=0のときは1バイト、1のときは2バイト、2のときは4バイト書き込む。<br>(Dipstarシリアルコードもどき互換)</td></tr>
+</table>
+<br><br>
+
+<font size=5>raw_write.dll</font> (emuhaste汎用形式2) 作者：Imaha486<br>
+用途：emuhasteに対応してないエミュレータのコンフィグファイルを自力で作る最中のテストなどに。
+<table border=1 width=100%>
+<tr><td>コード書式</td><td>効果・用法</td></tr>
+<tr><td>aaaaaaaa 000000nn</td><td>アドレスaaaaaaaaに1バイトnnを書き込む(DLL拡張チェックOFF時)</td></tr>
+<tr><td>aaaaaaaa nnnnnnnn</td><td>アドレスaaaaaaaaに4バイトnnnnnnnnを書き込む(DLL拡張チェックON時)</td></tr>
+</td></tr>
+</table>
+<br><br>
+
+<font size=5>ards.dll</font> (DSアクションリプレイ) 作者：Imaha486<br>
+用途：そのままDS実機にも使いたい人はコチラ。
+<table border=1 width=100%>
+<tr><td>コード書式</td><td>効果・用法</td></tr>
+<tr><td>2aaaaaaa 000000nn</td><td>アドレスaaaaaaaに1バイトnnを書き込む</td></tr>
+<tr><td>1aaaaaaa 0000nnnn</td><td>アドレスaaaaaaaに2バイトnnnnを書き込む</td></tr>
+<tr><td>0aaaaaaa nnnnnnnn</td><td>アドレスaaaaaaaに4バイトnnnnnnnnを書き込む</td></tr>
+<tr><td>D5000000 000000nn</td><td>連続書き込みコード(詳しい書式はソースコード参照）</td></tr>
+</table>
+<br><br>
+
+<font size=5>ps2par.dll</font> (PS2プロアクションリプレイ) 作者：Imaha486<br>
+用途：そのままPS2実機にも使いたい人はコチラ。<br>
+<table border=1 width=100%>
+<tr><td>コード書式</td><td>効果・用法</td></tr>
+<tr><td>00xxxxxx 000000yy</td><td>アドレスxxxxxxへ1バイトyyを書き込み</td></tr>
+<tr><td>10xxxxxx 0000yyyy</td><td>アドレスxxxxxxへ2バイトyyyyを書き込み</td></tr>
+<tr><td>20xxxxxx yyyyyyyy</td><td>アドレスxxxxxxへ4バイトyyyyyyyyを書き込み</td></tr>
+<tr><td>A0xxxxxx yyyyyyyy</td><td>アドレスxxxxxxへ4バイトyyyyyyyyを書き込み(本来は[起動時に1回だけ書き込み])</td></tr>
+<tr><td>301000yy xxxxxxxx</td><td>アドレスxxxxxxxxの1バイトにyyを足す(1Byteインクリメント)</td></tr>
+<tr><td>302000yy xxxxxxxx</td><td>アドレスxxxxxxxxの1バイトからyyを引く(1Byteデクリメント)</td></tr>
+<tr><td>Dxxxxxxx 0000yyyy</td><td>アドレスxxxxxxxの2バイトがyyyyのときに次の行のコードを実行(Equal判定)</td></tr>
+<tr><td>Dxxxxxxx 0010yyyy</td><td>アドレスxxxxxxxの2バイトがyyyyでなければ次の行のコードを実行(Not Equal判定)</td></tr>
+</table>※暗号化コードは利用できません。また、上記以外のコードはサポートしてません。<br><br>
+
+
+<font size=5>n64par.dll</font> (N64プロアクションリプレイ) 作者：ねこかぶさん<br>
+用途：emuhaste用N64 Action Replay互換チートエンジン by ねこかぶ<br>
+<table border=1 width=100%>
+<tr><td width=50%>
+＜サポートするコードタイプ＞<br>
+80xxxxxx 00yy<br>
+81xxxxxx yyzz<br>
+D0xxxxxx 00yy<br>
+D1xxxxxx yyzz<br>
+D2xxxxxx 00yy<br>
+D3xxxxxx yyzz<br>
+5000xxyy zzzz</td>
+<td>
+＜未サポート＞<br>
+88xxxxxx 00yy<br>
+89xxxxxx yyzz<br>
+F0xxxxxx 00yy<br>
+F1xxxxxx yyzz<br>
+DExxxxxx 0000<br>
+EE000000 0000<br>
+FFxxxxxx 0000<br>
+</td></tr>
+</table><br><br>
+
+
+
+
+</BODY></HTML>

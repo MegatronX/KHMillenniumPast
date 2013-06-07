@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="60" height="60" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Battle Background" value="Grass Sunset"/>
+  <property name="Music" value="Traverse Point, Traverse Point"/>
+  <property name="Script" value="Traverse Point - Far Left.py"/>
+ </properties>
+ <tileset firstgid="1" name="ruins1" tilewidth="32" tileheight="32">
+  <image source="ruins1.png" width="256" height="992"/>
+ </tileset>
+ <tileset firstgid="249" name="grasslands1" tilewidth="32" tileheight="32">
+  <image source="grasslands1.png" width="256" height="864"/>
+ </tileset>
+ <tileset firstgid="465" name="grasslands2" tilewidth="32" tileheight="32">
+  <image source="grasslands2.png" width="256" height="896"/>
+ </tileset>
+ <tileset firstgid="689" name="grasslands3" tilewidth="32" tileheight="32">
+  <image source="grasslands3.png" width="256" height="1024"/>
+ </tileset>
+ <tileset firstgid="945" name="grasslands4" tilewidth="32" tileheight="32">
+  <image source="grasslands4.png" width="256" height="864"/>
+ </tileset>
+ <tileset firstgid="1161" name="grasslands5" tilewidth="32" tileheight="32">
+  <image source="grasslands5.png" width="256" height="896"/>
+ </tileset>
+ <tileset firstgid="1385" name="grasslands6" tilewidth="32" tileheight="32">
+  <image source="grasslands6.png" width="256" height="320"/>
+ </tileset>
+ <tileset firstgid="1465" name="Aoni" tilewidth="32" tileheight="32">
+  <image source="../Graphics/Sprites/Characters/Main/Aoni.png" width="1280" height="1152"/>
+ </tileset>
+ <tileset firstgid="2905" name="buildings1" tilewidth="32" tileheight="32">
+  <image source="buildings1.png" width="256" height="1186"/>
+ </tileset>
+ <tileset firstgid="3201" name="buildings2" tilewidth="32" tileheight="32">
+  <image source="buildings2.png" width="256" height="320"/>
+ </tileset>
+ <tileset firstgid="3281" name="buildings3" tilewidth="32" tileheight="32">
+  <image source="buildings3.png" width="256" height="960"/>
+ </tileset>
+ <tileset firstgid="3521" name="buildings4" tilewidth="32" tileheight="32">
+  <image source="buildings4.png" width="256" height="928"/>
+ </tileset>
+ <tileset firstgid="3753" name="Witch-Tree-large" tilewidth="32" tileheight="32">
+  <image source="Witch-Tree-large.png" width="1024" height="640"/>
+ </tileset>
+ <tileset firstgid="4393" name="Collisions" tilewidth="32" tileheight="32">
+  <image source="Collisions.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="4395" name="Inq XP MT - Water3" tilewidth="32" tileheight="32">
+  <image source="Inq XP MT - Water3.png" width="384" height="128"/>
+ </tileset>
+ <tileset firstgid="4443" name="pumpkins_soruve" tilewidth="32" tileheight="32">
+  <image source="pumpkins_soruve.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="4447" name="28_22_08_08_4_58_49" tilewidth="32" tileheight="32">
+  <image source="28_22_08_08_4_58_49.png" width="128" height="192"/>
+ </tileset>
+ <layer name="Base" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="0"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2awXLbIBCGEZJ899O0PSc5p32vTjvpoefekld0xrJjpuzk9wYhwIDWDod/JDOA9uNfoUzYV6XUa1NTk1O/9Me2v462EP1JHFdSP7VfOdarli8xenKMX1qLUNXyJ5Vz053f4++Qdcb+udaMc1FcqJh1M/377vxqNJ7UnaRn5uRt9M7ydegi4/H5u7Hx9ImsRr3lcumo3u/Hzs05x1+Ct7e8FHfsHBvwFRmNDur9XjPmJ+3m0zCPhmsO3t/6fywpnMR6sFwamM3vPROxEwt/z811hDWhvkdYh0u9NbwYE++zA2H7Ubk9xN+7BWb+TmuWG1zThcwuXs68ixByzmmvznNbWy9HYD0w4Xgam4t3Ls4Ufh8zz2301Td2suNT3j/izcGQwszzlXvpG9t38d+RNXlD9M8TG+2xPmb6ZtA+6uJ15axvzdZcD5Pbg2Wh/MbvIuXQZGXGhPobki9rMBueveUhzknN7wPIizEjQ+y+sJbf5Kevj8/fudglsKVqKZ9jvZO+FpL358Zbj1dqfpbklf5u5uKV+O0p7S+yrx1zTd5rX4+2P6+rl8LxSOP9bP423sbbeK+T97lCLBJ4a3BK4q2pkryl/3aQxitRIbwSfWr+yuf9slXqK9O3bZ65Q/7fXlt3J7Z7poeMvC7mW+Xt7ZmyJN7HE9t3ph8ZeOnssO8+enyL+xWdlw1QB1KD13d+W1J4Nkzno1L9Tf3Wk6d0Ljqw2h/yWBpviHfTzJU4B8+5/yW8tfMVmZCtB8almg6p/hrPDnDPa+JctWoh9SumhoPXOeFzeG1WauwTa+NzIZ+5Diz2S+r/OK+rD9WC8fcj9ZkDzGVYqZ6E7ylHdZ63Kc9b8tcXIzFTLUjqc5BZw9zYp7PtMc8ZI/ou1XWTzxRHSp2wi5l8c/mHrLn9Da1jT62JdilXHXNJ3muUK89vmdfn72fSGyQQbr5AOAAA
+  </data>
+ </layer>
+ <layer name="BaseDetails" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="1"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YOw7CMBCE4U1yDs4DHRyG0ABpAvTQhSPwSo7IlFSRImFbzv6fNLV3tJIl2yy+bWVWK7sqweGR7dXxoByVxkHfVh1Pylm5/PR9lGZP5VWmmy2Etzp+lF4ZHOwXAAAA+Ie5vg8AzNO1MLsVqaeIp1PXu7JUVo56r9V146gvgHG534FT58/9Dsx9fgAAAADhef3jQ14W7AwAAAAAENAXgk/LlUA4AAA=
+  </data>
+ </layer>
+ <layer name="BuildingBase" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="2"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3TsQqCUBiG4TMV5CGnprbqfusOajNoa2xraGjoAiqIoBvpE5WOmboE5c/7wAceUPBFdK7ZQLtF2TbaPd+o5bkuSlu3attpe22s8yHKZrE5bJ3oPNVmrtxsSdF6+bCi2ZK61rDZkqN6Yl+/k7Hec8v3vRrs7fvyLPf2fLU3bLbWO2z4d9M91LvUfatfv+iXJG/Xa22hzd2rM6k+1nkWmwAAAAAAAAAAAAAAAAAAAADg3z0Bbehf+EA4AAA=
+  </data>
+ </layer>
+ <layer name="BuildBase2" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="3"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3USwrCMBSF4c67B3XmG99jBZ/gQMGFdDUdOnTsrsRleIop1CAakbS0/B8cQm9SuGlIg8DNSlkrG6Xv+E4Z9UyyZkU0kpOpia2KZxyZ8Ra+1u9hdc842WtbY0fpmtoyeO65qkbKWJmY532BvfiU/U/VlLrSUE6FdOPfXFlYtfRON5VWrt38L/4wd1W2ys6qp/d4oAw99fWri+O685f5g3K0ask9jt6sLQPX7wIAAAAAAAAAAAAAAAAAAAAAgG8PZIBXNkA4AAA=
+  </data>
+ </layer>
+ <layer name="BuildDetails" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="4"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3YOQoCQRQG4Z7ImwgqCCp4Zc3mQC6JS+KSuCQuWIGBiIFRN/rqg2IYJnl/OilJkn5Vs/QBmXVLH5DZkFrUps6H740q7z059KhPg9KHZDR6edY0fr7XZc6RJEmSJEmSpK9MqpSmNKP5H/6vfrdg45JWtA6wd8PGLe1oH2DvgY1HOtE5wN4LG690o3uAvZIkSZIkSZIU3QOTvtwlQDgAAA==
+  </data>
+ </layer>
+ <layer name="TreeBase" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="5"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VyQnCUBiF0WcHqdSxD8c+HPtwLMQWvIGAC9eivJwD3z6XR/hLAQAAAAD+3agpZZwmadr8+mu+6zl47111e2cVb55n2yItu73rtKl0b/u222zbpX06pGM6Vbq3dc62S7qmW7qnR8V76af23+6jYfN5n/t4r2p9f/fKvQIAAAAAAKjFC8xggLJAOAAA
+  </data>
+ </layer>
+ <layer name="TreeShadow" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="6"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VNVJEQRhF4YcTzgtxly3gLltAE3QLaIJuAYsYZAtYhm0BTdAt4JyugqSra6iJhvfmnqqvOu0b/Z6nlFJKKaWUUkoppdT/rSbiebWoQz0a0IgmNKMFrWhDOzrQiS50RxL9+/jr4c+96EM/BjCILcsQhjGCUYxhPIB7J/jzJKYwjRnMOvbOYR4LWMQSlgO4d4U/r2IN69hwbP0V/Xm3sYPdAO7d48/7OMAhjmLsPcYJTnGG8wDuveDPl7jCNW5w69h6h3s84BFPeA7g3hf+/Io3vOMDn/gyW3zPS0Eq0pCODGQiC9l+on8ffzn8ORd5yEcBClGEYpT4yXWvTK57FbWE5V6ZXPfK3huWe2Wy75W91dgMyb0y2ffKtTcakntlct0re2tY7pUpme6V6a97VYoylKMClahCdUD3KqWUUkoppZRSSimllFIqdt9MCkGUQDgAAA==
+  </data>
+ </layer>
+ <layer name="TreeCanopy" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="7"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VR06WARSG0X+KSBdkC0gVRNgCRZDOFuy9bMHeyxZA6XULdFDaFgCRqjD0bIHEhHzJfZIzf+/oplJRFEVRdPr1ZKZSvXzjO330M8AgQwwzwihjjDPBZOZprz95UzZPM8Msc8yzwCJL/OAny6ywyhrrCbx3w+ZNtvjFNr/ZYZc99jngkD/85YjjBN6blpVKnSGds2SQSRbZ5JBLHufIp4DzFGad9vqTV2TzBYopoZQyyqngIpVUcYlqLlNDbQLvrbO5ngYauUITzVylhVbaaKeDTrroTuC912y+zg1ucovb3OEu97jPAx7yiMc84WkC731m83Ne8JJXvOYNb3nHez7wkU985gtfE3hvj829fOM7ffQzwCBDDDPCKGOMM8FkAu+dsnmaGWaZY54FFlniBz9ZZoVV1lhP4L0bNm+yxS+2+c0Ou+yxzwGH/OEvRxwn8N60bP+XdM6SQSZZZJNDLnmcI58CzlOYfdrrT16RzRcopoRSyiingotUUsUlqrlMDbUJvLfO5noaaOQKTTRzlRZaaaOdDjrpojuB90ZRFEVRFEVRFEVRFEVRFEVRFEVRFEVRFEVRFP2v/gEJRpo0QDgAAA==
+  </data>
+ </layer>
+ <layer name="TreeCanopy2" width="60" height="60">
+  <properties>
+   <property name="Draw Order" value="8"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VR06VYRiG4eMQkUNHtkBVkLYFEES6W7D3sgV7L1tApTe3ICgqRdgCRZCmDr0Sw8g4YIR/8t7JlW/6vKMvlYqiKIqiKIqiKIqiv+tNp1KvecNb+uhngEGGGGaEUcYYZ4J36f1ev/fe2zzJFB/4yDSf+MwXZphljnm+ssBiAu9dsnmZFVb5xhrrfGeDTbbYZocf/ORXAu/NyE6lDpLJIbJIk00OueSRTwGFFHGY4uz9Xr/3SmwupYxyKqjkCEepoppj1FBLHfU0JPDeRpubOE4zLZyglZO00U4HnXTRTQ+nEnjvaZvPcJZznOcCF7nEZa5wlWtc5wY3uZWge4sP/Hlv23yHu9zjPg94yCMe84SnPOM5L3jJqwTdu1uvza95w1v66GeAQYYYZoRRxhhngncJvPe9zZNM8YGPTPOJz3xhhlnmmOcrCywm8N4lm5dZYZVvrLHOdzbYZIttdvjBT34l8N6MHP8vmRwiizTZ5JBLHvkUUEgRhynO2e/1e6/E5lLKKKeCSo5wlCqqOUYNtdRRT0MC7220uYnjNNPCCVo5SRvtdNBJF930cCqB9/6r3f8qiqIoiqIoiqIoiqIoiqIoiqIoiqLof+03fjLYT0A4AAA=
+  </data>
+ </layer>
+ <layer name="Collisions" width="60" height="60">
+  <properties>
+   <property name="collision layer" value="true"/>
+   <property name="enforce on" value="0, 1, 2, 3, 4, 5, 6, 7"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2ZQQqAMAwE/YLP8P8fFK+iNFjdmM0M9KKU7TS1Fl0W6Mq2jpsTI5+Ovk/r/8f1MVvfyHyon5mZLEV93pqz6JobjaUS+F7fd3kfVRzzDPh6g683mb4Ze3y3+h7g6w2+2mx1/l2e4pyccRbP9D1nKfiDrxJ8vcHXG3zj/SruZ/jG+3XyrQq+3uDrDb7e4OsNvtps9T/0bN/Ita8zVXT07bSeM8DXG3y9wdcbfH2p9u14Fny96erbqe0i01RmQDgAAA==
+  </data>
+ </layer>
+ <objectgroup name="Chests" width="60" height="60">
+  <object name="Chest1" type="Chest" x="384" y="896" width="32" height="32">
+   <properties>
+    <property name="contents" value="Items {Potion: 1}"/>
+    <property name="layer" value="2"/>
+    <property name="locked" value="false"/>
+    <property name="style" value="standard chest"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Exits" width="60" height="60">
+  <object type="Exit" x="1888" y="512" width="32" height="1216">
+   <properties>
+    <property name="Active Layer" value="5"/>
+    <property name="Target Map" value="Traverse Point - Left.tmx"/>
+    <property name="Target Position" value="0, Carry, 3"/>
+   </properties>
+  </object>
+  <object type="Exit" x="1856" y="224" width="32" height="32">
+   <properties>
+    <property name="Active Layer" value="5"/>
+    <property name="Target Map" value="Traverse Point - Left"/>
+    <property name="Target Position" value="1, 1, 1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="NPC" width="60" height="60">
+  <object name="NPCTest" type="NPC" x="1184" y="544" width="32" height="32"/>
+  <object x="1200" y="579">
+   <polyline points="0,0 1,270 -2,-8"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Layer Transitions" width="60" height="60">
+  <object type="Layer Transition" x="1152" y="928" width="32" height="32">
+   <properties>
+    <property name="Transitions" value="5 &gt; 6, 6 &gt; 5"/>
+   </properties>
+  </object>
+  <object type="Layer Transition" x="448" y="1216" width="32" height="32">
+   <properties>
+    <property name="Transitions" value="5 &gt; 6, 6 &gt; 5"/>
+   </properties>
+  </object>
+  <object type="Layer Transition" x="736" y="1216" width="32" height="32">
+   <properties>
+    <property name="Transitions" value="5 &gt; 6, 6 &gt; 5"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

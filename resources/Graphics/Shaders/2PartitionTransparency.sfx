@@ -1,0 +1,20 @@
+uniform sampler2D texture;
+uniform float x_start;
+uniform float x_end;
+void main()
+{
+    vec4 pixel = texture2D(texture, gl_TexCoord[0].xy) * gl_Color;
+    float x_pos = gl_TexCoord[0].x;
+    gl_FragColor = texture2D(texture, gl_TexCoord[0].st);
+    if (x_pos > x_start && x_pos < x_end && pixel.a > 0)
+    {
+	float range = x_end - x_start;
+	float alpha = pixel.a - (x_pos - x_start) / range;
+	gl_FragColor.a = alpha;
+    }
+    else if (x_pos >= x_end)
+    {
+	gl_FragColor.a = 0;
+    }
+    //gl_FragColor = texture2D(texture, gl_TexCoord[0].xy) * gl_Color;
+} 

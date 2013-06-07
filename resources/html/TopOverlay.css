@@ -1,0 +1,37 @@
+body
+{
+	font-family: Chaney;
+}
+
+body.window
+{
+	width: 800px;
+	height: 600px;
+}
+
+div.BottomMessageDiv
+{
+
+	margin-top: 100px;
+	width: 800px;
+	height: 200px;
+	/*background-decorator: image;
+	background-image-src: testimages/testitemback.png;*/
+}
+
+div.EmotionDiv
+{
+	width: 150px;
+}
+
+div.BottomMessage
+{
+    width: 640px;
+	vertical-align: top;
+	font-size: 25px;
+}
+
+img.EmotionImage
+{
+	width: 140px;
+}

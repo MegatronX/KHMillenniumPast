@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/sparkengine/!svn/ver/271/spark2/include/Extensions/Zones
+END
+SPK_Plane.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sparkengine/!svn/ver/271/spark2/include/Extensions/Zones/SPK_Plane.h
+END
+SPK_Ring.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/sparkengine/!svn/ver/271/spark2/include/Extensions/Zones/SPK_Ring.h
+END
+SPK_Sphere.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/sparkengine/!svn/ver/271/spark2/include/Extensions/Zones/SPK_Sphere.h
+END
+SPK_Point.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/sparkengine/!svn/ver/271/spark2/include/Extensions/Zones/SPK_Point.h
+END

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="32" height="38" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="Event" value="test.js"/>
+  <property name="Starting Position" value="9,6"/>
+ </properties>
+ <tileset name="Void Tileset 2x - 4" firstgid="1" tilewidth="32" tileheight="32">
+  <image source="..\..\Resources\Graphics\Tilesets\Void Tileset 2x - 4.png"/>
+ </tileset>
+ <tileset name="Untitled" firstgid="121" tilewidth="32" tileheight="32" spacing="32">
+  <image source="..\..\Resources\Graphics\Tilesets\Collisions.png"/>
+  <tile id="0">
+   <properties>
+    <property name="Collision Layer" value="True"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 2" width="32" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3OMQqAMBBE0ai1Wqs3inVOoAfI/SvHQrCwMLBhFf6DafdvCMB3NVqrdU79Xhu00ak/abO2OPUB4MlufG8tbGfjfiz44WxvFfrXD2/+sO6n2w/R+PbffkhObQAAUN8BA9MHSAATAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="32" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO1XPXPCMAzVT2Bj6VrajSvtCmVOuvKxQpOxBf7/UuvQu+hcS7Yp2fru3vmonbxnRbJVon/cA4+Bs8Cnyrl74SVwEfhaOecBvkHP/1I03ivnPO1FgpaHNnAqY4zGmbOAmMW0YrgRjV3lnAXELKYVQ8TLis+0QpvRiYdD4CTwS7R7Y30ux2r1z+KBn3uQkbUvxnr2uiI7PjX6HMujeJiL/ly0PykdY86thuwcK9XHd/wWD53o96J9ovR33oh+KsdyuRGvA9kDx+CZrns/kV+LW+Ode1n/kfGQqjmOwRtd9x7P8ftmGe6prH4tfY7BOrF3JtfEKsNDhT4lNDxyrnN+9M6IupiQXx9EQ72XajM4Py7O2NGQw/DkocSDjiHnx6eMbeL3mYYchqccEDPLh85jrrudMx5pyGF4KoUXi1wtARvhWnkq7UPYq3UP3lrPNX2IPjvAVYWHZWJ9rgY8bX6upd/fxfKAfNd3Y0kNxNq4e3HHNIUecB9pfe+O8rQbRfjIeUC+aX38rVa7lee28o6UB6yPUdL/QpscbY3Yw0StT73X8gboMyenHXvQPYL+trG29907tRes9bS1B90jYH1K28t79C+oj75AG9A9gqddspdczGOwlu4R0HPUamsPNf8npM7YW7VvAfJWU2vnzpu/wup7sG99XowBfR7qMXVejAGr70gB/nL3z1hgb/w9xszHWvwAqq1WOgATAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="32" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAGNgGAXUAiw4xBmBmAmImenoFmTAC8R8QMw/QPZLArEUEEuToXc07IgLu9FwIj+NjQLagtG0SVzaNKSDW0bBKBgFQw9oIbF1B8B+MyA2B2ILILakkR346gknIHYGYhcgdqWR/fjqCT8g9gfiABrZDQLDsQ1jBMTGA2w/CKsPkP22o24YNG6Ata8GKj2CwsAOiO0HyP5RgAkA54+5BwATAAA=
+  </data>
+ </layer>
+ <layer name="Tile Layer 4" width="32" height="38">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3OMQ5AQABE0UWBAgUKFCgcyiW4f2ck2ykVE/Jf8uuZEAAAAPAXmzpitzMGvJGrQpWm/VZ1qjftz2pRq9pNH4CvSVSqMtN+pWrVmPYHNarJtI+nC1aVlIcAEwAA
+  </data>
+ </layer>
+ <objectgroup name="Object Group 4" width="0" height="0" x="-1"/>
+ <layer name="Collision Layer 1" width="32" height="38" x="-1">
+  <properties>
+   <property name="Collision Layer" value="True"/>
+   <property name="Test" value="True"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAN2VSQ7EIAwE+fb8fq4R8lLtJYdYQgqyoRzcmHO+YT9jEN8k35tHvmxPb2zzo3OyfBt8xf/Myau/5XuDfy4fsQqfzFXtUd8k39N7dscn+B4vmpPciP68c810Ff2TsibKK/Mrvcrbq8qvmMLfsEn+9vkTNsnNmit7deIr97+bA+lh2bpODuobQvelsR2+WgdrTZVPNE1y8OrYuQNEG1kP6LJprPXtrZ18x55MqsuqFrP6UlZVi3cMYVNWtb9mbEW7hKvqUu0rGT/zq1rf5k/m0KnlFD8ad9wGvxo7qUPKV+/X1+0Pfn2cLQATAAA=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,31 @@
+- Method for multi language - 
+
+This program supported the multi language mode. (Ver2.22)
+We wish to express our gratitude to Chinese hacker and the American hacker. ;)
+I did not make it if there was no assistance of them. 
+
+*Use
+1."multilanguage - (COUNTRY) - language.ini" is copied
+  onto the same folder as emuhaste.exe.
+2.Execute the emuhaste.exe
+3.Let's enjoy!
+
+However, I do not understand Chinese. 
+"language.ini" that I can make is only an English version. 
+Please make language.ini from you.
+
+*Make
+1.Open the "language.ini" to text editor.
+2.Please correct the system message.
+3.Please make [COUNTRY = "(ENG)"] your name of a country by three characters. 
+ (example : Japan=(JPN) China=(CHN) Korea=(KOR) France=(FRA) etc..)
+4.Up-load it. :)
+
+The contact to me is unnecessary. 
+Please distribute it again freely. 
+
+- For a hacker all over the world. 
+
+*Author
+English  (ENG) .. Imaha486
+Japanese (JPN) .. Imaha486

@@ -1,0 +1,22 @@
+uniform sampler2D texture;
+uniform vec2 center;
+uniform float time;
+uniform vec4 color;
+uniform vec4 color2;
+
+void main()
+{
+	
+	vec2 uv = gl_TexCoord[0].xy;
+	vec4 pixel = texture2D(texture, gl_TexCoord[0].xy) * gl_Color;
+	float gray = (pixel.r * 0.7 + pixel.g * 0.7 + pixel.b * 0.7) * (1 + 0.6 * (0.5 + sin((time + uv.y * 1/12.5) * 25) * 0.5));
+	//float gray2 = (pixel.r * 0.63 + pixel.g * 0.63 + pixel.b * 0.63) * (1 + 0.6 * (0.5 + sin((time + uv.y * 1/12.5) * 25) * 0.5));
+	float ratio = (uv.y ) / 1.0;
+	if (ratio < 0)
+		ratio = 0;
+	if (ratio > 1)
+		ratio = 1;
+	gl_FragColor = (vec4(gray * color) /*+ vec4(gray * color2 * (1.0 - ratio))*/) * 0.65 + pixel * 0.35;
+	gl_FragColor.a = pixel.a; 
+  //gl_FragColor = vec4(1.0 - gl_FragColor.r, 1.0 - gl_FragColor.g, 1.0 - gl_FragColor.b, 1.0);
+}

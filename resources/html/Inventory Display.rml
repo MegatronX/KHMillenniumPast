@@ -1,0 +1,32 @@
+
+<rml>
+  <settings>
+    <add key="ItemIconDirectory" value="..\Graphics\Sprites\Main\Icons\Items\" />
+  </settings>
+<head>
+  <link type="text/template" href="primarywindow.rml" />
+  <link type="text/rcss" href="Inventory Display.rcss" />
+</head>
+<body template="window">
+  <div id="LeftPanels" class="LeftPanels">
+    <div id="AuxDisplay" class="AuxDisplay">
+      <div id="ActiveItemInfo" class="ActiveItemInfo">
+        <div id="ActiveItemInfoName" class="ActiveItemInfoName"></div>
+        <div id="ActiveItemInfoTypeHeader" class="ActiveItemInfoTypeHeader">Type:</div>
+        <div id="ActiveItemInfoType" class="ActiveItemInfoType"></div>
+        <div id="ActiveItemInfoTypeValue" class="ActiveItemInfoTypeValue">Value:</div>
+        <div id="ActiveItemInfoValue" class="ActiveItemInfoValue"></div>
+        <div id="LargeItemDisplay" class="LargeItemDisplay"></div>
+      </div>
+    </div>
+  </div>
+  <div id="RightPanels" class="RightPanels">
+    <div id="ItemPanels" class="ItemPanels">
+    </div>
+  </div>
+  <div id="ItemDescription" class="ItemDescription">
+    <div id="ItemNameFooter" class="ItemNameFooter"></div>
+    <div id="ItemDescriptionFooter" class="ItemDescriptionFooter"></div>
+  </div>
+</body>
+</rml>

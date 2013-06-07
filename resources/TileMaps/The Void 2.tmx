@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="30" height="44" tilewidth="32" tileheight="32">
+ <tileset name="The Void" firstgid="1" tilewidth="32" tileheight="32">
+  <image source="../Graphics/Tilesets/Void Tileset 2x - 4.png"/>
+ </tileset>
+ <tileset name="Collision" firstgid="121" tilewidth="32" tileheight="32">
+  <image source="Collisions.png"/>
+ </tileset>
+ <layer name="Layer 0" width="30" height="44" y="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO2XPU/DQAyG/RO6sTCWjw3RdoV2JWFtysrHSoD/v2ArtmIsX5q7OF3oK726KFLvySWvez6ATlfoa/QL+on9iX50HKl79EqZmFv0B/ob/cM+zMxdoytm7vk6mkl6QL+iF9CvVbOaGZjAjAv0JY8135tbwr3lMee9SiZvMpn0O1rfHXrDY5Uxj2Rjncml37XM2vHYZsxD2aD62hZwV8zT41huxa4LuS2PX9BneoxK60xqyNZvzvOX1FnlsJ+hy+jYnC4LuPKeJB/a9CxjvnMJV7Ot6dvT2o+tuZQr7Br6/6oa+swdY0/hClvWeoC/+8UQeyqX1ECfTy9vHjuCq5XKumVHcPfm2rKpF7EZj16vZadqaw6uZkttnYqr2afmCjuH+wbd3voewB7LpX6iZS7tcbn9iJ2LemxbSx7X61FLRZlesPX+bLnyfFFcyhX1nNT/6f15aZw6B0zlbmC4L9Bc3Y+XivJJa91BOqP6HWtmKVfyuQE/o/ps5zFLzzn2m9l+SOcoipnieo5kkrz+y3MkE8Dvv6xriGVqrp47dS/yrGx7To8/1/k81e/OyRQ1Az7rrP+oX9v3uqigFAAA
+  </data>
+ </layer>
+ <layer name="Collision Layer 0" width="30" height="44" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO2U3QqFMAyDfW3f3qsDMpo0zVo5FwuIsp98be12XUdf6f5D7jp3m0+FG407tWH+KC/kUckz466eLHaV73BRHaJ35MW4UY5sj8tlvRZ5OVykbi77PxGD9Y/KVWKJ1lfrUvFmY0rOqrczp9Qb9USFq/S5ckaUnNDc+p2NsX9eiQUJzWe9pta+yn0zlHVVruo5wWXrlL7c4aK12f2n3HUqm53dKe66x+Gq9+ME15HKzXrRZSpxTHMRu5ObnR3Fo5OL7opdZoXbzVTj6WLu7N1huvt3mY5HB/PnU32Ojo5m9QDBe8anoBQAAA==
+  </data>
+ </layer>
+ <layer name="Layer 2" width="28" height="44" y="15">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO2TuQ6DMBBE/Qn5gLQ52hxtQg9pOdpIpIxk/r/JWtlRBmSIImHS7JNGLLbxesyuc/9jI9om0i6S7yA6ip6i60y6656niK+G5nJVS/FDVNB4O7EO8UW0EmURX/CW6dqwt6dvO4o9zRWDuNNnoedY6xngraF87O1XIQePec3XRbwF3dz734a1tajUPRDngznElb4PY/jLR/LBY033XVFcTszFgD/c51i+uQi+9pQv1A9qlutlznxn9/l/reZEv2R0lhR41+8d1H0qStfvMdR1SrjOUd+p4V5aim+9ZBiGYRiGYRiGsSQv1fOIQUATAAA=
+  </data>
+ </layer>
+ <layer name="Collision Layer 2" width="30" height="44" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3TQQoAIAhE0a7t7dtGKBaMbvwPogJpSmgtAABgTcPLrWbXOrpLdW5Uo+5rlqt8vx1zdqay5z+5yuzJuS+11bnevvM/d+YBAIBZNoiO8xygFAAA
+  </data>
+ </layer>
+</map>

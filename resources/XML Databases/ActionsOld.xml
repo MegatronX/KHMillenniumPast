@@ -1,0 +1,96 @@
+<Actions>
+  <MagicAttacks>
+    <MagicAttack name="Haste">
+      <BattleComponents>
+        <InflictStatusEffectsComponent>
+          <StatusEffect name="Haste" chance="1.00"/>
+        </InflictStatusEffectsComponent>
+      </BattleComponents>
+      <Cost MP="20"/>
+    </MagicAttack>
+    <MagicAttack name="Reflect">
+      <BattleComponents>
+        <InflictStatusEffectsComponent>
+          <StatusEffect name="Reflect" chance="1.00"/>
+        </InflictStatusEffectsComponent>
+      </BattleComponents>
+      <Cost MP="40"/>
+    </MagicAttack>
+    <MagicAttack name="Firaza">
+      <BattleComponents>
+        <InflictStatusEffectsComponent>
+          <StatusEffect name="Death" chance="0.04"/>
+        </InflictStatusEffectsComponent>
+        <TimerModificationComponent>
+          <UserTimerCost value="0.1" type="AbsolutePercent" />
+        </TimerModificationComponent>
+      </BattleComponents>
+      <Cost MP="140"/>
+    </MagicAttack>
+    <MagicAttack name="Gravity">
+      <BattleComponents>
+        <DamageComponents>
+          <PercentDamage amount="25%" variability="0" breakDL="false" />
+        </DamageComponents>
+      </BattleComponents>
+    </MagicAttack>
+  </MagicAttacks>
+  <Skills>
+    <Skill name="Quick Hit">
+      <BattleComponents>
+          <Custom ComponentName="QuickHitComponent">
+            <![CDATA[
+            QuickHitComponent(ActionUseComponent):
+              def __init__(self):
+                ActionUseComponent.__init__("QuickHitComponent", False, False, False, False, False, True)
+              def BattlePostUse(self, action, field)
+                for target in action.GetTargets():
+                  modAmount = 0.9
+                  for action in target.GetActionHistory():
+                    if (action.GetName() == "Quick Hit"):
+                      modAmount -= 0.1
+                    if (modAmount <= 0):
+                      break
+                  if (modAmount > 0):
+                    target.GetAttachedBattleCharacter().SetTimerValue(target.GetTimerValue() + field.GetMaxTimerValue() * modAmount)
+              def Clone(self)
+                return copy.deepcopy(self)
+              return QuickHitComponent()
+            ]]>
+          </Custom>
+      </BattleComponents>
+    </Skill>
+  </Skills>
+  <Generic>
+    
+  </Generic>
+  <CommandSpecific>
+    <Action name="UseItem">
+      <BattleComponents>
+        <UseComponents>
+          <Custom>
+            <![CDATA[
+            ItemUseComponent(ActionUseComponent):
+              def __init__(self, item):
+                self.Item = item
+                ActionUseComponent("UseItemComponent", False, True, False)
+              def Use(self, users, targets, field):
+                Comp = self.Item.GetComponent("UseComponent")
+                if Comp == None
+                  return False
+                Comp.Use(users, targets, field)
+            
+            ]]>
+          </Custom>
+        </UseComponents>
+      </BattleComponents>
+      <FieldComponents>
+        <UseComponents>
+          <Custom>
+            
+          </Custom>
+        </UseComponents>
+      </FieldComponents>
+    </Action>
+  </CommandSpecific>
+</Actions>

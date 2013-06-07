@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="64" height="64" tilewidth="32" tileheight="32">
+ <tileset name="MarioChipset" firstgid="1" tilewidth="32" tileheight="32">
+  <image source="..\..\Resources\Graphics\Tilesets\Mar3chipLarge.png"/>
+ </tileset>
+ <tileset name="Untitled" firstgid="481" tilewidth="32" tileheight="32">
+  <image source="..\..\Resources\Graphics\Tilesets\Collisions.png"/>
+ </tileset>
+ <layer name="Layer 1" width="64" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3YQQrCMBCF4eSQPVb1AnoC9QK61lK9lG9REMqsSrBM3v/BbEt/MqWQUgAAAAD8w1hLOWiOde832cdF3VfNzbR/Vvdb8zHsZ/fz7f5T89JMDZ6Vcfdb9mdEP/3000+/J/rpd+4HAGzDnU++O5+WMt75bOW061Gr065Hrb3uenTWvbZGnPY64nTW7pz+YSc1nledTt/6XY2PVafTtz4uez4YtEbm5Zxd+4f6GwAAAAAAgJ58AcMNje4AQAAA
+  </data>
+ </layer>
+ <layer name="Layer 0" width="64" height="64">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO2UwQnCQBBFYwnaiLZpYhHqRWMR6sVoEWotfg+BIThhA0qc5D14sIch5DN/N8tgzOSTLCvkatL3n/TDXrlLeRhp/kq5r/I20vz0n/7Tf/pP//v+k374Zf8j3K0u/V/KXBYtMzZzhLvVpf87uZdly4zNHOFu1buye/POF81X8tr4hp2xmSP0v96V3Zt3tvm9nkfrf70ruzfv7GWzM0Puv5fN638EuvQ/pQveG/GvfLv/0fK/Sem+Pbfd7Yj5U7pvz213O2L+lO6nvmsR838T8pOf/MPMv5YbuZVTRzszNI7yJM9y5mhnhsZdPuRTzj+4aMwAAAAAAAAAAAAAAAAAAAAAAPyaFxjZ1HcAQAAA
+  </data>
+ </layer>
+ <layer name="Layer 2" width="64" height="64">
+  <properties>
+   <property name="Collision Layer" value="True"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3Y0Q6CMAyFYXz/p/RNvCLOZOs6Ydb2/F9CSLRCj0M2PA4oez7emzLyR3cQi/zRHcQif3QHscgf3UGsHflna6t/Wnt5evD029acdVZ+77l38+af1fbeyzL+nu2stT7bO7Z1vmxG34tVP3otY34PzzWRdfw9qubyypL/6jU4u1dmsNqrlTPjfW11vDzzf8b8K5t1rHZfycr6j/z7+/k18n/uv63Jqs22+oxUwV1zZFZ3zZGAIvXfRuW5wUNp/NWzkr9mfqWsPUpZe9TzK1Ea69F/2eTXza9EPT8AAAAAAEBVL+UdyBEAQAAA
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,13 @@
+uniform sampler2D texture; // 0
+uniform float gamma; // 0.6
+uniform float numColours; // 8.0
+void main()
+{
+  vec3 c = texture2D(texture, gl_TexCoord[0].xy).rgb;
+  c = pow(c, vec3(gamma, gamma, gamma));
+  c = c * numColours;
+  c = floor(c);
+  c = c / numColours;
+  c = pow(c, vec3(1.0/gamma));
+  gl_FragColor = vec4(c, 1.0);
+}

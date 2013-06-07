@@ -1,0 +1,24 @@
+uniform sampler2D texture;
+uniform float starttime; 
+uniform float time; 
+uniform float rt_w;
+uniform float rt_h; 
+
+// Swirl effect parameters
+uniform float radius;
+uniform float anglerate;
+uniform vec2 center;
+uniform vec4 coloroffset;
+uniform vec4 colorvariation;
+void main()
+{
+	float difTime = (time - starttime) * 5;// * 200; 
+	vec4 ref = texture2D(texture, gl_TexCoord[0].xy) * gl_Color;
+	vec4 final = ref + coloroffset + colorvariation * sin(difTime) + colorvariation * 0.5;
+	//float r = ref.r * cos(difTime);
+	//float g = ref.g * cos(difTime);
+	//float b = ref.b * cos(difTime);
+	//float a = ref.a;
+	gl_FragColor = final;//vec4(ref.r * cos(difTime), ref.g * center[0] / 800, ref.b * center[1] / 600, ref.a);// texture2D(texture, gl_TexCoord[0].xy) * gl_Color;
+	gl_FragColor.a = ref.a;
+}
